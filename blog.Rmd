@@ -1,0 +1,11 @@
+---
+title: "Blog"
+output:
+  html_document
+---
+\ 
+\ 
+
+*Coming soon, I swear!*
+
+For now, why don't you enjoy these nice things I've [written](LTjournal_Pt1.html) about a nature trail.

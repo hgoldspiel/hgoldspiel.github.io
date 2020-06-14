@@ -1,0 +1,48 @@
+name: "my-website"
+navbar:
+  title: "Harrison B. Goldspiel"
+  left:
+    - text: "Home"
+      icon: glyphicon-tent  
+      href: index.html
+    - text: "Research"
+      icon: fa-frog
+      href: research.html
+    - text: "Resources"
+      icon: fa-code
+      href: resources.html  
+    - text: "Blog"
+      icon: fa-pencil-alt
+      href: blog.html
+    - text: "Misc."
+      icon: fa-hiking
+      menu: 
+        - text: "Long Trail (Pt. 1)"
+          href: LTjournal_Pt1.html
+        - text: "Long Trail (Pt. 2)"
+          href: LTjournal_Pt2.html
+        - text: "Long Trail (Pt. 3)"
+          href: LTjournal_Pt3.html
+  right:
+    - icon: fa-github
+      href: https://github.com/hgoldspiel
+    - icon: ai-researchgate
+      href: https://www.researchgate.net/profile/Harrison_Goldspiel
+    - icon: fa-graduation-cap
+      href: https://scholar.google.com/citations?user=OCbS0DMAAAAJ&hl=en
+    - icon: fa-tumblr
+      href: http://harryonwheels.tumblr.com/
+    - icon: fa-twitter
+      href: https://twitter.com/hbgoldspiel
+    - icon: fa-linkedin
+      href: https://www.linkedin.com/in/harrisongoldspiel/
+output_dir: "."
+output:
+  html_document:
+    theme: yeti
+    css:
+    - custom.css
+    - academicons-1.8.6/css/academicons.css
+    include:
+      after_body: footer_normal.html
+      

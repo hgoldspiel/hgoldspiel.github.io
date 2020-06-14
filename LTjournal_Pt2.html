@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Harrison Goldspiel" />
+
+<meta name="date" content="2019-09-06" />
+
+<title>The Long Trail (Part 2)</title>
+
+<script src="site_libs/header-attrs-2.1/header-attrs.js"></script>
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="custom.css" type="text/css" />
+<link rel="stylesheet" href="academicons-1.8.6\css\academicons.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 45px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h2 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h3 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h4 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h5 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h6 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Harrison B. Goldspiel</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="glyphicon glyphicon-tent"></span>
+     
+    Home
+  </a>
+</li>
+<li>
+  <a href="research.html">
+    <span class="fa fa-frog"></span>
+     
+    Research
+  </a>
+</li>
+<li>
+  <a href="resources.html">
+    <span class="fa fa-code"></span>
+     
+    Resources
+  </a>
+</li>
+<li>
+  <a href="blog.html">
+    <span class="fa fa-pencil-alt"></span>
+     
+    Blog
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-hiking"></span>
+     
+    Misc.
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="LTjournal_Pt1.html">Long Trail (Pt. 1)</a>
+    </li>
+    <li>
+      <a href="LTjournal_Pt2.html">Long Trail (Pt. 2)</a>
+    </li>
+    <li>
+      <a href="LTjournal_Pt3.html">Long Trail (Pt. 3)</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://github.com/hgoldspiel">
+    <span class="fa fa-github"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://www.researchgate.net/profile/Harrison_Goldspiel">
+    <span class="ai ai-researchgate"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://scholar.google.com/citations?user=OCbS0DMAAAAJ&amp;hl=en">
+    <span class="fa fa-graduation-cap"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="http://harryonwheels.tumblr.com/">
+    <span class="fa fa-tumblr"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://twitter.com/hbgoldspiel">
+    <span class="fa fa-twitter"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://www.linkedin.com/in/harrisongoldspiel/">
+    <span class="fa fa-linkedin"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">The Long Trail (Part 2)</h1>
+<h4 class="author">Harrison Goldspiel</h4>
+<h4 class="date">6 September 2019</h4>
+
+</div>
+
+
+<p><img src="images/abesign_pano.jpg" width="1280" style="display: block; margin: auto;" /> ***</p>
+<div id="day-10the-river" class="section level1">
+<h1>Day 10—The River</h1>
+<p><strong>June 16, 2018: Killington to David Logan Shelter (13 miles)</strong></p>
+<p><em>Nobody</em><br /> <em>told me this. But little by litte</em><br /> <em>the smell of mud and leaves returned to me…</em></p>
+<hr />
+<p>Started off the day with an annoying realization: *I forgot to buy fuel in town yesterday! I have a decent amount, but 5 days would probably be stretching it. So I set out to the gear shop in Killington for a small canister after breakfast. Lightened Up and I parted ways, which was sad. I wished him well on the rest of his AT journey.</p>
+<p>After getting fuel, I packed up my room and went to check out. I was mortified after weighing my pack—34 lbs! Way more than I had hoped. But it is the first day after a resupply, so probably the worst it will be.</p>
+<p>Today’s objective was a 13 mile hike to David Logan Shelter. It was pretty mellow and quiet hiking all day long. Mostly flat, and not many people around, save a young couple from Maryland. I had lunch with them halfway.</p>
+<p>The hike to the shelter was a quiet and lonesome walk along a gentle ridge. There were two older guys and a woman there when I arrived. They had a fire going, even though it was only 5:30PM. The black flies were bad today, especially at this shelter. So the fire served a useful purpose. They were all friendly, local Vermonters. We chatted for a bit as I made dinner. The Maryland duo came by at around 6:30PM and took the lower bunk.</p>
+<p>I like this shelter. And I enjoy the company.</p>
+<hr />
+</div>
+<div id="day-11consequences" class="section level1">
+<h1>Day 11—Consequences</h1>
+<p><strong>June 17, 2018: David Logan Shelter to Sucker Brook Shelter (12 miles)</strong></p>
+<p><em>How does any of us live in this world?</em><br /> <em>One thing compensates for another, I suppose.</em></p>
+<hr />
+<p>Today’s hike was to Sucker Brook Shelter, about 12 miles from David Logan.</p>
+<p>The older folks were up and out by 5:30AM. I got up at 6 and left by 7. The couple was just waking up when I started on the trail.</p>
+<p>The hiking was a bit more rigorous today. Flat for a while and then rolling hills and small peaks. The weather was nice and I listened to music for a while.</p>
+<p>I had lunch with the duo at one shelter about 7 miles in. They didn’t bring a stove, so they just have a giant bag of snacks (three-quarters of which was candy).</p>
+<p>Before making it to the shelter, I saw a young boy (with a camping backpack) and an older man (also with a backpack). I figured they were a grandfather and grandson on a Father’s Day outing. We spoke for a little while (they indeed were a grandfather/grandson hiking duo) before I hopped on ahead of them to arrive at the shelter.</p>
+<p>The shelter was pretty nice and right next to a small stream. The grandfather and grandson arrived shortly after I set my pack down. The three of us shared the lean-to tonight.</p>
+<p>Turns out the older guy (Tom or “Krumholz”) already hiked the LT, and is now section hiking it with his very energetic 8-year old grandson (Silus or “Rockhopper”). I’m enamored with these two. I hope to have the same relationship with my grandson one day.</p>
+<p>We made dinner (lentil stew for me, mac and cheese and lasagna for Silus and Tom), and played a card game called Junk. Silus’s favorite.</p>
+<p>By 9:00PM we were off to bed. I’m happy to share a shelter with this family. I’m happy people like them exist in these mountains.</p>
+<hr />
+</div>
+<div id="day-12robert-schumann" class="section level1">
+<h1>Day 12—Robert Schumann</h1>
+<p><strong>June 18, 2018: Sucker Brook Shelter to Skylight Pond Shelter (10 miles)</strong></p>
+<p><em>He turns the corner,</em><br /> <em>he scrapes the dirt from his soles,</em><br /> <em>he runs up the dark staircase, humming.</em></p>
+<hr />
+<p>Today was a shorter day (about 10 miles) that involved some decent climbs, <strong>great trail magic</strong>, and serious rainstorms.</p>
+<p>The hike down to Middlebury Gap was quiet but pretty. I passed some nice open glens and a lake that I decided not to explore. I got to the road soon after Silus and Tom. They had a new companion—a man named Bill. He was quite chatty and gave me watermelon and trail mix. There waas also a Macy’s shopping bag hanging from the trailhead sign with 10+ individually plastic wrapped brownies and some weird trail mix. I ate a brownie, it was fantastic.</p>
+<p>My God, I love trail magic.</p>
+<p>The best (and most unfortunate) part of the morning was that apparently Bike &amp; Build (NUS ’18) just came over the pass! There was a chalk message on the side of the road near the Macy’s bag that said:</p>
+<p><em>Bike &amp; Build &lt;3 AT</em></p>
+<p>I have a feeling they dropped off the trail magic. I’m SO bummed that I missed them. They must have gone by no more than an hour ago.</p>
+<div class="figure" style="text-align: center">
+<img src="images/bikeandbuild.JPG" alt="Bike &amp; Build trail magic." width="50%" height="50%" />
+<p class="caption">
+Bike &amp; Build trail magic.
+</p>
+</div>
+<p>The rest of the day involved lots of climbing and log hopping. The trail was littered with freshly fallen trees. The blowdowns made quite the obstacle course between Boyce Shelter and Skylight.</p>
+<p>The lodge was even better than I remember it from two years ago. A large cabin with a loft and porch overlooking the pond. It was empty and quiet. I settled in and snacked a bit.</p>
+<p>Soon enough, the rain came. A deluge that persisted for at least 20 min. I started to worry about Tom and Silus (and Bill). To have to maneuver all those blowdowns in the pouring rain!</p>
+<div class="figure" style="text-align: center">
+<img src="images/skylight.JPG" alt="Skylight made for a welcome temporary home during the deluge." width="50%" height="50%" />
+<p class="caption">
+Skylight made for a welcome temporary home during the deluge.
+</p>
+</div>
+<p>I dozed off for a bit to the sound of the rain hitting the metal roof and dreamed of summer storms at Archbold.</p>
+<p>Soon enough I was woken up by the couple from Maryland, and their new red-haired friend named Ethan. Top, Silus, and Bill quickly followed. Everyone (except me) was completely soaked! I felt a little guilty being so dry in my pajamas already.</p>
+<p>After the rain died down a bit, Tom, Silus, and Bill quickly departed—much to Silus’s dismay. They were moving on to the next shelter.</p>
+<p>Ethan and I quickly bonded over our Magic Flight Launch Boxes. We took them out almost immediately after Silus &amp; Co. departed.</p>
+<p>The day dwindled on and we eventually made our dinner, beds, and crashed.</p>
+<hr />
+</div>
+<div id="day-13clamming" class="section level1">
+<h1>Day 13—Clamming</h1>
+<p><strong>June 19, 2018: Sunrise to Battell Shelter (14 miles)</strong></p>
+<p><em>I rise</em><br /> <em>by lamplight and hurry out</em></p>
+<hr />
+<p>The day started gloomy and cold and wet, Ethan and I rolled out around 7:30AM and stuck together most of the day. The blowdowns to Emily Proctor Shelter were intense and definitely added time.</p>
+<p>We ran into Silus &amp; Co. after taking a pause at Emily Proctor. They accidentally backtracked a mile or so.</p>
+<p>We kept moving toward Lincoln Gap, the weather improving with each hour. Ethan told me all about his childhood and family. This guy had really been through it. Serious motorcycle accident at 16 that broke both femurs. Dad passed from cancer. Mom has it now. Yet somehow, he still maintains a positive attitude and adventurous spirit.</p>
+<p>We hike over some minor peaks and eventually make it to some cliff views of the Adirondacks from Mt. Grant. An older couple (40s maybe) immediately offers us some Switchbacks and we chat for a long while. They are both teachers and spending the summer exploring Vermont.</p>
+<div class="figure" style="text-align: center">
+<img src="images/switchback.JPG" alt="Surprise switchbacks on the Long Trail." width="50%" height="50%" />
+<p class="caption">
+Surprise switchbacks on the Long Trail.
+</p>
+</div>
+<p>Trail folk are amazing. The things people will do for thru-hikers…</p>
+<p>We eventually leave, thanking them for the beers and wishing them well. The road is about one mile ahead. On the way we encounter a woman whom Ethan instantly identifies as Silus’s mother.</p>
+<p>“Have you guys seen a little guy…?” she begins to ask.</p>
+<p>“Yes!” Ethan blurts back emphatically, before she finished her question. “Probably about an hour back on the trail.”</p>
+<p>“Really?! Oh man. Okay, thanks!” she responds, and keeps on moving to find them. Only a few minutes later we encounter a South African man who asks the same question, so we give the same answer and he moves on his way.</p>
+<p>We finally get to the road and begin our climb toward Battell Shelter. It gets pretty steep (and wet), but I arrive within an hour, quickly followed by Ethan.</p>
+<div class="figure" style="text-align: center">
+<img src="images/battellascent.JPG" alt="The steep, rocky ascent to Battell Shelter." width="50%" height="50%" />
+<p class="caption">
+The steep, rocky ascent to Battell Shelter.
+</p>
+</div>
+<p>The Maryland duo aren’t far behind. Eventually, around 7:30PM, the family arrives, starting with Silus and his mom, the South African fellow named Rob, and finally Tom. They all joke and laugh about the rough, long day they had.</p>
+<p>In the end, Ethan and I shared the shelter with Silus, his mom, and his grandfather. Everyone else tented.</p>
+<p>It was a full day, 14 miles long with many interesting people med along the way.</p>
+<p>Tomorrow we go over the first 4000 ft peaks—Abe &amp; Ellen!</p>
+<hr />
+</div>
+<div id="day-14the-fire" class="section level1">
+<h1>Day 14—The Fire</h1>
+<p><strong>June 20, 2018: Battell Shelter to Stark’s Nest (7.4 miles)</strong></p>
+<p><em>What I mean is, I wanted to live my life</em><br /> <em>but I didn’t want to do what I had to</em><br /> <em>to go on, which was: to go back.</em></p>
+<hr />
+<p>The hike to Abraham was rather quick this morning. The views were just as good as they were two years ago, when I hiked this section with Theresa. Full 360 degrees clear skies, with excellent views of Champlain and the Adirondacks to the west, Camel’s Hump and Mansfield to the north, the White Mountains to the east, and Killington to the South.</p>
+<p><img src="images/abesign.JPG" width="50%" height="50%" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="images/abeview.JPG" alt="Views from Mt. Abe." width="50%" height="50%" />
+<p class="caption">
+Views from Mt. Abe.
+</p>
+</div>
+<p>The rest of the day flew by. I hiked with Ethan for most of it, ridge running from Abraham to Lincoln to Ellen. We spent a while relaxing up on a ski lift from Sugarbush just past the Ellen summit. We soon saw Silus &amp; Co., trickling in a few minutes after we arrived. It was the kind of pause that makes hiking all worth it. Views of the mountains, good company, and a well rewarded rest. All on top of the warm nostalgia from my trip with Theresa that inspired this thru-hike in the first place.</p>
+<div class="figure" style="text-align: center">
+<img src="images/maryland.JPG" alt="The Maryland duo, Caroline &amp; Derek (trailnames TBD)." width="50%" height="50%" />
+<p class="caption">
+The Maryland duo, Caroline &amp; Derek (trailnames TBD).
+</p>
+</div>
+<p>Pretty soon after that—maybe 20 minutes—we got to Stark’s Nest, the ski warming hut where I’m staying tonight. It was a short day of hiking. I’ve been hoping to return to this spot ever since 2016.</p>
+<p>Ethan and Silus &amp; Co. all hung around for a bit, maybe half an hour, on the balcony of the Nest. It may have been the last time I’d see any of them. I said my goodbyes to the party of hikers. Rob mentioned he has a cabin near Butler Lodge on Mansfield and would be happy to hike up some beers before I arrive in a few days. That would be a real treat for Theresa and me.</p>
+<p>I’m gonna miss them all, especially Ethan, whom I feel like I’ve been hiking with for weeks. I wish we could stick together to Journey’s End. I forgot to get his full name or number before he left, which I wish I had. It would be nice to reach out, if I’m ever passing through western Mass.</p>
+<p>The day dwindled down. I took advantage of the reception and privacy to call some friends and my parents.</p>
+<div class="figure" style="text-align: center">
+<img src="images/madriverglen.JPG" alt="Never seen single chair ski lifts before Mad River Glen. The Mad River Glen warming hut is truly a gem on the LT." width="50%" height="50%" />
+<p class="caption">
+Never seen single chair ski lifts before Mad River Glen. The Mad River Glen warming hut is truly a gem on the LT.
+</p>
+</div>
+<p>I read about the Mad River Glen history from a book in the hut. There were a lot of historical books on the skiing club in the warming hut. Crazy history. Incredible that they still don’t allow snowboarding. I can’t believe I haven’t heard of this place before.</p>
+<p>Okay, turning off now. Short day tomorrow hiking before resting (and cleaning!) up at the inn.</p>
+<hr />
+</div>
+<div id="day-15banyan" class="section level1">
+<h1>Day 15—Banyan</h1>
+<p><strong>June 21, 2018: Stark’s Nest to Hyde Away Inn (4.5 miles)</strong></p>
+<p><em>I’m only stopping here for a little while.</em></p>
+<hr />
+<p>Hiking out was pretty quick to App Gap. I stopped at the Theron Dean Shelter to have a look. Woke up an older couple from Texas by accident. The view from the “dinner/breakfast” spot was amazing! Someone fashioned two chairs from stones and set them in front of a ledge that looked perfectly at Camel’s Hump. This is a really special place.</p>
+<p>I decided to walk all the way to the Hyde Away Inn, two miles east along the road. It was still only 8:30AM when I got to the road, so it might have been too early to check in if I hitched.</p>
+<p>I passed a few establishments along the road. The Mad River Glen ski resort. The Mad River Barn inn. I almost went in and asked for a room, but it’s too expensive for me. Eventually, I got to the inn at 10AM.</p>
+<p>The staff seemed a little cold at first. They almost seemed annoyed to have a guest to deal with.</p>
+<p>In any case, they checked me into a room above the bar really quickly. It’s a bummer I couldn’t find other people to share this room with. It has a single bed and a set of bunks. It’s only $90, which isn’t the worst, but could have been way cheaper with three.</p>
+<p>Town was pretty awesome. I stopped to get pizza and beer for lunch. I couldn’t tell if it was <em>actually</em> good pizza, or simply magnified after five days of eating peanut butter wraps and lentil stew. In any case, I was very content. I walked down to an ice cream shop in the heart of town right next to the river and bought a cone of chocolate and maple soft serve. I was basically in heaven today, spoiling myself with everything. That’s my favorite thing about thru-hiking—you really earn these indulgences and they feel even more amazing given the minimal luxuries on the trail.</p>
+<p>I spent abount an hour in the local book store. I was in love with this shop. <em>Literal piles</em> of books everywhere. And not just crap paperback mysteries. Pretty decent collection. The owner was extremely chatty, but interesting in a sort of Jeff Goldblum way. We talked for a long time about Murakami and Miyazaki. So yes, my kind of guy. I was dumb and bought three books, which I don’t really want to take on the trail. Maybe I’ll just leave them at shelters so they can have decent literature for a change—Borges, Twain, and some Russian dude whose name eludes me now.</p>
+<p>I relaxed until dinner. Wrote James a long email updating him on my travels. Took a short nap.</p>
+<p>Dinner was pretty great. Caprese panini with very good fries, beer, and a mousse/ice cream dessert. I spoke (if you can say that, more like was spoken to) with an old man who gave me a long, sad autobiography. I felt bad for him; he was clearly unhappy with how parts of his life turned out. I tried to listen and respond as best I could. But I honestly just wanted either normal, upbeat conversation or solitude. Regardless, dinner and beer were satisfying.</p>
+<hr />
+</div>
+<div id="day-16whispers" class="section level1">
+<h1>Day 16—Whispers</h1>
+<p><strong>June 22, 2018: Hyde Away Inn to Montclair Glen Lodge (10 miles)</strong></p>
+<p><em>…in the sleek, amazing</em><br /> <em>humdrum of nature’s design…</em></p>
+<hr />
+<p>And we’re back on the trail to Camel’s Hump!</p>
+<p>I had a quick tasty egg breakfast and coffee at the inn and was driven right after to the trailhead at App Gap.</p>
+<p>Tough hiking today. Burnt Rock was especially challenging. But great weather and pretty views. I was full of nostalgia, having walked this same path just one year ago with Hannah.</p>
+<div class="figure" style="text-align: center">
+<img src="images/camelsdistance.JPG" alt="Approaching the hump." width="50%" height="50%" />
+<p class="caption">
+Approaching the hump.
+</p>
+</div>
+<p>I stopped at the Montclair Glen Lodge, about 10 miles in. It was already 4:45pm and I didn’t want to continue on another 6 miles to the next shelter over the hump.</p>
+<p>Sam was here. He was at the Inn at the Long Trail, but left the trail for a few days to deal with a toe infection. You really have to be careful about everything as a thru-hiker. One small slip-up can domino and cascade into physical and/or psychological chaos. All Sam did was clip his nails a bit too short, cutting a small area of skin, and all hell broke loose. It seems to be improving though.</p>
+<p>Made some dinner (yet another cheesy lentil stew; still not tired of these meals) and now getting ready for bed. It’s supposed to rain in the early afternoon tomorrow, so I want to get over the hump and to the next shelter early.</p>
+<p>Theresa comes in two days! And with bagels, lox, and iced coffee! Hooray!</p>
+<hr />
+</div>
+<div id="day-17driving-through-the-wind-river-reservation-a-poem-of-black-bear" class="section level1">
+<h1>Day 17—Driving through the Wind River Reservation: A poem of black bear</h1>
+<p><strong>June 23, 2018: Montclair Glen Lodge to Bamford Ridge Shelter (6 miles)</strong></p>
+<p><em>…legs pumping</em><br /> <em>up and down the hills.</em></p>
+<hr />
+<p>Today was short, but lingered nicely. I hiked up and over Camel’s Hump, arriving at the next shelter (Bamford Ridge) six miles away at 11AM.</p>
+<div class="figure" style="text-align: center">
+<img src="images/camelsummit.JPG" alt="Atop the windy hump." width="50%" height="50%" />
+<p class="caption">
+Atop the windy hump.
+</p>
+</div>
+<p>Toward the end of my descent it began to rain. Not too hard, but enough to make the rocks slippery and the going more treacherous. Luckily I made it with only a few slips and no major injuries.</p>
+<div class="figure" style="text-align: center">
+<img src="images/camelsledge.JPG" alt="The ever exciting rocky cliffside trail to Camel's Hump." width="50%" height="50%" />
+<p class="caption">
+The ever exciting rocky cliffside trail to Camel’s Hump.
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="images/camelsplane.JPG" alt="Just a short spur trail before the summit of Camel's Hump to see the wreckage of this WWII bomber plane." width="50%" height="50%" />
+<p class="caption">
+Just a short spur trail before the summit of Camel’s Hump to see the wreckage of this WWII bomber plane.
+</p>
+</div>
+<p>Déjà vu, huh? It seems I can’t escape the rain on the hump. At least this time I got to the shelter early (an understatement).</p>
+<p>I’m hanging here for the remainder of the day. No need to continue, since Theresa is meeting me at the road in the morning. Derek and Caroline are also here, as well as a caretaker crew undergoing training.</p>
+<p>I think it will rain all day long. So I’ll sleep. And read.</p>
+<hr />
+<p><strong>Continue reading</strong> <a href="LTjournal_Pt3.html">part 3 here.</a></p>
+<div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;">
+
+</div>
+</div>
+
+<br />
+<br />
+<br />
+<br />
+
+&nbsp;
+
+<hr />
+<p style="text-align: center;">Compliled in R with RMarkdown and Github Pages.<br />
+Copyright &copy; <span id="year"></span><a href="https://github.com/hgoldspiel/"> Harrison Goldspiel.</a></p>
+<p style="text-align: center;"><span style="color: #808080;"><em>hbgoldspiel@gmail.com</em></span></p>
+
+<br>
+
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+
+<div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;"></div>
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

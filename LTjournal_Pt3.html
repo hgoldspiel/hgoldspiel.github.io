@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Harrison Goldspiel" />
+
+<meta name="date" content="2019-09-06" />
+
+<title>The Long Trail (Part 3)</title>
+
+<script src="site_libs/header-attrs-2.1/header-attrs.js"></script>
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="custom.css" type="text/css" />
+<link rel="stylesheet" href="academicons-1.8.6\css\academicons.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 45px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h2 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h3 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h4 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h5 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h6 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Harrison B. Goldspiel</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="glyphicon glyphicon-tent"></span>
+     
+    Home
+  </a>
+</li>
+<li>
+  <a href="research.html">
+    <span class="fa fa-frog"></span>
+     
+    Research
+  </a>
+</li>
+<li>
+  <a href="resources.html">
+    <span class="fa fa-code"></span>
+     
+    Resources
+  </a>
+</li>
+<li>
+  <a href="blog.html">
+    <span class="fa fa-pencil-alt"></span>
+     
+    Blog
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-hiking"></span>
+     
+    Misc.
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="LTjournal_Pt1.html">Long Trail (Pt. 1)</a>
+    </li>
+    <li>
+      <a href="LTjournal_Pt2.html">Long Trail (Pt. 2)</a>
+    </li>
+    <li>
+      <a href="LTjournal_Pt3.html">Long Trail (Pt. 3)</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://github.com/hgoldspiel">
+    <span class="fa fa-github"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://www.researchgate.net/profile/Harrison_Goldspiel">
+    <span class="ai ai-researchgate"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://scholar.google.com/citations?user=OCbS0DMAAAAJ&amp;hl=en">
+    <span class="fa fa-graduation-cap"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="http://harryonwheels.tumblr.com/">
+    <span class="fa fa-tumblr"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://twitter.com/hbgoldspiel">
+    <span class="fa fa-twitter"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://www.linkedin.com/in/harrisongoldspiel/">
+    <span class="fa fa-linkedin"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">The Long Trail (Part 3)</h1>
+<h4 class="author">Harrison Goldspiel</h4>
+<h4 class="date">6 September 2019</h4>
+
+</div>
+
+
+<p><img src="images/butlervista.JPG" width="1280" style="display: block; margin: auto;" /></p>
+<hr />
+<div id="day-18members-of-the-tribe" class="section level1">
+<h1>Day 18—Members of the Tribe</h1>
+<p><strong>June 24, 2018: Bamford Ridge Shelter to Buchanan Shelter (10.9 miles)</strong></p>
+<p><em>…sliding and sliding…</em></p>
+<hr />
+<p>It was a misty day. One of those Vermont mountain fogs that I’ve grown to admire more with each occurrence. I hiked the long descent down to US-2, the lowest point on the trail, cruising to the Hamilton soundtrack along the way.</p>
+<p>I opted to stick to the road (Duxbury) over the re-route throuugh the farm meadows. From what I recall, the trail was overgrown and would be very wet with all the recent rain. It wasn’t very far to the bridge along the road, in any case.</p>
+<p>I got to the parking lot a bit before Theresa. There was a “Free Little Library” on the side of the lot, so I decided to kill some time and have a look at the local trail literature. Sadly, the only books to read were Nancy Drew “novels.” Out of desperation, I read one. It took approximately five minutes to read, but the culprit was obvious by the second page. I guess these books aren’t meant for 27 year old adults.</p>
+<p>Theresa arrived shortly after I put back the book, sporting a whole bagel with egg and cheese! And an iced coffee! And lots of other food (no smoked salmon, but I’ll live). I pigged out, and after organizing food we were on our way.</p>
+<div class="figure" style="text-align: center">
+<img src="LTjournal_Pt3_files/figure-html/theresa%20arrival-1.png" alt="The one and only Theresa (Pistil) Fuller arrives to the Long Trail, bringing some spoils from civilization."  />
+<p class="caption">
+The one and only Theresa (Pistil) Fuller arrives to the Long Trail, bringing some spoils from civilization.
+</p>
+</div>
+<p>The rest of the hike to Buchanan was continuously uphill, but gradually so it wasn’t too bad. The six miles flew by with Theresa around. We had a lot to catch up on.</p>
+<p><img src="images/buchanantrail.JPG" width="50%" height="50%" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="images/buchanan.JPG" alt="Hiking to Buchanan shelter." width="50%" height="50%" />
+<p class="caption">
+Hiking to Buchanan shelter.
+</p>
+</div>
+<p>The rain held off a while, for at least an hour after arriving at the shelter. It is a nice shelter here, and a full house! I really love the fenced porch area with a table. A SOBO thru-hiker (Salsa) was here when we arrived, as well as Derek and Caroline. Others showed up later. The rest of the day was nice. We ate a delicious orzo meal. Theresa taught me a fun new card game called Pitch. And we had some good chats with Salsa and a LT alumnus, Jules (AKA Spöönchilla).</p>
+<p>Tomorrow to Butler! Hope that Rob got my message about beer!</p>
+<hr />
+</div>
+<div id="day-19starfish" class="section level1">
+<h1>Day 19—Starfish</h1>
+<p><strong>June 25, 2018: Buchanan Shelter to Butler Lodge (11.2 miles)</strong></p>
+<p><em>…they slid</em><br />   <em>like sponges,</em><br />     <em>like too many thumbs.</em></p>
+<hr />
+<p>Today was a pretty brisk day, until the afternoon at least. It was cloudy and chilly all morning. Enjoyed breakfast (so nice having PB in the oats, for a change) and more conversation with Spöönchilla, who is one cool dude.</p>
+<p>It was a lot of rolling terrain to Butler. We had a decent climb to Puffer Shelter over Bolton Mtn. It was wet and the descent was tricky at times. Theresa and I chatted away the morning and then solo hiked, a few minutes apart, for much of the day. Not in any negative way—we were both enjoying each other’s company. But there is only so much you can continuously talk about.</p>
+<p>After a long lunch at Puffer, we hiked on, fairly constantly, to Butler Lodge. The skies opened up throughout the day, making it a bit warmer. It was perfect hiking weather by the time we arrived.</p>
+<div class="figure" style="text-align: center">
+<img src="images/butler.JPG" alt="Butler Lodge is simply a magical place." width="50%" height="50%" />
+<p class="caption">
+Butler Lodge is simply a magical place.
+</p>
+</div>
+<p>Butler Lodge is stunningly beautiful. It’s a fully walled log cabin, with two floors and a porch that overlooks Champlain and the Adirondacks. I couldn’t get over this place. So grateful for the Green Mountain Club for making this beautiful shelter and keeping it in such good shape over the years.</p>
+<p>Theresa and I played some Pitch, had a great lentil curry dinner, and enjoyed a picturesque sunset with Derek Caroline, and Spöönchilla, before heading to bed.</p>
+<div class="figure" style="text-align: center">
+<img src="images/adksunset.JPG" alt="Sunset over the Adirondacks from Butler Lodge." width="50%" height="50%" />
+<p class="caption">
+Sunset over the Adirondacks from Butler Lodge.
+</p>
+</div>
+<p>Also, we have given and accepted each other’s trail names. I am now “Scrunch” and she is “Pistil.” Short version: I ripped my pants yesterday but botched the floss-sewing job, so my ass looks scrunchy. She has a tank top that really shows off the guns.</p>
+<hr />
+</div>
+<div id="day-20the-journey" class="section level1">
+<h1>Day 20—The Journey</h1>
+<p><strong>June 26, 2018: Butler Lodge to Sterling Pond (8.6 miles)</strong></p>
+<p><em>It was already late</em><br /> <em>enough, and a wild night,</em><br /> <em>and the road full of fallen</em><br /> <em>branches and stones.</em></p>
+<hr />
+<p>Mansfield! Fancy ski resort food! Hills, thrills, vistas!</p>
+<p>Today had it all—long hard climbs, well earned 360 degrees vistas, delicious (and overpriced) food, slippery long descents, and an alpine pond to top it all off.</p>
+<p>Slept in real late (7:30AM) to pace ourselves to get to the Mansfield restaurant when they were open. The hike up the forehead, nose, and lips was wonderful. Some pretty tricky obstacle sections. Lots of ladders. Definitely not for elderly or small children.</p>
+<div class="figure" style="text-align: center">
+<img src="images/mansfield2.JPG" alt="The long traverse over Mount Mansfield." width="50%" height="50%" />
+<p class="caption">
+The long traverse over Mount Mansfield.
+</p>
+</div>
+<p>It was pretty busy up on the mountain. Lots of families and day hikers. It’s amazing what a difference and road and cable car makes for summit traffic. There were hardly any people on top of Camel’s Hump when I summitted. It’s a gnarly trail to get to the top, and that is the only way up. Because Mansfield is so much more accessible, it draws in all sorts of folks in large numbers. While an undeniably beautiful summit, much of the magic is lost when you are surrounded by crowds of people.</p>
+<div class="figure" style="text-align: center">
+<img src="images/mansfieldpano.JPG" alt="Mount Mansfield." width="70%" height="70%" />
+<p class="caption">
+Mount Mansfield.
+</p>
+</div>
+<p>We took a short (but crazy steep) spur trail to a restaurant. It was very fancy, but the food and coffee was worth the cost (and extra hiking), I think. There was a cool little cave en route to the restaurant on the spur trail that still had piles of snow inside.</p>
+<div class="figure" style="text-align: center">
+<img src="images/rockbirth.JPG" alt="Theresa's 'rebirth' on the tricky Mansfield spur trail." width="50%" height="50%" />
+<p class="caption">
+Theresa’s ‘rebirth’ on the tricky Mansfield spur trail.
+</p>
+</div>
+<p>The rest of the hike over the chin and down to the road was <strong>long</strong> and hard. Very steep and slippery in parts. We both had a friend take a fatal flaw off a mountain recently, so we were extra careful. As an aid to our precaution, we thought up some useful (and awesome) Long Trail adages that should apply to any hiker on slippery trail:</p>
+<p><em>Slippy bottoms = bottomatic slippage.</em></p>
+<p><em>It’s tricky without a key tree.</em></p>
+<p>We amused ourselves with this activity, mostly creating adages of nonsense, and eventually got to Sterling Pond, very tired and sore. Today was only 9ish miles, but felt much longer and difficult. It’s nice here in any case. The pond is peaceful and lovely. It has a quiet, simple beauty. A crisp pool of shimmering water, surrounded by a thick tangle of forest, and nothing else.</p>
+<div class="figure" style="text-align: center">
+<img src="images/sterlingview.JPG" alt="Perhaps the most quaint lean-to on the Long Trail, Sterling Pond shelter was the perfect respite after a long day up and over Mansfield." width="50%" height="50%" />
+<p class="caption">
+Perhaps the most quaint lean-to on the Long Trail, Sterling Pond shelter was the perfect respite after a long day up and over Mansfield.
+</p>
+</div>
+<p>It’s good to have a friendly face around. Tomorrow is our resupply day in Johnson. We <em>may</em> stay at an inn. The impending thunderstorms are making that decision uncertain.</p>
+<hr />
+</div>
+<div id="day-21a-visitor" class="section level1">
+<h1>Day 21—A Visitor</h1>
+<p><strong>June 27, 2018: Sterling Pond to Johnson (11 miles)</strong></p>
+<p><em>I saw what a child must love…</em></p>
+<hr />
+<p>Today’s hike went fairly quickly. Lots of ups and downs in the first half of the day, going over Madonna and Whiteface. Whiteface was pretty tough, but all around it was a pretty easy day after yesterday’s adventure over Mansfield. There was a nice view from the top of Whiteface at the Smuggler’s Notch ski lift.</p>
+<div class="figure" style="text-align: center">
+<img src="images/whiteface.JPG" alt="Atop Whiteface at the Smuggler's Notch ski lift." width="50%" height="50%" />
+<p class="caption">
+Atop Whiteface at the Smuggler’s Notch ski lift.
+</p>
+</div>
+<p>The rest of the hike was a <strong>long</strong> downhill to the road. Throughout it, Theresa and I deliberated whether to resupply and hike back in to continue or to stay at an inn tonight. We were both tired, smelly (I was seven days without a shower), and should really launder our clothes. It took us three hours (practically right up to reaching the road) to come to a decision, which was to resupply in Johnson and stay at an inn. The evening rain intimidated us too much, and a shower would be nice.</p>
+<p>After getting to the road at around 2:45PM, we quickly got a hitch from a young local college student. We spent <em>way</em> too much money on groceries. Full splurging on fancy chocolate, granola, cheese, fresh veggies. But it will be all worth it to end the trip with good food.</p>
+<div class="figure" style="text-align: center">
+<img src="images/hitchhiking.JPG" alt="Hitchhiking, with conviction." width="50%" height="50%" />
+<p class="caption">
+Hitchhiking, with conviction.
+</p>
+</div>
+<p>The inn host—an old gentleman named David—picked us up from the grocery store to take us to the inn near Jeffersonville (Nye’s Green Valley Farm B&amp;B). Theresa and I were sprawled out on the sidewalk drinking kombucha when he arrived.</p>
+<p>The inn was really just a converted red barn, fit with a living room, dining room, kitchen, and many guest rooms. It was ridiculously decorated. Obsessively quilted and splattered with kitchy figurines and rabbit dolls. This place is the archetype for stereotypical old-timey New England B&amp;Bs. Like the kind they make fun of excessively in Gilmore Girls. Theresa and I couldn’t control our laughter.</p>
+<p>They provided us with dressrobes to wear while they did our laundry, which were oversized cotton robes with blue and white pinstripes. We looked like hospital patients, waiting around our room for our clothes to dry. I wish I had photographic evidence of this.</p>
+<p>Despite the hospital gowns and creepy rabbit decorations, we were happy to be here. It felt <em>amazing</em> to shower and have warm, dry, clean clothes. After freshening up, David drove us to town so we could get dinner. He gave us a quick driving tour of the six or seven options in Jeffersonbille, with fantastic commentary. We decided on the Village Tavern, because it seemed to have the highest probability of burgers and beer. Burgers and beer it had, in plenty. And it was all delicious. Absolutely huge portions. I was immensely satisfied. Post-hiking burger and beer satisfaction is one of the best feelings in the world.</p>
+<p>David picked us up after and drove us back to the inn, where we promptly collapsed in our beds. They are making us breakfast tomorrow (pancakes and eggs) and driving us back to the trailhead.</p>
+<p>I’m amazed at the level of hospitality here. At the Hyde Away, the manager gave me a little bit of a hard time when I simply asked for a ride back from Waitsfield. Here they are going out of their way to be helpful and generous. I guess that could be a cultural difference betweena modern “inn” and a traditional “bed and breakfast,” the latter of which this place definitely is. I’m glad we stayed here. It’ll be good to go into the last five days feeling fresh and clean.</p>
+<hr />
+</div>
+<div id="day-22the-house" class="section level1">
+<h1>Day 22—The House</h1>
+<p><strong>June 28, 2018: Johnson to Spruce Ledge Shelter (18.1 miles)</strong></p>
+<p><em>…what a change</em><br /> <em>from the cramped</em><br /> <em>room at the center</em><br /> <em>where I began…</em></p>
+<hr />
+<p>It rained for much of the morning today. We had breakfast at the B&amp;B, which was delicious and savored by all. Another thru-hiker joined us named Moment. An older fellow in his 50s by the look of it. Very cheery guy. Proudly sharing his backpacking diet, which consists mostly of boiled potatoes. Theresa and I were dumbfounded, and mildly self-critical, when we compared our diverse and expensive diet with his minimalist approach. To each their own, I guess.</p>
+<p>David dropped us all off at the trail and it was already raining. It was warm too, which made wearing a rain-jacked quite uncomfortable. My day took a real dive after plunging through some thick, wet vegetation and thoroughly inundating my socks and boots with water. Wet feet really change your mentality about hiking. Mild terrain suddenly becomes less exciting and more intolerable. A new hiking mantra floated into my head:</p>
+<p><em>Every step is a potential blister.</em></p>
+<p>Just get a little wet, under the right circumstances, and your whole worldview is more pessimistic.</p>
+<p>Somehow I made it to the second shelter (about 11 miles in) without a blister. The rain had stopped hours ago, but the forest still trickled from the wet canopy. We had a late lunch and debated pushing it to the next shelter seven miles ahead. I was perfectly fine staying where we were. The shelter was so beautiful—a double decker cabin with a brand new outhouse. But, the weather was aiming to be very hot (80s to 90s) and stormy over the next few days. Theresa convinced me to push on, since the weather was great now, the next seven miles would be mild terrain, and we both felt pretty good (aside from my wet feet).</p>
+<div class="figure" style="text-align: center">
+<img src="images/sprucemist.JPG" alt="Clouds hung over the Green Mountains all day today." width="50%" height="50%" />
+<p class="caption">
+Clouds hung over the Green Mountains all day today.
+</p>
+</div>
+<p>The seven mile trek to Spruce Ledge was fairly easy, but we didn’t arrive until 8PM. Moment was finishing up his dinner. Another female hiker was practically asleep in her sleeping bag on a bottom bunk. I was <strong>exhausted</strong>. My wet feet really brought my morale down. Hopefully the socks and boots will dry or the next few days will be very unpleasant.</p>
+<p>Theresa and I made a very quick dinner of Knorr’s pasta, to which we added watercress and cheese. Snickers for dessert. Then we turned in.</p>
+<p>Despite the lengthy, wet day, we did have some great stimulated conversations. I guess the best ones usually occur on days like this. Conservation helps keep you moving. We spoke about religion and our relationships, past and present. These are the exact types of conversations I’ve missed from her. It’s amazing how you can know someone for so long, but still have so much to learn from each other.</p>
+<p>Well, I’m off to bed now. Tomorrow is one of our last big climbs before Journey’s End.</p>
+<hr />
+</div>
+<div id="day-23stanly-kunitz" class="section level1">
+<h1>Day 23—Stanly Kunitz</h1>
+<p><strong>June 29, 2018: Spruce Ledge to Tillotson Camp (7.8 miles)</strong></p>
+<p><em>and trees open their moist</em><br /> <em>pages of thunder…</em></p>
+<hr />
+<p>Our objective for the day was a brief 7.8 miles to Tillotson Camp, which was over Belvedere, a fairly tall mountain with a long 2+ mile climb to the summit.</p>
+<p>We set out a bit before 8AM from Spruce Ledge. Very quickly into the hike we hit Devil’s Gulch, a unique rocky area stuck between two huge cliff walls. It was quite wet from the rainy weather yesterday, making the short section a bit technical to navigate. A lovely spot though. I’d like to return one day without a giant backpack.</p>
+<p><img src="images/devilslide.JPG" width="50%" height="50%" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="images/gulch.JPG" alt="Hiking through Devil's Gulch was super slippery and super fun." width="50%" height="50%" />
+<p class="caption">
+Hiking through Devil’s Gulch was super slippery and super fun.
+</p>
+</div>
+<p>We proceeded to hike a short peak overlooking a pond and crossed a road. The next bit was a long climb to the Belvedere summit. Mostly gradual, so it wasn’t too bad. I powered ahead listening to music from Final Fantasy, and got to the summit around 11:30AM. Theresa arrived 20 minutes later, very tired. Her foot has been hurting a little this morning, so she is taking it slow.</p>
+<p>We walked along the short spur trail to the fire tower clearning, where the view was really spectacular, and had a nice, albeit buggy lunch up there.</p>
+<p>The rest of the hike to camp was pretty quick. We settled into one of our classic debates of conservation versus preservation (I was on Team Conservation). This is a continuation of another, similar conversation we had while backpacking in Glacier. This time, I was trying to convice Theresa that it’s okay to eat a few ripe blueberries or forage some mushrooms along the trail. She thinks the trail already is enough of a disturbance and you shouldn’t take anything at all, period. This went on for at least an hour, with many anecdotes and tangential arguments; however, neither of us really convinced the other of anything.</p>
+<p>We spent some time lounging at the beaver pond near Tillotson Camp. An older man was resting there, so we had a nice chat with him. His wife is a wildlife biologists with an amphibian background that works for the state. Theresa quickly, and smoothly, mentioned my similar background and interests. He didn’t seem to care much about learning about my work though, mostly commenting on how difficult it is to get a wildlife job these days. Like I needed to knew that again. Little did he know that a few weeks later I would apply to (and get rejected for) an amphibian biologist position in the State of Vermont, probably to work with his wife. Small world.</p>
+<p>We hung around the pond for a while after he left. The sun and warm rocks were too nice to pass up. I felt inspired and did a little pond dance on a boulder, which was perfectly captured by Theresa in a candid video.</p>
+<div class="figure" style="text-align: center">
+<img src="images/ponddance_tiny.gif" alt="Spontaneous backcountry pond jigging." width="35%" height="35%" />
+<p class="caption">
+Spontaneous backcountry pond jigging.
+</p>
+</div>
+<p>Eventually we left and got to camp with much time to spare (it was only 3:30PM).</p>
+<p>The hours passed. I set up my hammock and read some Borges. Around 6PM we made dinner—a big lentil stew—and played Pitch followed by a long game of 500 Rummy.</p>
+<p>Today was one of those wonderful lingering days. I enjoyed the slow pace and ample down time. But I’m ready to see what comes next before we reach the border.</p>
+<p>Three more days until Canada!</p>
+<hr />
+</div>
+<div id="day-24orion" class="section level1">
+<h1>Day 24—Orion</h1>
+<p><strong>June 30, 2018: Tillotson Camp to Hazen’s Notch (6.1 miles)</strong></p>
+<p><em>Miles below</em><br /> <em>in the cold woods, with the mouse and the owl,</em><br /> <em>with the clearness of water sheeted and hidden,</em><br /> <em>with the reason for the wind forever a secret,</em> <em>he descends and sits with me, his voice</em> <em>like the snapping of bones.</em></p>
+<hr />
+<p>We got a late start this morning in, sleeping to 7:30AM and not leaving until 9. We aimed to reach Jay Camp, about 11 miles away.</p>
+<p>At some point in the morning, I flipped through the log book and began to write our entry for the shelter. I then felt inspired and sketched up something that I have been pondering for the last few days: how the smell of hikers changes with increasing time on the trail without bathing. I approached the problem like a mathematical model, and assumed that hiker stench increases gradually until reaching a plateau around day 6 or 7. Theresa proposed that the relation may be a bit more complex, with a cubic polynomial function where stench increases exponentially until about day 4, when it plateaus for a few days, and then suddenly becomes worse, heading toward a point of no return. I agreed with this hypothesis, despite having no empirical evidence beyond day 6.</p>
+<div class="figure" style="text-align: center">
+<img src="LTjournal_Pt3_files/figure-html/unnamed-chunk-2-1.png" alt="The empirically-driven hiker stench curve (Goldspiel &amp; Fuller, 2018)."  />
+<p class="caption">
+The empirically-driven hiker stench curve (Goldspiel &amp; Fuller, 2018).
+</p>
+</div>
+<p>There are of course many other factors and covariates at play with hiker stench that are worth investigating in a full study. These may include:</p>
+<ul>
+<li>food consumption (type, quantity, frequency)</li>
+<li>weather conditions</li>
+<li>topical applications (e.g., sunscreen, insect repellant)</li>
+<li>clothing (e.g., wool, cotton, synthetics)</li>
+</ul>
+<p>We had one decent climb at the start of the hike to go over Haystack Mountain. I reached the summit around 11 and waited for Theresa, who was only a short ways behind me.</p>
+<p>It was a typical foggy morning. The climb wasn’t too bad, so I started to worry when 20 minutes passed and Theresa still didn’t show. As a precaution, I fetched my first aid kit and left my pack at the summit, backtracking to see if everything was okay. I imagined Theresa lying facedown on the side of the trail, unconscious. I hustled downhill, pathetic first-aid kit in hand with next to zero medical training, and found her about a quarter mile back, slowly making her way up. Her ankle is really hurting her today, so she’s moving slowly. A huge relief that she was alive, but I was still worried. I could tell by the look on her face that she didn’t think she would make it to Journey’s End.</p>
+<p>We spoke at the summit. She wraps her foot and we decide to reassess the situation at the Hazen’s Notch site about 3.5 miles ahead. It’s another long, slippery descent to the road at Hazen’s Notch. I’m way ahead of her when I arrive, so I relaxed on the side of the road. There was a small parking area to the right of the trail head. I figure I might be waiting for a while, so I took off my boots and found a nice rock to rest against.</p>
+<p>Cars passed by pretty frequently and drivers gave an occasional nod. I was hoping maybe there would be some trail magic here. We have enough food for the next three days, but it’s just enough. After 10 minutes or so, a middle-aged couple appears, walking out of the trailhead on the opposite side of the road. Turns out they are the parents of a female thru-hiker that camped with us at Spruce Ledge. She dropped her pack off at the Hazen’s Notch shelter so she could finish the trail today with less weight on her back. So her parents were picking it up before driving up to get her from the Journey’s End trailhead.</p>
+<p>We talk for a little while longer, the parents and I. They ask about my hike and when I planned to finish. Then the father asks the magical question I was hoping he would ask: “Do you need any food?” “Sure!” I respond, “I can’t really say no to that!” As they walk over to their car to fetch the snacks, Theresa arrives. She seems disappointed, but perks up when I say that we just got some trail magic. They come back and offer us a bunch of bars, bananas, half a Hershey’s bar, and an ice cold Gatorade.</p>
+<p>People really are amazing on the trail. It’s also incredible how just a few bars, some chocolate, and fresh fruit can <em>really</em> boost your confidence and morale while thru-hiking.</p>
+<p>The hike up to Hazen’s Notch camp was a fairly short climb from the road. We have a late lunch at the shelter at about 2:30PM, which is a decent looking cabin, except for the large pile of newspaper and other scraps in one corner. We decide to stop here for the day, so Theresa can ice and rest up her foot. It looks like tomorrow we’ll hike to Jay Camp in the morning and Theresa will make a decision then as to whether she wants to continue over Jay Peak or stop early and meet up after I make it to the Canadian border.</p>
+<p>I decided to set up my hammock since it was so early in the afternoon. I napped for a little while, fully embracing the free time in the mountains. I probably won’t get to experience this level of deep forest serenity for a long time after Journey’s End.</p>
+<p>It was still only 5PM when I awoke, so I decided to fetch some dry wood for a campfire. It seemed a good night for one last fire, and it was supposed to rain later which makes putting out the embers easier. An hour later, we decided to make dinner. There were only two options remaining: Annie’s Mac &amp; Cheese or a Lentil/Risotto hybrid meal. We opted for the former, since it was heavier and we’ve already had lentils and risotto. I’ve never had this kind of Annie’s before; it was the “Deluxe” edition, meaning that milk or butter wasn’t necessary to add. Instead, the macaroni came with a pouch of some creamy cheese product. It looked like mayonaise and tasted like pure salt. But we were both very hungry so we scarfed it down all the same. it’s amazing what you’ll eat when backpacking.</p>
+<p>We played a few rounds of cards and then went to sit around the fire pit. The fire lit up quickly and I was able to get enough dried wood to keep it going for an hour or so. We had one of those campfire conversations that meander around numerous subjects, the serious and trivial.</p>
+<p>The fire died down and the sky got darker, so we decided to put out the rest of the embers and call it a night. It’s strange that I only have two more days on the trail. I can’t decide if the days went by slowly or quickly. Regardless, I wish they weren’t about to end.</p>
+<hr />
+</div>
+<div id="day-25one-or-two-things" class="section level1">
+<h1>Day 25—One Or Two Things</h1>
+<p><strong>July 1, 2018: Hazen’s Notch to Shooting Star Shelter (10.4 miles)</strong></p>
+<p><em>The god of dirt</em><br /> <em>came up to me many times and said</em><br /> <em>so many wise and delectable things…</em></p>
+<hr />
+<p>It rained hard last night for several hours. My mattress pad deflated a bit on me during the night, so I didn’t get much sleep. We got up at 6:00AM, made breakfast, tidied up, and left camp by 7:15.</p>
+<p>It was really foggy the entire morning. Theresa and I walked together for a bit. Her foot wasn’t feeling that much better. At least it was fairly simple hiking. We only had to go over three small peaks, with many flat sections, and one long descent to Jay Pass. None of the peaks had any view (although the only view we’d get is a white wall of fog). The forest was still nice though. Walking more slowly, I noticed every step and every surrounding feature more clearly. My boots quickly got wet from all the mud and runoff. Parts of the trail became a stream from all the rain last night.</p>
+<p>We arrived at the road around 11:30AM. There was a big parking lot and a nondescript trailhead straight across the road to Jay Pass. Strange, I was expecting more. At least a sign for Jay Peak or the upcoming park, like we’ve seen in so many of the previous sections. It was a quick hike (0.4 miles) to Jay Camp, where we stopped to have lunch and make our plans for the remainder of the day.</p>
+<p>A woman was there at the cabin, finishing up her lunch. She just started the LT SOBO yesterday and had <em>many</em> questions for us northbounders. Her trail name was “Birthday Girl,” on account of today being her 50th birthday and everyone she’s spoke to (ourselves included) have wished her “Happy Birthday.” She never embarked on any previous thru-hiking or backpacking trips, and she figured she should do something big to celebrate the milestone.</p>
+<p>Again, the LT continues to amaze me with the people I meet! The hike was hard enough for me, a 27 year-old man, with a decent amount of backpacking experience. It’s so inspiring to see older (and younger) people on the trail. The trail seeks all..</p>
+<p>Theresa decided she’s going to stay at an inn near Journey’s End tonight, and meet me at the border tomorrow for the grand finale. She doesn’t want to risk getting a more serious injury by hiking over Jay, our last big climb. While unfortunate, this was probably a good decision for her. She still got to walk over 70 miles on this trip, meet some unique individuals, and see some really breathtaking views from multiple summits. Hiking with a foot injury, even a mild one, really changes your psyche and distorts your entire outlook on the trip. Better for her to rest up and maybe she can still make the short hike to the Canadian border from the trailhead tomorrow. She gave me most of her food and we parted ways, me toward the Jay summit and her back toward the road.</p>
+<p>The walk up to the Jay summit wasn’t that long, but with the extreme heat and humidity it felt especially difficult. Only two minutes into the climb and I was coated with a layer of sweat. Sweat ran down my face and beard, plopping down on the trail with almost every step. My shirt became fully saturated and clung to my skin. I charged ahead, playing Sylvan Esso from my phone tucked into a hip pocket of my pack. I passed so many people on their way down, equally as sweaty as me.</p>
+<p>Soon enough, I emerged from the woods and cut through a ski slope, with a hazy view of the mountains to the right. The rest of the climb was up a rock face, the summit appearing in sight from the satellite dishes and cell towers atop a large building.</p>
+<div class="figure" style="text-align: center">
+<img src="images/jayview.JPG" alt="The hazy view north toward Canada from Jay Peak." width="50%" height="50%" />
+<p class="caption">
+The hazy view north toward Canada from Jay Peak.
+</p>
+</div>
+<p>At the top next to a mountain tram was a little deli, run by the ski resort. I wasn’t particularly hungry, but I couldn’t pass up on the opportunity to splurge on some baked goods the deli offered. They also had one beer on tap—a Long Trail brew inspired by Jay—called the the “Tram Ale.” I couldn’t pass on that either. In the end I bought a brownie, a granola bar, a “magic” bar, a bag of baked potato chips, and a beer. I sat in the cool building for a while, savoring the beer and thoughtlessly munching on chips and the magic bar.</p>
+<p>A few minutes into my beer and heard the gondola arrive outside the deli, followed by a large group of people that emerged. With that, the magic of this mountaintop beer quickly dissipated. Tourists trickled into the deli, quickly selling out all their potato chips and brownies. Glad I got here when I did. A large group of toddlers and their caretakers settled at the table next to me. One girl stared at me, undismayed by my scruffy appearance and four-day old stench, with a look of unabashed curiosity. I suddenly felt very strange in that place. So I packed up my spoils, finished my beer, and escaped, the woods calling me again.</p>
+<p>Shortly after leaving the deli and into the descent down the ski slope I passed by two women wearing full packs and tired expressions.</p>
+<p>“Southbounders!” I exclaimed.</p>
+<p>“<em>North</em>bounder!” one of them called back.</p>
+<p>Their names were Pinky and Gandalf and today was their second day on the trail. They smiled when I told them the summit was only five minutes away, and that there was cold beer at the top. That was about the extent of our conversation. I wished them good luck and cooler days ahead and moved on.</p>
+<p>The trail quickly reentered the woods and began a steep and winding descent. A half hour or so later I arrived at Laura Woodward Shelter, drenched again in sweat.</p>
+<p>The lean-to was empty. I took off my shirt and relaxed in the shelter, browsing the log book. I found Pink and Gandalf’s entries from the night before, written in beautiful calligraphy. I turned the pages more, going back in time, stopping to read what may have been French Press’s last entry on the trail. He was just here yesterday. Only one day behind! Too bad I never caught up with that guy. That’s life, I guess. We’re always chasing after trailblazers, just out of reach, unaware that others are also chasing after us. I thought of the Bike and Build alumna Sam who was likely on my tail. And Caroline and Derek.</p>
+<p>I imagine Fresh Press is somewhere cozy now with his girlfriend. He’s probably enjoying the sweet fruits of civilization—hot showers, clean clothes, fresh vegetables, and never-ending beer. I wonder if he’ll ever read this. I hope he does. I hope he knows he is a hero to us all.</p>
+<p>I kept rewinding time with the log book, seeing Sam Adam’s entries from four days ago. June became May, and then April. The entries zoomed back to last year and I realized something simultaneously exciting and depressing. Hannah may have written in this book! I forgot to check any of the other log books for her entires, and was saddened by the realization. I couldn’t find any entry by Hannah (or her trail name “Chipper”), but I did come across an entry by Rockson, one of her trail friends from last summer. I snap a picture to send to her later.</p>
+<p>Twenty minutes into my rest and I hear some scuffling down the trail and shortly after a sweaty, middle-aged man appears. He was bald and one of his eyes was winched close, but in a painless sort of way. As he took off his pack and rested against the shelter he moaned and grunted the way we all do after a long, hard day on the trail. This was his first day and he was relieved to be at the shelter. He was exhausted, and his hiking poles already snapped. I asked if he was headed to the southern terminus and he said he was, but he’s going to walk a little further along the AT after.</p>
+<p>“Oh, where to?” I asked.</p>
+<p>“Just back to my place in North Carolina,” he said, nonchalantly.</p>
+<p>The man, whose trail name was Nature Boy (apparently after some pro wrestler), hiked the AT northbound two years ago. And while he was on it is was so enamored with the LT that he wanted to come back one day. He’s from mountains in North Carolina, so he figures he’d just get dropped off at the Canadian border and walk home.</p>
+<p>We talk for a little longer and I decide to keep moving on. It was already 4pm and I didn’t want to have to rush tomorrow meeting Ann and Theresa. I also felt like being along tonight, so I figured I’d take a gamble on the next shelter. As interesting as Nature Boy was, I was more in the mood for solitude. Shooting Star shelter was another four miles up the trail, so I figured I’d get there by 6PM.</p>
+<p>Thirty minutes into the hike and I’m again drenched with sweat. It was hot and unbearably humid. I quickly depleted the water from my Camelbak. A half hour passes, my shirt now fully saturated again, and I started to feel fatigued. My head was sort of foggy and I worried about passing out. I had only a little water left in my bottle and wasn’t sure if it was enough to get to the next shelter. I looked on Guthook to see if there were any water sources before Shooting Star and sadly there weren’t. There was also bad news on the app for the water at Shooting Star: the water was inaccessible, due to a broken pump (it was well water). I sat down, unsure what to do next. Risk walking another hour and finding no water for the rest of the day? Or walk back an hour to Laura Woodward, where there was a small stream? Abhorring backtracking, I moved on toward Shooting Star, with the hope that there will be some temporary streams flowing from the recent heavy rains. Worst comes to worst, I could always filter some of the water that’s been flowing directly off the flooded trail.</p>
+<p>Soon enough, I saw a small stream off the side of the trail and cheered with excitement. Not taking any chances, I filled up the full 3L of my bladder and 1L bottle, and both of my 1L Sawyer bags as reserve. At the very least, I’ll have water for tonight and tomorrow morning, in case I can’t find any on my way to the border.</p>
+<p>After drinking most of a 1L Nuun-infused beverage, I started to feel a little refreshed and less dehydrated. The last two miles to Shooting Star were pretty. I stayed on a ridge, walking over rolling hills, emerging into a giant rock slab with thick layers of moss. The shelter was right on the boulder, with some small trails and clearings in the surrounding forest. It was 6PM and the shelter was empty, as I hoped. It looked like I’d be alone tonight.</p>
+<div class="figure" style="text-align: center">
+<img src="images/shootingstar.JPG" alt="Shooting Star Shelter, my final respite on the Long Trail." width="50%" height="50%" />
+<p class="caption">
+Shooting Star Shelter, my final respite on the Long Trail.
+</p>
+</div>
+<p>I started cooking my dinner, to the tunes of Creedence Clearwood Revival from my phone. As dinner cooked—my last lentil stew—I unpacked all my things, sprawling them out in the shelter, taking time to appreciate the blend of equipment that supported me for 270 miles. My cookset and stove, simple and compact, perfect for making endless lentil stews and mint tea. My “banana pouch” and the seemingly endless quantity of “bananas” tucked inside that magical little bag. My precious multitool—if only it had nail clippers. My barely used first-aid kit. My Luci light, which illuminated many lean-tos and allowed for many rounds of Pitch with Theresa. My teeny-tiny external battery, which gave me enough energy to keep the tunes alive and Guthook accessable all month. My headphones, which I was on the fence about bringing on the trail but so glad I did. My sunglasses which, despite having a huge scratch on one of the lenses, have been so crucial on so many occasions. My horribly smelly bandana. My Sawyer, my life source. My sleeping bag, mattress pad, and pillow, compact and comfortable as can be. Last but not least, my hammock, the ultimate companion at the end of a long day hiking.</p>
+<p>They all deserved their own trail names. They all deserved to be celebrated.</p>
+<p>I finished up my final lentil stew extravaganza. It was my best one yet. I topped off dinner with the magic bar from Jay Peak and a cup of mint tea.</p>
+<p>Despite having a whole lean-to for myself tonight, I thought it made more sense to string up my hammock one last time and sleep in the forest under the stars. The weather was perfect for hammock camping, warm and with clear skies. I found a good spot, only 50 feet behind the shelter, in a little island of forest surrounded on all sides by the rock slab.</p>
+<div class="figure" style="text-align: center">
+<img src="images/finalhammock.JPG" alt="Beginning and ending my LT journey alone and in a hammock." width="50%" height="50%" />
+<p class="caption">
+Beginning and ending my LT journey alone and in a hammock.
+</p>
+</div>
+<p>I write this all now, swinging gently in the warm night air. The stars are out in full force, but only partly visible to me through the patchy forest canopy. I realize now that this is exactly how I began the Long Trail: alone, in the woods, in a hammock. Except now, I’m exactly where I want to be. I’m not hungry, wet, lost, and surrounded by a chorus of loud spring peepers. Tonight, here in the far north of Vermont, it’s amazingly quiet. The only sound I hear is from a log on the ground a few feet away. A tiny squeaking sound. I imagine a small insect, slowly boring into the deadwood, happily chomping away at the detritus.</p>
+<p><em>Chomp. Chomp. Chomp.</em></p>
+<p>I fall asleep to the insect sounds.</p>
+<hr />
+</div>
+<div id="day-26poem" class="section level1">
+<h1>Day 26—Poem</h1>
+<p><strong>July 2, 2018: Shooting Star Shelter to Journey’s End (4.4 miles)</strong></p>
+<p><em>The spirit</em><br />   <em>likes to dress up like this:</em><br />     <em>ten fingers</em><br />       <em>ten toes,</em><br /> <br /> <em>shoulders, and all the rest</em><br />   <em>at night</em><br />     <em>in the black branches,</em><br />       <em>in the morning</em><br /> <br /> <em>in the blue branches</em><br />   <em>of the world.</em></p>
+<hr />
+<p>This morning I woke up feeling more refreshed than ever before. For a few moments, I forgot what today was. I was in a complete state of bliss, swinging gently in the morning sun and happy as ever to be alone in the forest. Then it hit me that I was leaving. Walking out of my forest dreamland and back into civilization.</p>
+<p>I made a quick batch of oats and coffee, put on a Gordon Bok album, and enjoyed my last camp breakfast on the Long Trail.</p>
+<p>The hike to Journey’s End was quick, just over 4 miles with only two “mountains” that felt more like large hills than true Vermont peaks. As sad as I was to be leaving, I was quite glad that I was finishing when I did. The last few days were unbearably hot and humid and today was no exeception. It was only 8AM and already well above 80 degrees.</p>
+<p>Half way through my hike, as I made my way up the first of two “summits,” I wondered if Theresa was already at Journey’s End waiting for my arrival. I half expected her to be hiding somewhere close to the end, waiting to jump out and surprise me. Or holding another iced coffee and bagel.</p>
+<p>Before I knew it, I saw a wooden plaque far in the distance along the trail.</p>
+<div class="figure" style="text-align: center">
+<img src="images/northernsign.JPG" alt="The northern terminus sign on the Long Trail." width="50%" height="50%" />
+<p class="caption">
+The northern terminus sign on the Long Trail.
+</p>
+</div>
+<p>Behind the sign was an bright opening in the forest. And standing in the middle of the light was Theresa, taking a video and cheering me on like I was finishing the end of a marathon run. I played along with the drama of the moment, starting to hike in slow motion, and faking a fall just a few feet before the border. Crawling my way toward the end of the forest canopy, Theresa and I started to laugh.</p>
+<p>Lying flat on my stomach on the forest floor, I inched my way into the light and dug my hands into the warm dirt of the US-Canadian border.</p>
+<p>I had made it to the promised land of Journey’s End, a 20 foot wide strip of clearcut land, sligtly overgrown with grasses and shrubs, as far as the eye can see.</p>
+<p>I’ve always been fascinated by the US-Canadian border and its contrast with our border to the south. I could have easily walked across and into Canada. There were no guards or fences blocking my path. All that stood between the United States and Canada were a few thorny shrubs.</p>
+<p>Dotting the center of the strip every quarter mile or so were these large metal monuments, presumably marking the border from coast to coast. I walked my way over to the marker just in front of the trail and pressed my palm against the warm metal. I bent my head and rested it against the marker, imaging all the other thousands of hikers that have come before me and assumed the same emotional posture. To think that just yesterday French Press may have been here and shared his mystic hiker energy with this very same hunk of metal.</p>
+<p>We took a few photos at the border, stayed for a few minutes to admire where we were, and then walked back into the woods advancing to the trailhead to meet our ride.</p>
+<div class="figure" style="text-align: center">
+<img src="images/hug.JPG" alt="The border." width="50%" height="50%" />
+<p class="caption">
+The border.
+</p>
+</div>
+<p>We stopped at the Journey’s End shelter and admired the graffiti from previous hikers. Signatures were etched on practically every surface of the cabin. I flipped through the log book, and made my last entry on the Long Trail on a blank sheet. It was an emotional entry. I shared what the trail meant to me and what I hoped it would mean to others that may be just starting their journey. I thought it only made sense to include a Mary Oliver poem, so I wrote an inscription of Wild Geese into the book. We then filled up an entire page with our Long Trail axioms, and our mathemical hiker stench model from Tillotson Camp.</p>
+<p>Not long after finishing our finest trail log entry ever, a curly haired woman approached the cabin, calling out our names. Our shuttle driver Ann, who is also a volunteer for the Green Mountain Club, had arrived to bring us all the way back to Theresa’s car! We continued on the trail, the three of us, exchanging stories as we walked along to the Journey’s End trailhead parking lot.</p>
+<p>And that was that. Before I knew it, we walked out of the shaded forest and into a hot parking lot, where we crammed into an even hotter car. In about 1.5 hours, we drove the entire length of mountains that took us 10 days to hike. Jay Peak, Belvedere, Haystack, Whiteface, Madonna, Mansfield. They all zoomed by so quickly, stripped of all their magic that you can only experience on foot.</p>
+<p>We thanked Ann, gave her some cash for the long shuttle ride, and jumped into Theresa’s car, where we quickly sped to the nearest town to get burgers and beer in celebration of our succesful journey.</p>
+<hr />
+</div>
+<div id="day-451at-sea-postscript" class="section level1">
+<h1>Day 451—At Sea (Postscript)</h1>
+<p><strong>September 6, 2019: Journey’s End to Puerto Ayora (3,342 miles)</strong></p>
+<p><em>The haze</em><br />   <em>has us</em><br />     <em>in a slow, pink</em><br />       <em>and grey</em><br /> <br /> <em>confusion; everything</em><br />   <em>we know—</em><br />     <em>the horizon,</em><br />       <em>for example,</em><br /> <br /> <em>and the distant</em><br />   <em>ridge of land—</em><br />     <em>has vanished,</em><br />       <em>the boat</em><br /> <br /> <em>glides without a sound</em><br />   <em>over a sea of curled</em><br />     <em>and luminous glass,</em><br />       <em>there are clouds</em><br /> <br /> <em>in the sky wherever</em><br />   <em>that is, and clouds</em><br />     <em>in the water,</em><br />       <em>and maybe</em><br /> <br /> <em>we have entered heaven</em><br />   <em>already, the happy boat</em><br />     <em>sliding</em><br />       <em>like a bee</em><br /> <br /> <em>down the throat of a huge</em><br />   <em>damp flower.</em><br />     <em>Some birds,</em><br />       <em>like streamers of white silk</em><br /> <br /> <em>approach us crying</em><br />   <em>Ah yes,</em><br />     <em>how easy,</em><br />       <em>how familiar</em><br /> <br /> <em>it seems now,</em><br />   <em>that long</em><br />     <em>lovely thrusting up and down</em><br />       <em>of wings.</em></p>
+<hr />
+<p>It’s been just over a year since my thru-hike on the Long Trail. I type this all now, from my new (temporary) home in the Galápagos Islands, in stark contrast to the lush forests and mountainous streams of Vermont.</p>
+<p><img src="images/gal1.JPG" width="50%" height="50%" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="images/gal2.JPG" alt="Trekking in a new land, far far away." width="50%" height="50%" />
+<p class="caption">
+Trekking in a new land, far far away.
+</p>
+</div>
+<p>Reading through my old journey is a powerful experience, to be sure. With every passing sentence, I am reminded just how beautiful the Green Mountains are, and just how much the Long Trail meant to me. My hike was many years in the works, and at the time a purposeful way to “turn off” my brain after graduate school, as I told many people. In retrospect, the Long Trail turned on much more than it turned off. By leaving behind my computer models and manuscripts, and living in nature with no strings attached, I remembered why I got in this field in the first place. Even the most earnest short-term backpacking trip comes with baggage (pun intended). It’s incredibly hard to break away from trivial thoughts and superficial dependencies, and <em>just be</em> with the world and yourself in a fully honest way.</p>
+<p>Like many, I <em>did not</em> live a healthy lifestyle in graduate school. I brought the stress of my research with me everywhere I went. I never really left the office at the end of the day. By best attempt at stress-relief was to smack around a squash ball once a week with other graduate students (FYI, that method actually works fairly well, but the results are short-lived). I was only partly present in any conversation or event away from my thesis. And despite doing rigorous field work in a forest each summer, my mind in the woods was mostly full of negative thoughts and self-critiques that, for all my passion for amphibians and conservation, my data would never amount to anything useful (update: part of my thesis was published in a conservation journal:</p>
+<p><a href="https://www.sciencedirect.com/science/article/pii/S2351989419300162" class="uri">https://www.sciencedirect.com/science/article/pii/S2351989419300162</a></p>
+<p>so take that pessimistic 26-year-old Harrison). Ironically, it took me 26 days, one for each year of my life, deep in the forests of Vermont to remember that there is more to life than impressing your advisor.</p>
+<p>The Long Trail brought me back to my spiritual roots and reminded me what I need to live a happy life: dirt, water, presence, and purpose.</p>
+<p>Mix in some good friends and a trusty pair of boots.</p>
+<p><em>Be.</em></p>
+<div class="figure" style="text-align: center">
+<img src="images/oliver.jpg" alt="RIP Mary Oliver." width="50%" height="50%" />
+<p class="caption">
+RIP Mary Oliver.
+</p>
+</div>
+<hr />
+</div>
+<div id="bonusthe-ultimate-long-trail-playlist" class="section level1">
+<h1>Bonus—The ultimate Long Trail playlist</h1>
+<p>The Long Trail, like any wholesome New England path, is far from a silent walk in the woods. The forest consists of a symphony of sounds, be them frog calls, bird songs, insect chatter, water bubbling, or trees swaying in the wind. All of these natural elements provide great inspiration and creative energy for making music, or in the case for someone with no musical talent (like myself), making playlists.</p>
+<p>And so now I present to you my official <a href="https://open.spotify.com/playlist/2YRHbJbXA960ugW8Eyw4L0?si=beQs3CO_TwO-i_d0Q7Rpvg">Long Trail Spotify playlist</a>, inspired by my hike in the woods.</p>
+<p>I hope you enjoy.</p>
+<div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;">
+
+</div>
+</div>
+
+<br />
+<br />
+<br />
+<br />
+
+&nbsp;
+
+<hr />
+<p style="text-align: center;">Compliled in R with RMarkdown and Github Pages.<br />
+Copyright &copy; <span id="year"></span><a href="https://github.com/hgoldspiel/"> Harrison Goldspiel.</a></p>
+<p style="text-align: center;"><span style="color: #808080;"><em>hbgoldspiel@gmail.com</em></span></p>
+
+<br>
+
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+
+<div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;"></div>
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
