@@ -70,8 +70,6 @@ knitr::include_graphics("images/litter_tadpole.jpg")
 
 *Media:* [Pacific Standard](https://psmag.com/ideas/most-controversial-tree-in-the-world-gmo-genetic-engineering)
 
-\ 
-
 ***
 ## Tortoise ecology and conservation
 
