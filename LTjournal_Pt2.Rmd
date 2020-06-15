@@ -22,6 +22,7 @@ knitr::opts_chunk$set(message = FALSE, tidy = TRUE, echo = FALSE, fig.show="hold
 ```{r}
 include_graphics("images/abesign_pano.jpg")
 ```
+
 ***
 
 # Day 10---The River
@@ -36,7 +37,7 @@ the smell of mud and leaves returned to me...
 
 ***
 
-Started off the day with an annoying realization: *I forgot to buy fuel in town yesterday! I have a decent amount, but 5 days would probably be stretching it. So I set out to the gear shop in Killington for a small canister after breakfast. Lightened Up and I parted ways, which was sad. I wished him well on the rest of his AT journey. 
+Started off the day with an annoying realization: *I forgot to buy fuel in town yesterday!* I have a decent amount, but 5 days would probably be stretching it. So I set out to the gear shop in Killington for a small canister after breakfast. Lightened Up and I parted ways, which was sad. I wished him well on the rest of his AT journey. 
 
 After getting fuel, I packed up my room and went to check out. I was mortified after weighing my pack---34 lbs! Way more than I had hoped. But it is the first day after a resupply, so probably the worst it will be.
 
@@ -126,8 +127,6 @@ I dozed off for a bit to the sound of the rain hitting the metal roof and dreame
 Soon enough I was woken up by the couple from Maryland, and their new red-haired friend named Ethan. Tom, Silus, and Bill quickly followed. Everyone (except me) was completely soaked! I felt a little guilty being so dry in my pajamas already.
 
 After the rain died down a bit, Tom, Silus, and Bill quickly departed---much to Silus's dismay. They were moving on to the next shelter.
-
-Ethan and I quickly bonded over our Magic Flight Launch Boxes. We took them out almost immediately after Silus & Co. departed.
 
 The day dwindled on and we eventually made our dinner, beds, and crashed.
 
