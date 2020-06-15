@@ -28,9 +28,11 @@ include_graphics("images/abesign_pano.jpg")
 
 **June 16, 2018: Killington to David Logan Shelter (13 miles)**
 
-*Nobody*<br />
-*told me this. But little by litte*<br />
-*the smell of mud and leaves returned to me...*
+>Nobody  
+told me this. But little by litte  
+the smell of mud and leaves returned to me...
+>
+> --- (Oliver, lines 15-17)
 
 ***
 
@@ -50,8 +52,10 @@ I like this shelter. And I enjoy the company.
 
 **June 17, 2018: David Logan Shelter to Sucker Brook Shelter (12 miles)**
 
-*How does any of us live in this world?*<br />
-*One thing compensates for another, I suppose.*
+>How does any of us live in this world?  
+One thing compensates for another, I suppose.
+>
+> --- (Oliver, lines 16-17)
 
 ***
 
@@ -79,15 +83,17 @@ By 9:00PM we were off to bed. I'm happy to share a shelter with this family. I'm
 
 **June 18, 2018: Sucker Brook Shelter to Skylight Pond Shelter (10 miles)**
 
-*He turns the corner,*<br />
-*he scrapes the dirt from his soles,*<br />
-*he runs up the dark staircase, humming.*
+>He turns the corner,  
+he scrapes the dirt from his soles,  
+he runs up the dark staircase, humming.
+>
+> --- (Oliver, lines 16-18)
 
 ***
 
 Today was a shorter day (about 10 miles) that involved some decent climbs, **great trail magic**, and serious rainstorms.
 
-The hike down to Middlebury Gap was quiet but pretty. I passed some nice open glens and a lake that I decided not to explore. I got to the road soon after Silus and Tom. They had a new companion---a man named Bill. He was quite chatty and gave me watermelon and trail mix. There waas also a Macy's shopping bag hanging from the trailhead sign with 10+ individually plastic wrapped brownies and some weird trail mix. I ate a brownie, it was fantastic.
+The hike down to Middlebury Gap was quiet but pretty. I passed some nice open glens and a lake that I decided not to explore. I got to the road soon after Silus and Tom. They had a new companion---a man named Bill. He was quite chatty and gave me watermelon and trail mix. There was also a Macy's shopping bag hanging from the trailhead sign with 10+ individually plastic wrapped brownies and some weird trail mix. I ate a brownie, it was fantastic.
 
 My God, I love trail magic.
 
@@ -117,7 +123,7 @@ knitr::include_graphics("images/skylight.jpg")
 
 I dozed off for a bit to the sound of the rain hitting the metal roof and dreamed of summer storms at Archbold.
 
-Soon enough I was woken up by the couple from Maryland, and their new red-haired friend named Ethan. Top, Silus, and Bill quickly followed. Everyone (except me) was completely soaked! I felt a little guilty being so dry in my pajamas already.
+Soon enough I was woken up by the couple from Maryland, and their new red-haired friend named Ethan. Tom, Silus, and Bill quickly followed. Everyone (except me) was completely soaked! I felt a little guilty being so dry in my pajamas already.
 
 After the rain died down a bit, Tom, Silus, and Bill quickly departed---much to Silus's dismay. They were moving on to the next shelter.
 
@@ -131,14 +137,16 @@ The day dwindled on and we eventually made our dinner, beds, and crashed.
 
 **June 19, 2018: Sunrise to Battell Shelter (14 miles)**
 
-*I rise*<br />
-*by lamplight and hurry out*
+>I rise  
+by lamplight and hurry out
+>
+> --- (Oliver, lines 1-2)
 
 ***
 
 The day started gloomy and cold and wet, Ethan and I rolled out around 7:30AM and stuck together most of the day. The blowdowns to Emily Proctor Shelter were intense and definitely added time.
 
-We ran into Silus & Co. after taking a pause at Emily Proctor. They accidentally backtracked a mile or so. 
+We ran into Silus & Co. after taking a pause at Emily Proctor. They accidentally backtracked a mile or so.
 
 We kept moving toward Lincoln Gap, the weather improving with each hour. Ethan told me all about his childhood and family. This guy had really been through it. Serious motorcycle accident at 16 that broke both femurs. Dad passed from cancer. Mom has it now. Yet somehow, he still maintains a positive attitude and adventurous spirit. 
 
@@ -172,7 +180,7 @@ The Maryland duo aren't far behind. Eventually, around 7:30PM, the family arrive
 
 In the end, Ethan and I shared the shelter with Silus, his mom, and his grandfather. Everyone else tented.
 
-It was a full day, 14 miles long with many interesting people med along the way.
+It was a full day, 14 miles long with many interesting people met along the way.
 
 Tomorrow we go over the first 4000 ft peaks---Abe & Ellen!
 
@@ -182,9 +190,11 @@ Tomorrow we go over the first 4000 ft peaks---Abe & Ellen!
 
 **June 20, 2018: Battell Shelter to Stark's Nest (7.4 miles)**
 
-*What I mean is, I wanted to live my life*<br />
-*but I didn't want to do what I had to*<br />
-*to go on, which was: to go back.*
+>What I mean is, I wanted to live my life  
+but I didn't want to do what I had to  
+to go on, which was: to go back.
+>
+> --- (Oliver, lines 11-13)
 
 ***
 
@@ -234,7 +244,9 @@ Okay, turning off now. Short day tomorrow hiking before resting (and cleaning!) 
 
 **June 21, 2018: Stark's Nest to Hyde Away Inn (4.5 miles)**
 
-*I'm only stopping here for a little while.*
+>I'm only stopping here for a little while.
+>
+> --- (Oliver, line 26)
 
 ***
 
@@ -262,8 +274,10 @@ Dinner was pretty great. Caprese panini with very good fries, beer, and a mousse
 
 **June 22, 2018: Hyde Away Inn to Montclair Glen Lodge (10 miles)**
 
-*...in the sleek, amazing*<br />
-*humdrum of nature's design...*
+>...in the sleek, amazing  
+humdrum of nature's design...
+>
+> --- (Oliver, lines 33-34)
 
 ***
 
@@ -293,8 +307,10 @@ Theresa comes in two days! And with bagels, lox, and iced coffee! Hooray!
 
 **June 23, 2018: Montclair Glen Lodge to Bamford Ridge Shelter (6 miles)**
 
-*...legs pumping*<br />
-*up and down the hills.*
+>...legs pumping  
+up and down the hills.
+>
+> --- (Oliver, lines 10-11)
 
 ***
 

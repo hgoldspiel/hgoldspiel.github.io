@@ -29,7 +29,9 @@ include_graphics("images/butlervista.jpg")
 
 **June 24, 2018: Bamford Ridge Shelter to Buchanan Shelter (10.9 miles)**
 
-*...sliding and sliding...*
+>...sliding and sliding...
+>
+> --- (Oliver, lines 10-11)
 
 ***
 
@@ -42,17 +44,9 @@ I got to the parking lot a bit before Theresa. There was a "Free Little Library"
 Theresa arrived shortly after I put back the book, sporting a whole bagel with egg and cheese! And an iced coffee! And lots of other food (no smoked salmon, but I'll live). I pigged out, and after organizing food we were on our way.
 
 
-```{r theresa arrival, fig.show = "hold", fig.cap = "The one and only Theresa (Pistil) Fuller arrives to the Long Trail, bringing some spoils from civilization."}
+```{r theresa arrival, out.width = "50%", out.height = "50%", fig.show = "hold", fig.show = "hold", fig.cap = "The one and only Theresa (Pistil) Fuller arrives to the Long Trail, bringing some spoils from civilization."}
 
-library(cowplot)
-library(ggplot2)
-
-p1 <- ggdraw() + draw_image("images/reesedunkin.jpg") + 
-  theme(plot.margin = unit(c(0, 0.2, 0, 0), "cm"))
-p2 <- ggdraw() + draw_image("images/reeseguns.jpg") + 
-  theme(plot.margin = unit(c(0, 0, 0, 0.2), "cm"))
-
-plot_grid(p1, p2, align = "hv", nrow = 1, ncol = 2)
+knitr::include_graphics("images/theresa_trailhead.jpg")
 ```
 
 
@@ -80,9 +74,11 @@ Tomorrow to Butler! Hope that Rob got my message about beer!
 
 **June 25, 2018: Buchanan Shelter to Butler Lodge (11.2 miles)**
 
-*...they slid*<br />
-\ \ *like sponges,*<br />
-\ \ \ \ *like too many thumbs.*
+>...they slid  
+\ \ like sponges,  
+\ \ \ \ like too many thumbs.
+>
+> --- (Oliver, lines 4-6)
 
 ***
 
@@ -116,10 +112,12 @@ Also, we have given and accepted each other's trail names. I am now "Scrunch" an
 
 **June 26, 2018: Butler Lodge to Sterling Pond (8.6 miles)**
 
-*It was already late*<br />
-*enough, and a wild night,*<br />
-*and the road full of fallen*<br />
-*branches and stones.*
+>It was already late  
+enough, and a wild night,  
+and the road full of fallen  
+branches and stones.
+>
+> --- (Oliver, lines 19-22)
 
 ***
 
@@ -173,7 +171,9 @@ It's good to have a friendly face around. Tomorrow is our resupply day in Johnso
 
 **June 27, 2018: Sterling Pond to Johnson (11 miles)**
 
-*I saw what a child must love...*
+>I saw what a child must love...
+>
+> --- (Oliver, line 32)
 
 ***
 
@@ -213,10 +213,12 @@ I'm amazed at the level of hospitality here. At the Hyde Away, the manager gave 
 
 **June 28, 2018: Johnson to Spruce Ledge Shelter (18.1 miles)**
 
-*...what a change*<br />
-*from the cramped*<br />
-*room at the center*<br />
-*where I began...*
+>...what a change  
+from the cramped  
+room at the center  
+where I began...
+>
+> --- (Oliver, lines 18-21)
 
 ***
 
@@ -240,7 +242,7 @@ The seven mile trek to Spruce Ledge was fairly easy, but we didn't arrive until 
 
 Theresa and I made a very quick dinner of Knorr's pasta, to which we added watercress and cheese. Snickers for dessert. Then we turned in.
 
-Despite the lengthy, wet day, we did have some great stimulated conversations. I guess the best ones usually occur on days like this. Conservation helps keep you moving. We spoke about religion and our relationships, past and present. These are the exact types of conversations I've missed from her. It's amazing how you can know someone for so long, but still have so much to learn from each other. 
+Despite the lengthy, wet day, we did have some great stimulating conversations. I guess the best ones usually occur on days like this. Conservation helps keep you moving. We spoke about religion and our relationships, past and present. These are the exact types of conversations I've missed from her. It's amazing how you can know someone for so long, but still have so much to learn from each other. 
 
 Well, I'm off to bed now. Tomorrow is one of our last big climbs before Journey's End.
 
@@ -250,8 +252,10 @@ Well, I'm off to bed now. Tomorrow is one of our last big climbs before Journey'
 
 **June 29, 2018: Spruce Ledge to Tillotson Camp (7.8 miles)**
 
-*and trees open their moist*<br />
-*pages of thunder...*
+>and trees open their moist  
+pages of thunder...
+>
+> --- (Oliver, lines 11-12)
 
 ***
 
@@ -277,7 +281,7 @@ We walked along the short spur trail to the fire tower clearning, where the view
 
 The rest of the hike to camp was pretty quick. We settled into one of our classic debates of conservation versus preservation (I was on Team Conservation). This is a continuation of another, similar conversation we had while backpacking in Glacier. This time, I was trying to convice Theresa that it's okay to eat a few ripe blueberries or forage some mushrooms along the trail. She thinks the trail already is enough of a disturbance and you shouldn't take anything at all, period. This went on for at least an hour, with many anecdotes and tangential arguments; however, neither of us really convinced the other of anything.
 
-We spent some time lounging at the beaver pond near Tillotson Camp. An older man was resting there, so we had a nice chat with him. His wife is a wildlife biologists with an amphibian background that works for the state.  Theresa quickly, and smoothly, mentioned my similar background and interests. He didn't seem to care much about learning about my work though, mostly commenting on how difficult it is to get a wildlife job these days. Like I needed to knew that again. Little did he know that a few weeks later I would apply to (and get rejected for) an amphibian biologist position in the State of Vermont, probably to work with his wife. Small world.
+We spent some time lounging at the beaver pond near Tillotson Camp. An older man was resting there, so we had a nice chat with him. His wife is a wildlife biologist with an amphibian background that works for the state.  Theresa quickly, and smoothly, mentioned my similar background and interests. He didn't seem to care much about learning about my work though, mostly commenting on how difficult it is to get a wildlife job these days. Like I needed to know that again. Little did he know that a few weeks later I would apply to (and get rejected for) an amphibian biologist position in the State of Vermont, probably to work with his wife. Small world.
 
 We hung around the pond for a while after he left. The sun and warm rocks were too nice to pass up. I felt inspired and did a little pond dance on a boulder, which was perfectly captured by Theresa in a candid video.
 
@@ -301,12 +305,14 @@ Three more days until Canada!
 
 **June 30, 2018: Tillotson Camp to Hazen's Notch (6.1 miles)**
 
-*Miles below*<br />
-*in the cold woods, with the mouse and the owl,*<br />
-*with the clearness of water sheeted and hidden,*<br />
-*with the reason for the wind forever a secret,*
-*he descends and sits with me, his voice*
-*like the snapping of bones.*
+>Miles below  
+in the cold woods, with the mouse and the owl,  
+with the clearness of water sheeted and hidden,  
+with the reason for the wind forever a secret,  
+he descends and sits with me, his voice  
+like the snapping of bones.
+>
+> --- (Oliver, lines 6-11)
 
 ***
 
@@ -372,9 +378,11 @@ The fire died down and the sky got darker, so we decided to put out the rest of 
 
 **July 1, 2018: Hazen's Notch to Shooting Star Shelter (10.4 miles)**
 
-*The god of dirt*<br />
-*came up to me many times and said*<br />
-*so many wise and delectable things...*
+>The god of dirt  
+came up to me many times and said  
+so many wise and delectable things...
+>
+> --- (Oliver, lines 14-16)
 
 ***
 
@@ -386,7 +394,7 @@ We arrived at the road around 11:30AM. There was a big parking lot and a nondesc
 
 A woman was there at the cabin, finishing up her lunch. She just started the LT SOBO yesterday and had *many* questions for us northbounders. Her trail name was "Birthday Girl," on account of today being her 50th birthday and everyone she's spoke to (ourselves included) have wished her "Happy Birthday." She never embarked on any previous thru-hiking or backpacking trips, and she figured she should do something big to celebrate the milestone. 
 
-Again, the LT continues to amaze me with the people I meet! The hike was hard enough for me, a 27 year-old man, with a decent amount of backpacking experience. It's so inspiring to see older (and younger) people on the trail. The trail seeks all..
+Again, the LT continues to amaze me with the people I meet! The hike was hard enough for me, a 27 year-old man, with a decent amount of backpacking experience. It's so inspiring to see older (and younger) people on the trail. The trail seeks all.
 
 Theresa decided she's going to stay at an inn near Journey's End tonight, and meet me at the border tomorrow for the grand finale. She doesn't want to risk getting a more serious injury by hiking over Jay, our last big climb. While unfortunate, this was probably a good decision for her. She still got to walk over 70 miles on this trip, meet some unique individuals, and see some really breathtaking views from multiple summits. Hiking with a foot injury, even a mild one, really changes your psyche and distorts your entire outlook on the trip. Better for her to rest up and maybe she can still make the short hike to the Canadian border from the trailhead tomorrow. She gave me most of her food and we parted ways, me toward the Jay summit and her back toward the road.
 
@@ -416,7 +424,7 @@ The trail quickly reentered the woods and began a steep and winding descent. A h
 
 The lean-to was empty. I took off my shirt and relaxed in the shelter, browsing the log book. I found Pink and Gandalf's entries from the night before, written in beautiful calligraphy. I turned the pages more, going back in time, stopping to read what may have been French Press's last entry on the trail. He was just here yesterday. Only one day behind! Too bad I never caught up with that guy. That's life, I guess. We're always chasing after trailblazers, just out of reach, unaware that others are also chasing after us. I thought of the Bike and Build alumna Sam who was likely on my tail. And Caroline and Derek. 
 
-I imagine Fresh Press is somewhere cozy now with his girlfriend. He's probably enjoying the sweet fruits of civilization---hot showers, clean clothes, fresh vegetables, and never-ending beer. I wonder if he'll ever read this. I hope he does. I hope he knows he is a hero to us all.
+I imagine French Press is somewhere cozy now with his girlfriend. He's probably enjoying the sweet fruits of civilization---hot showers, clean clothes, fresh vegetables, and never-ending beer. I wonder if he'll ever read this. I hope he does. I hope he knows he is a hero to us all.
 
 I kept rewinding time with the log book, seeing Sam Adam's entries from four days ago. June became May, and then April. The entries zoomed back to last year and I realized something simultaneously exciting and depressing. Hannah may have written in this book! I forgot to check any of the other log books for her entires, and was saddened by the realization. I couldn't find any entry by Hannah (or her trail name "Chipper"), but I did come across an entry by Rockson, one of her trail friends from last summer. I snap a picture to send to her later.
 
@@ -426,9 +434,9 @@ Twenty minutes into my rest and I hear some scuffling down the trail and shortly
 
 "Just back to my place in North Carolina," he said, nonchalantly.
 
-The man, whose trail name was Nature Boy (apparently after some pro wrestler), hiked the AT northbound two years ago. And while he was on it is was so enamored with the LT that he wanted to come back one day. He's from mountains in North Carolina, so he figures he'd just get dropped off at the Canadian border and walk home.
+The man, whose trail name was Nature Boy (apparently after some pro wrestler), hiked the AT northbound two years ago. He was so enamored with the LT that he wanted to come back one day. He's from mountains in North Carolina, so he figures he'd just get dropped off at the Canadian border and walk home.
 
-We talk for a little longer and I decide to keep moving on. It was already 4pm and I didn't want to have to rush tomorrow meeting Ann and Theresa. I also felt like being along tonight, so I figured I'd take a gamble on the next shelter. As interesting as Nature Boy was, I was more in the mood for solitude. Shooting Star shelter was another four miles up the trail, so I figured I'd get there by 6PM.
+We talk for a little longer and I decide to keep moving on. It was already 4pm and I didn't want to have to rush tomorrow meeting Ann and Theresa. I also felt like being alone tonight, so I figured I'd take a gamble on the next shelter. As interesting as Nature Boy was, I was more in the mood for solitude. Shooting Star shelter was another four miles up the trail, so I figured I'd get there by 6PM.
 
 Thirty minutes into the hike and I'm again drenched with sweat. It was hot and unbearably humid. I quickly depleted the water from my Camelbak. A half hour passes, my shirt now fully saturated again, and I started to feel fatigued. My head was sort of foggy and I worried about passing out. I had only a little water left in my bottle and wasn't sure if it was enough to get to the next shelter. I looked on Guthook to see if there were any water sources before Shooting Star and sadly there weren't. There was also bad news on the app for the water at Shooting Star: the water was inaccessible, due to a broken pump (it was well water). I sat down, unsure what to do next. Risk walking another hour and finding no water for the rest of the day? Or walk back an hour to Laura Woodward, where there was a small stream? Abhorring backtracking, I moved on toward Shooting Star, with the hope that there will be some temporary streams flowing from the recent heavy rains. Worst comes to worst, I could always filter some of the water that's been flowing directly off the flooded trail. 
 
@@ -442,7 +450,7 @@ knitr::include_graphics("images/shootingstar.jpg")
 ```
 
 
-I started cooking my dinner, to the tunes of Creedence Clearwood Revival from my phone. As dinner cooked---my last lentil stew---I unpacked all my things, sprawling them out in the shelter, taking time to appreciate the blend of equipment that supported me for 270 miles. My cookset and stove, simple and compact, perfect for making endless lentil stews and mint tea. My "banana pouch" and the seemingly endless quantity of "bananas" tucked inside that magical little bag. My precious multitool---if only it had nail clippers. My barely used first-aid kit. My Luci light, which illuminated many lean-tos and allowed for many rounds of Pitch with Theresa. My teeny-tiny external battery, which gave me enough energy to keep the tunes alive and Guthook accessable all month. My headphones, which I was on the fence about bringing on the trail but so glad I did. My sunglasses which, despite having a huge scratch on one of the lenses, have been so crucial on so many occasions. My horribly smelly bandana. My Sawyer, my life source. My sleeping bag, mattress pad, and pillow, compact and comfortable as can be. Last but not least, my hammock, the ultimate companion at the end of a long day hiking. 
+I started cooking my dinner, to the tunes of Creedence Clearwood Revival from my phone. As dinner cooked---my last lentil stew---I unpacked all my things, sprawling them out in the shelter, taking time to appreciate the blend of equipment that supported me for 270 miles. My cookset and stove, simple and compact, perfect for making endless lentil stews and mint tea. My "banana pouch" and the seemingly endless quantity of "bananas" tucked inside that magical little bag. My precious multitool---if only it had nail clippers. My barely used first-aid kit. My Luci light, which illuminated many lean-tos and allowed for many rounds of Pitch with Theresa. My teeny-tiny external battery, which gave me enough energy to keep the tunes alive and Guthook accessible all month. My headphones, which I was on the fence about bringing on the trail but so glad I did. My sunglasses which, despite having a huge scratch on one of the lenses, have been so crucial on so many occasions. My horribly smelly bandana. My Sawyer, my life source. My sleeping bag, mattress pad, and pillow, compact and comfortable as can be. Last but not least, my hammock, the ultimate companion at the end of a long day hiking. 
 
 They all deserved their own trail names. They all deserved to be celebrated.
 
@@ -468,18 +476,20 @@ I fall asleep to the insect sounds.
 
 **July 2, 2018: Shooting Star Shelter to Journey's End (4.4 miles)**
 
-*The spirit*<br />
-\ \ *likes to dress up like this:*<br />
-\ \ \ \ *ten fingers*<br />
-\ \ \ \ \ \ *ten toes,*<br />
-<br />
-*shoulders, and all the rest*<br />
-\ \ *at night*<br />
-\ \ \ \ *in the black branches,*<br />
-\ \ \ \ \ \ *in the morning*<br />
-<br />
-*in the blue branches*<br />
-\ \ *of the world.*
+>The spirit  
+\ \ likes to dress up like this:  
+\ \ \ \ ten fingers  
+\ \ \ \ \ \ *ten toes,  
+>
+shoulders, and all the rest  
+\ \ at night  
+\ \ \ \ in the black branches,  
+\ \ \ \ \ \ in the morning  
+>
+in the blue branches  
+\ \ of the world.
+>
+> --- (Oliver, lines 1-10)
 
 ***
 
@@ -531,50 +541,15 @@ We thanked Ann, gave her some cash for the long shuttle ride, and jumped into Th
 
 **September 6, 2019: Journey's End to Puerto Ayora (3,342 miles)**
 
-*The haze*<br />
-\ \ *has us*<br />
-\ \ \ \ *in a slow, pink*<br />
-\ \ \ \ \ \ *and grey*<br />
-<br />
-*confusion; everything*<br />
-\ \ *we know---*<br />
-\ \ \ \ *the horizon,*<br />
-\ \ \ \ \ \ *for example,*<br />
-<br />
-*and the distant*<br />
-\ \ *ridge of land---*<br />
-\ \ \ \ *has vanished,*<br />
-\ \ \ \ \ \ *the boat*<br />
-<br />
-*glides without a sound*<br />
-\ \ *over a sea of curled*<br />
-\ \ \ \ *and luminous glass,*<br />
-\ \ \ \ \ \ *there are clouds*<br />
-<br />
-*in the sky wherever*<br />
-\ \ *that is, and clouds*<br />
-\ \ \ \ *in the water,*<br />
-\ \ \ \ \ \ *and maybe*<br />
-<br />
-*we have entered heaven*<br />
-\ \ *already, the happy boat*<br />
-\ \ \ \ *sliding*<br />
-\ \ \ \ \ \ *like a bee*<br />
-<br />
-*down the throat of a huge*<br />
-\ \ *damp flower.*<br />
-\ \ \ \ *Some birds,*<br />
-\ \ \ \ \ \ *like streamers of white silk*<br />
-<br />
-*approach us crying*<br />
-\ \ *Ah yes,*<br />
-\ \ \ \ *how easy,*<br />
-\ \ \ \ \ \ *how familiar*<br />
-<br />
-*it seems now,*<br />
-\ \ *that long*<br />
-\ \ \ \ *lovely thrusting up and down*<br />
-\ \ \ \ \ \ *of wings.*
+>...everything  
+\ \ we know---  
+\ \ \ \ the horizon,  
+\ \ \ \ \ \ for example,  
+>
+and the distant  
+\ \ ridge of land---
+>
+> --- (Oliver, lines 5-10)
 
 ***
 

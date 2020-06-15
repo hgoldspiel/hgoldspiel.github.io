@@ -82,7 +82,7 @@ knitr::include_graphics("images/espanola_tort.png")
 
 Once numbered in the hundreds of thousands throughout the archipelago, Galápagos tortoises have suffered extreme population declines and extinctions over hundreds of years due to human activity. GTRI works together with the Galápagos National Park Directorate to restore tortoise populations to their historical ranges and sizes, via research, captive breeding, and management programs.
 
-*Media:* [NY Times](https://www.nytimes.com/2020/01/12/world/americas/diego-tortoise-sex-drive.html), [The Guardian](https://www.theguardian.com/world/2020/feb/02/galapagos-experts-find-a-tortoise-related-to-lonesome-george), [The Daily Show](https://www.youtube.com/watch?v=imH7aU-RBZA), [Wait Wait Don't Tell Me](https://www.npr.org/2020/01/18/797574404/bluff-the-listener)
+*Media:* [NY Times](https://www.nytimes.com/2020/01/12/world/americas/diego-tortoise-sex-drive.html), [The Guardian](https://www.theguardian.com/world/2020/feb/02/galapagos-experts-find-a-tortoise-related-to-lonesome-george), [The Daily Show](https://www.youtube.com/watch?v=hFbYgad3UXo), [Wait Wait Don't Tell Me](https://www.npr.org/2020/01/18/797574404/bluff-the-listener)
 
 ***
 ## Social media and forest recreation

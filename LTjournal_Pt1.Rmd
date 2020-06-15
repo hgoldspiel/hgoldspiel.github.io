@@ -63,7 +63,12 @@ At the end of this trip I was convinced that I had to hike the entire thing. And
 
 The following are journal entries and photos from my northbound thru-hike on the Long Trail in June of 2018. In total I hiked for 22 days and rested for four, making the whole journey 26 days long from end-to-end. I mostly hiked alone, meeting new people along the way, and was joined by the one and only Theresa Fuller for the final 90 miles from Camel's Hump to Canada. 
 
-I went along without much outside entertainment, save some music (read through to the end of Part 3 to find a personally curated Long Trail-themed Spotify playlist), short stories by Jorge Luis Borges, and poems by Mary Oliver, whose collection *Dream Work* supplied the daily rhythm and mystic energy for my tramping in the Green Mountains. 
+I went along without much outside entertainment, save some music (read through to the end of Part 3 to find a personally curated Long Trail-themed Spotify playlist), short stories by Jorge Luis Borges, and poems by Mary Oliver, whose 1986 collection [Dream Work](https://groveatlantic.com/book/dream-work/){target="_blank" rel="noopener"} supplied the daily rhythm and mystic energy for my tramping in the Green Mountains. 
+
+```{r, out.height = "30%", out.width = "30%"}
+knitr::include_graphics("images/dreamwork.jpg")
+```
+
 
 And so we begin...
 
@@ -73,10 +78,12 @@ And so we begin...
 
 **June 1, 2018: North Adams, MA to unnamed beaver pond (10.2 miles).**
 
-*...I wanted to know,*<br />
-*whoever I was, I was*<br />
-*alive*<br />
-*for a little while.*
+>...I wanted to know,  
+whoever I was, I was  
+alive  
+for a little while.
+>
+>--- (Oliver, lines 22-24)
 
 ***
 
@@ -124,11 +131,13 @@ Oh, and I got the wrong batteries for my headlamp! That was unfortunate.
 
 **June 2, 2018: Unnamed beaver pond to Goddard Shelter (17.6 miles).**
 
-*If it is your nature*<br />
-*to be happy*<br />
-*you will swim away along the soft trails*<br />
-*for hours, your imagination*<br />
-*alighting everywhere.*
+>If it is your nature  
+to be happy  
+you will swim away along the soft trails  
+for hours, your imagination  
+alighting everywhere.
+>
+> --- (Oliver, lines 14-18)
 
 ***
 
@@ -136,7 +145,7 @@ Today was rough. Pain, oh so much pain.
 
 Didn't get much sleep on account of the chorusing peepers and green frogs.
 
-The morning hike wasn't too bad. Met an man in his 50s named "Timezone." He and I walked together for a while, talking about practically everything. Personal lives, careers, coding. He is going to Maine on the AT. We zoomed along the trail, across misty forest and meadows, chatting away the morning.
+The morning hike wasn't too bad. Met a man in his 50s named "Timezone." He and I walked together for a while, talking about practically everything. Personal lives, careers, coding. He is going to Maine on the AT. We zoomed along the trail, across misty forest and meadows, chatting away the morning.
 
 
 ```{r meadow, out.height = "50%", out.width= "50%", fig.cap = "The misty meadow trail to Goddard shelter."}
@@ -160,8 +169,10 @@ Critters seen:
 
 **June 3, 2018: Goddard Shelter to Stratton-Arlington Road (13.3 miles).**
 
-*All summer I made friends*<br />
-*with the creatures nearby.*
+>All summer I made friends  
+with the creatures nearby.
+>
+> --- (Oliver, lines 1-2)
 
 ***
 
@@ -187,9 +198,11 @@ I wonder if I'll ever see Alyssa and Rob again. Real friendships or not, I'll mi
 
 **June 10, 2018: Stratton-Arlington Road to Stratton Pond Shelter (6.9 miles).**
 
-*I listened to the earth talk,*<br />
-\ \ *the root wrangle,*<br />
-\ \ \ *the arguments of energy...*
+>I listened to the earth talk,  
+\ \ the root wrangle,  
+\ \ \ \ the arguments of energy...
+>
+> --- (Oliver, lines 25-27)
 
 ***
 
@@ -234,9 +247,11 @@ Also, in preparation for this first long stretch back on the trail I made a bunc
 
 **June 11, 2018: Stratton Pond to Bromley Mountain Summit (13.5 miles).**
 
-*You are the dark song*<br />
-*of the morning;*<br />
-*serious and slow...*
+>You are the dark song  
+of the morning;  
+serious and slow...
+>
+> --- (Oliver, lines 1-3)
 
 ***
 
@@ -274,11 +289,13 @@ Sam's foot was hurting real bad, so he left the trail. I feel bad for him. He's 
 
 **June 12, 2018: Bromley Mountain Summit to Little Rock Pond (17 miles).**
 
-*You do not have to be good.*<br />
-*You do not have to walk on your knees*<br />
-*for a hundred miles through the desert, repenting.*<br />
-*You only have to let the soft animal of your body*<br />
-\ \ *love what it loves.*
+>You do not have to be good.  
+You do not have to walk on your knees  
+for a hundred miles through the desert, repenting.  
+You only have to let the soft animal of your body  
+\ \ love what it loves.
+>
+> --- (Oliver, lines 1-5)
 
 ***
 
@@ -310,14 +327,16 @@ Tomorrow is a resupply day!
 
 **June 13, 2018: Little Rock Pond to Clarendon Shelter (13.6 miles).**
 
-*It was the sheer, dense wall*<br />
-*of blind stone*<br />
-*without a pinch of hope*<br />
-*or a single unfulfilled desire*<br />
-*sponging up and reflecting,*<br />
-*so brilliantly,*<br />
-*as it has for centuries,*<br />
-*the sun's fire.*
+>It was the sheer, dense wall  
+of blind stone  
+without a pinch of hope  
+or a single unfulfilled desire  
+sponging up and reflecting,  
+so brilliantly,  
+as it has for centuries,  
+the sun's fire.
+>
+> --- (Oliver, lines 29-36)
 
 ***
 
@@ -365,9 +384,11 @@ Yes, it was a good day.
 
 **June 14, 2018: Clarendon Shelter to Inn at the Long Trail (17.4 miles).**
 
-*And meanwhile*<br />
-*the gold-trimmed thunder*<br />
-*wanders the sky...*
+>And meanwhile  
+the gold-trimmed thunder  
+wanders the sky...
+>
+> --- (Oliver, lines 5-7)
 
 ***
 
@@ -423,10 +444,12 @@ knitr::include_graphics("images/killingtonsign.jpg")
 
 **June 15, 2018: Rest day in Killington/Rutland**
 
-*All night*<br />
-*the dark bugs of dreams*<br />
-*open*<br />
-*richly.*
+>All night  
+the dark bugs of dreams  
+open  
+richly.
+>
+> --- (Oliver, lines 1-4)
 
 ***
 
@@ -436,11 +459,9 @@ After breakfast I spent some time trying to plan out an itinerary and transporta
 
 Went to Rutland. Nice small city. The co-op was fantastic. If only the Syracuse co-op could be this well stocked.
 
-After spending way too much money on fancy organic snacks from the co-op, I seeked out the Yellow Deli for a proper lunch. It was a thriving spot, full of hikers and regular people alike. The food looked really good. I bumped into Lightened Up, fully engrossed in a sandwich. He greeted me cheerfully, with mustard on his chin, and spoke highly of the bustling establishment we were in. After thinking about it, I decided to skip the lunch at the deli, despite being hungry. 
+After spending way too much money on fancy organic snacks from the co-op, I sought out the Yellow Deli for a proper lunch. It was a thriving spot, full of hikers and regular people alike. The food looked really good. I bumped into Lightened Up, fully engrossed in a sandwich. He greeted me cheerfully, with mustard on his chin, and spoke highly of the bustling establishment we were in. 
 
-I hopped back on the bus to the Inn. I'd rather support a local hiker GMC landmark than a pseudo-Jewish religious cult. They just weided me out a bit.
-
-Lunch was a simple grilled cheese with beer. Lightened Up was there of course, drinking at the bar and chatting on the phone with his wife. Funny how we keep bumping into each other. 
+After giving it some more thought, I decided to skip the lunch at the deli and explore town a bit more. Eventually I hopped on a bus to return to the Inn for a bite. Lunch was a simple grilled cheese with beer. Lightened Up was there of course, drinking at the bar and chatting on the phone with his wife. Funny how we keep bumping into each other. 
 
 "Harrison just walked in. This guy is a real stud. Did I tell you how he brought me a sub and beer the other day? What a nice young man," he remarked to his wife before hanging up.
 

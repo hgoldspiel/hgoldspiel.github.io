@@ -9,27 +9,27 @@ output:
       smooth_scroll: true
 ---
 
-The following page provide examples for various coding and quantitative techniques I've used over the years that may be useful to others. This page is a *work in progress*. I will be adding more vignettes when available!
+The following page provides examples for various coding and quantitative techniques I've used over the years that may be useful to others. This page is a *work in progress*. I will be adding more vignettes when available!
 
 ***
 
 ## Data visualization tutorial
 
-**Link:** [Dataviz workshop](dataviz_part1_HBG.html)
+**Link:** [Dataviz workshop](dataviz_part1_HBG.html){target="_blank" rel="noopener"}
 
 Call me lazy, but when I read academic papers I like to zoom straight to the figures. Well made figures can tell you practically everything you need to know about a study. Of course, I'll read the main text too (usually). But good figures help me better disentangle the often disjointed nature of scientific writing. There is a reason that supplementary graphical abstracts are growing in popularity! And with the growing visualization toolbox for data scientists, making high quality figures is easier than ever.
 
-Here is a little [workshop](dataviz_part1_HBG.html) I put together for a data science collective in Galapagos in 2019. This is by no means an attempt to reinvent the wheel, which I'm still learning how to maneuver myself. These slides constitute a brief introduction to data visualization, focusing on the Grammar of Graphics philosophy as implemented in R with `ggplot2`.
+Here is a little workshop I put together for a data science collective in Galapagos in 2019. This is by no means an attempt to reinvent the wheel, which I'm still learning how to maneuver myself. These slides constitute a brief introduction to data visualization, focusing on the Grammar of Graphics philosophy as implemented in R with `ggplot2`.
 
 ***
 
 ## Mapping Flickr data 
 
-**Link:** [Flickr mapping vignette](Flickr_hotspot_mapping.html)
+**Link:** [Flickr mapping vignette](Flickr_hotspot_mapping.html){target="_blank" rel="noopener"}
 
 If you thought your social media data was only being used for marketing and other profitable ventures, well think again! There has been a boom of environmental research in the last decade using big data from social media platforms including Twitter, Instagram, and Flickr to better understand a myriad of modern ecological and conservation challenges.
 
-In this [vignette](Flickr_hotspot_mapping.html), I demonstrate some basic tasks with spatial point data using the `spatstat` package. The dataset consists of Flickr images from the northeastern United States from 2012-2016. This synthesis is part of an ongoing project at [SUNY ESF](https://www.esf.edu/socialmediastudy/) to understand patterns of nature-based tourism and recreation in the Northern Forest region from New York to Maine.
+In this vignette, I demonstrate some basic tasks with spatial point data using the `spatstat` package. The dataset consists of Flickr images from the northeastern United States from 2012-2016. This synthesis is part of an ongoing project at [SUNY ESF](https://www.esf.edu/socialmediastudy/) to understand patterns of nature-based tourism and recreation in the Northern Forest region from New York to Maine.
 
 ***
 
