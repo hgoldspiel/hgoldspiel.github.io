@@ -27,7 +27,7 @@ Here is a little workshop I put together for a data science collective in Galapa
 
 **Link:** [Flickr mapping vignette](Flickr_hotspot_mapping.html){target="_blank" rel="noopener"}
 
-If you thought your social media data was only being used for marketing and other profitable ventures, well think again! There has been a boom of environmental research in the last decade using big data from social media platforms including Twitter, Instagram, and Flickr to better understand a myriad of modern ecological and conservation challenges.
+If you thought your social media data were only being used for marketing and other profitable ventures, well think again! There has been a boom of environmental research in the last decade using big data from social media platforms including Twitter, Instagram, and Flickr to better understand a myriad of modern ecological and conservation challenges.
 
 In this vignette, I demonstrate some basic tasks with spatial point data using the `spatstat` package. The dataset consists of Flickr images from the northeastern United States from 2012-2016. This synthesis is part of an ongoing project at [SUNY ESF](https://www.esf.edu/socialmediastudy/) to understand patterns of nature-based tourism and recreation in the Northern Forest region from New York to Maine.
 
