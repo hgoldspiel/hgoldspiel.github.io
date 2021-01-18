@@ -15,7 +15,7 @@
 
 <title>The Long Trail (Part 2)</title>
 
-<script src="site_libs/header-attrs-2.1/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.5/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
@@ -28,8 +28,19 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -77,7 +88,7 @@ h6 {
 </style>
 
 <link rel="stylesheet" href="custom.css" type="text/css" />
-<link rel="stylesheet" href="academicons-1.8.6\css\academicons.css" type="text/css" />
+<link rel="stylesheet" href="academicons-1.8.6/css/academicons.css" type="text/css" />
 
 
 
@@ -527,7 +538,7 @@ Skylight made for a welcome temporary home during the deluge.
 </p>
 </div>
 <p>I dozed off for a bit to the sound of the rain hitting the metal roof and dreamed of summer storms at Archbold.</p>
-<p>Soon enough I was woken up by the couple from Maryland, and their new red-haired friend named Ethan. Tom, Silus, and Bill quickly followed. Everyone (except me) was completely soaked! I felt a little guilty being so dry in my pajamas already.</p>
+<p>Soon enough I was woken up by the couple from Maryland, and their new red-haired friend named Ethan. Tom, Silus, and Bill quickly followed. Everyone (except me) was completely soaked! I felt a little guilty being so dry and wearing my pajamas already.</p>
 <p>After the rain died down a bit, Tom, Silus, and Bill quickly departed—much to Silus’s dismay. They were moving on to the next shelter.</p>
 <p>The day dwindled on and we eventually made our dinner, beds, and crashed.</p>
 <hr />
@@ -622,7 +633,7 @@ Never seen single chair ski lifts before Mad River Glen. The Mad River Glen warm
 <p>The staff seemed a little cold at first. They almost seemed annoyed to have a guest to deal with.</p>
 <p>In any case, they checked me into a room above the bar really quickly. It’s a bummer I couldn’t find other people to share this room with. It has a single bed and a set of bunks. It’s only $90, which isn’t the worst, but could have been way cheaper with three.</p>
 <p>Town was pretty awesome. I stopped to get pizza and beer for lunch. I couldn’t tell if it was <em>actually</em> good pizza, or simply magnified after five days of eating peanut butter wraps and lentil stew. In any case, I was very content. I walked down to an ice cream shop in the heart of town right next to the river and bought a cone of chocolate and maple soft serve. I was basically in heaven today, spoiling myself with everything. That’s my favorite thing about thru-hiking—you really earn these indulgences and they feel even more amazing given the minimal luxuries on the trail.</p>
-<p>I spent abount an hour in the local book store. I was in love with this shop. <em>Literal piles</em> of books everywhere. And not just crap paperback mysteries. Pretty decent collection. The owner was extremely chatty, but interesting in a sort of Jeff Goldblum way. We talked for a long time about Murakami and Miyazaki. So yes, my kind of guy. I was dumb and bought three books, which I don’t really want to take on the trail. Maybe I’ll just leave them at shelters so they can have decent literature for a change—Borges, Twain, and some Russian dude whose name eludes me now.</p>
+<p>I spent about an hour in the local book store. I was in love with this shop. <em>Literal piles</em> of books everywhere. And not just crap paperback mysteries. Pretty decent collection. The owner was extremely chatty, but interesting in a sort of Jeff Goldblum way. We talked for a long time about Murakami and Miyazaki. So yes, my kind of guy. I was dumb and bought three books, which I don’t really want to take on the trail. Maybe I’ll just leave them at shelters so they can have decent literature for a change—Borges, Twain, and some Russian dude whose name eludes me now.</p>
 <p>I relaxed until dinner. Wrote James a long email updating him on my travels. Took a short nap.</p>
 <p>Dinner was pretty great. Caprese panini with very good fries, beer, and a mousse/ice cream dessert. I spoke (if you can say that, more like was spoken to) with an old man who gave me a long, sad autobiography. I felt bad for him; he was clearly unhappy with how parts of his life turned out. I tried to listen and respond as best I could. But I honestly just wanted either normal, upbeat conversation or solitude. Regardless, dinner and beer were satisfying.</p>
 <hr />
@@ -720,7 +731,7 @@ Copyright &copy; <span id="year"></span><a href="https://github.com/hgoldspiel/"
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -759,7 +770,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
