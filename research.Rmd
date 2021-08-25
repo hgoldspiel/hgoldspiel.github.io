@@ -1,6 +1,6 @@
 ---
 title: "Research"
-date: 'Last updated: `r format(Sys.time(), "%d %B, %Y")`'
+date: 'Last updated: `r format(Sys.time(), "%d %B %Y")`'
 output:
   html_document:
     toc: true
@@ -9,12 +9,12 @@ output:
       smooth_scroll: true
 ---
 
-My research mostly resides in the realm of ecology and conservation biology, with a focus on amphibians and reptiles. I am most interested in studying wildlife populations over different gradients of natural and human disturbance, and applying those relationships for understanding future threats against biodiversity and guiding conservation planning. I work with a variety of organisms and ecosystems, ranging from vernal pool amphibians to Galápagos tortoises, and use various quantitative techniques for studying ecological and demographic processes. I'm also interested in social science perspectives in ecological research and using historical data and social-ecological systems frameworks to better understand complex conservation stories.
+My research mostly resides in the realm of ecology and conservation biology, with a focus on amphibians and reptiles. I am most interested in studying wildlife populations over different gradients of natural and human disturbance, and applying those relationships for understanding future threats against biodiversity and guiding conservation planning. I work with a variety of organisms and ecosystems, ranging from vernal pool amphibians to Galápagos tortoises, and use various quantitative techniques for studying ecological and demographic processes. I'm also interested in social dimensions of wildlife ecology and using historical data and social-ecological frameworks to better understand complex conservation stories.
 
 Here is a short list of some projects I've worked on over the last several years.
 
 ***
-## Amphibian ecology and conservation
+## Population biology and restoration ecology
 
 ```{r, echo=FALSE, out.width="60%", out.height="60%", fig.cap="Left: A Tapichalaca tree frog (Hyloscirtus tapichalaca) from southern Ecuador. Right: Spotted salamander (Ambystoma maculatum).", fig.show='hold', fig.align='center'}
 knitr::include_graphics("images/amphibs.jpg")
@@ -47,7 +47,7 @@ knitr::include_graphics("images/heiberg_history.jpg")
 \ 
 \ 
 
-*Relevant articles:*
+*Relevant literature:*
 
 - **Goldspiel HB** 2018. "Forest Legacy Effects on Amphibian Populations: Integrating Land and Life Histories in Conservation" (2018). Dissertations and Theses. 40. https://digitalcommons.esf.edu/etds/40
 
@@ -56,22 +56,9 @@ knitr::include_graphics("images/heiberg_history.jpg")
 *Media:* [The Wildlife Society](https://wildlife.org/spotted-salamanders-prefer-legacy-forests/)
 
 ***
-### *Wood frogs and transgenic chestnut*
 
-With rapid advancements in transgenic research, biotechnology has become more commonplace in discussions about ecological restoration. These techniques present numerous opportunities for conservation, as well as numerous uncertainties about potential non-target effects on other organisms. Following decades of research at SUNY ESF with the [American Chestnut Project](https://www.esf.edu/chestnut/), American chestnut (*Castanea dentata*) has become a primary case study of species restoration using biotechnology. As part of the regulatory approval process for planting these trees, various studies have been done to examine non-target effects on native species and ecological processes. Until 2017, no research had yet been conducted to examine potential effects of transgenic chestnut on forest vertebrates, such as amphibians. In collaboration with the American Chestnut Project, I conducted a lab survival experiment to study interactions between transgenic American chestnut litter and amphibian larvae.
 
-```{r, echo=FALSE, out.width="60%", out.height="60%", fig.cap="Left: Sample vials of leaf litter with pond water from central New York. Right: a wood frog (Lithobates sylvaticus) tadpole.", fig.show='hold', fig.align='center'}
-knitr::include_graphics("images/litter_tadpole.jpg")
-``` 
-
-*Relevant articles:*
-
-- **Goldspiel HB**, Newhouse AE, Powell WA, Gibbs JP. 2018. Effects of transgenic American chestnut leaf litter on growth and survival of wood frog larvae. *Restoration Ecology*: 1–8. https://doi.org/10.1111/rec.12879
-
-*Media:* [Pacific Standard](https://psmag.com/ideas/most-controversial-tree-in-the-world-gmo-genetic-engineering)
-
-***
-## Tortoise ecology and conservation
+### *Island rewilding*
 
 I have been collaborating with Galapagos Conservancy's [Giant Tortoise Restoration Initiative](https://www.galapagos.org/conservation/our-work/tortoise-restoration/) (GTRI) since 2018, providing technical support on long-term demographic and ecological data on tortoises and islands in the Galápagos archipelago. 
 
@@ -82,7 +69,33 @@ knitr::include_graphics("images/espanola_tort.png")
 
 Once numbered in the hundreds of thousands throughout the archipelago, Galápagos tortoises have suffered extreme population declines and extinctions over hundreds of years due to human activity. GTRI works together with the Galápagos National Park Directorate to restore tortoise populations to their historical ranges and sizes, via research, captive breeding, and management programs.
 
+*Relevant literature:*
+
+- Tapia, WA, **Goldspiel, HB**, Gibbs, JP. In press. Introduction of giant tortoises as a replacement “ecosystem engineer” to facilitate restoration of Santa Fe Island, Galapagos. *Restoration Ecology*: e13476.
+
+- Tapia, WA, **Goldspiel, HB**, Sevilla, C, Málaga J, Gibbs, JP. 2020. Santa Fe Island: Return of Tortoises via a Replacement Species. In: Gibbs, JP, Cayot, L, Tapia, WA, editors. *Galapagos Tortoises, 1st Edition*. Academic Press, Cambridge, MA.
+
+- Gibbs, JP and **Goldspiel, HB**. 2020. Population Biology. In: Gibbs, JP, Cayot, L, Tapia, WA, editors. *Galapagos Tortoises, 1st Edition*. Academic Press, Cambridge, MA.
+
 *Media:* [NY Times](https://www.nytimes.com/2020/01/12/world/americas/diego-tortoise-sex-drive.html), [The Guardian](https://www.theguardian.com/world/2020/feb/02/galapagos-experts-find-a-tortoise-related-to-lonesome-george), [The Daily Show](https://www.youtube.com/watch?v=hFbYgad3UXo), [Wait Wait Don't Tell Me](https://www.npr.org/2020/01/18/797574404/bluff-the-listener)
+
+***
+
+
+### *Amphibians and biotechnology*
+
+With rapid advancements in transgenic research, biotechnology has become more commonplace in discussions about ecological restoration. These techniques present numerous opportunities for conservation, as well as numerous uncertainties about potential non-target effects on other organisms. Following decades of research at SUNY ESF with the [American Chestnut Project](https://www.esf.edu/chestnut/), American chestnut (*Castanea dentata*) has become a primary case study of species restoration using biotechnology. As part of the regulatory approval process for planting these trees, various studies have been done to examine non-target effects on native species and ecological processes. Until 2017, no research had yet been conducted to examine potential effects of transgenic chestnut on forest vertebrates, such as amphibians. In collaboration with the American Chestnut Project, I conducted a lab survival experiment to study interactions between transgenic American chestnut litter and amphibian larvae.
+
+```{r, echo=FALSE, out.width="60%", out.height="60%", fig.cap="Left: Sample vials of leaf litter with pond water from central New York. Right: a wood frog (Lithobates sylvaticus) tadpole.", fig.show='hold', fig.align='center'}
+knitr::include_graphics("images/litter_tadpole.jpg")
+``` 
+
+*Relevant literature:*
+
+- **Goldspiel HB**, Newhouse AE, Powell WA, Gibbs JP. 2018. Effects of transgenic American chestnut leaf litter on growth and survival of wood frog larvae. *Restoration Ecology*: 1–8. https://doi.org/10.1111/rec.12879
+
+*Media:* [Pacific Standard](https://psmag.com/ideas/most-controversial-tree-in-the-world-gmo-genetic-engineering)
+
 
 ***
 ## Social media and forest recreation
@@ -105,9 +118,9 @@ knitr::include_graphics("images/flickr_NFR.jpg")
 *Vignettes:* [Point pattern analysis](Flickr_hotspot_mapping.html), [Flickr tag mapping](https://www.esf.edu/socialmediastudy/Flickr_tag_mapping_website.html)
 \ 
 
-*Relevant articles:*
+*Relevant literature:*
 
-- Kuehn D, Gibbs J, **Goldspiel HB**, Barr B, Sampson A, Moutenot M, Badding J, Stradtman L. 2020. Using Social Media Data and Park Characteristics to Understand Park Visitation. *The Journal of Park and Recreation Administration*: 1–12. https://doi.org/10.18666/JPRA-2019-10035
+- Kuehn D, Gibbs J, **Goldspiel HB**, Barr B, Sampson A, Moutenot M, Badding J, Stradtman L. 2020. Using Social Media Data and Park Characteristics to Understand Park Visitation. *The Journal of Park and Recreation Administration* 38.2: 1–12. https://doi.org/10.18666/JPRA-2019-10035
 
 ***
 ## Social-ecological systems

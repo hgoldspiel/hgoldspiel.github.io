@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Harrison Goldspiel &amp; Clare Peabody" />
+
+<meta name="date" content="2021-08-25" />
+
+<title>21 Chunk Street</title>
+
+<script src="site_libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="custom.css" type="text/css" />
+<link rel="stylesheet" href="academicons-1.8.6/css/academicons.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Harrison B. Goldspiel</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="glyphicon glyphicon-tent"></span>
+     
+    Home
+  </a>
+</li>
+<li>
+  <a href="research.html">
+    <span class="fa fa-frog"></span>
+     
+    Research
+  </a>
+</li>
+<li>
+  <a href="resources.html">
+    <span class="fa fa-code"></span>
+     
+    Resources
+  </a>
+</li>
+<li>
+  <a href="blog.html">
+    <span class="fa fa-pencil-alt"></span>
+     
+    Blog
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-hiking"></span>
+     
+    Misc.
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="twentyone-chunk-street.html">21 Chunk Street</a>
+    </li>
+    <li>
+      <a href="LTjournal_Pt1.html">Long Trail (Pt. 1)</a>
+    </li>
+    <li>
+      <a href="LTjournal_Pt2.html">Long Trail (Pt. 2)</a>
+    </li>
+    <li>
+      <a href="LTjournal_Pt3.html">Long Trail (Pt. 3)</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://github.com/hgoldspiel">
+    <span class="fa fa-github"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://www.researchgate.net/profile/Harrison_Goldspiel">
+    <span class="ai ai-researchgate"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://scholar.google.com/citations?user=OCbS0DMAAAAJ&amp;hl=en">
+    <span class="fa fa-graduation-cap"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="http://harryonwheels.tumblr.com/">
+    <span class="fa fa-tumblr"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://twitter.com/hbgoldspiel">
+    <span class="fa fa-twitter"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://www.linkedin.com/in/harrisongoldspiel/">
+    <span class="fa fa-linkedin"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">21 Chunk Street</h1>
+<h3 class="subtitle">A horrible parody of Lin-Manuel Miranda’s NPR musical masterpiece.</h3>
+<h4 class="author">Harrison Goldspiel &amp; Clare Peabody</h4>
+<h4 class="date">25 August 2021</h4>
+
+</div>
+
+
+<p>   </p>
+<p>In case you haven’t seen the original body of art this play is based off of, please indulge yourself <a href="https://www.youtube.com/watch?v=KgN5bve6S-4&amp;ab_channel=swaggybeans" target="_blank" rel="noopener">here</a>.</p>
+<hr />
+<div id="what-the-heck-i-gotta-do" class="section level2">
+<h2>What The Heck I Gotta Do</h2>
+<p><img src="images/whattheheck.gif" /><!-- --></p>
+<p>[NARRATOR]<br />
+The plan was called Operation C++. And one of the schools included in the plan was Leland Wilkinson Community High School, where a kid named Justin La’Tex—</p>
+<p>[JUSTIN]<br />
+That’s me</p>
+<p>[NARRATOR]<br />
+—an 18-year-old honor roll student—</p>
+<p>[JUSTIN]<br />
+I get straight A’s, man</p>
+<p>[NARRATOR]<br />
+—was in the last semester of his senior year. Justin could hardly believe his luck when a very enthusiastic Kiwi wearing a bowtie showed up</p>
+<p>[JUSTIN]<br />
+It’s Chadleyyyyyy!</p>
+<p>[NARRATOR]<br />
+In not one but two of his classes</p>
+<p>[STUDENTS]<br />
+It’s Chadleyyyyyy!</p>
+<p>[NARRATOR]<br />
+He sat in front of him. He switched seats</p>
+<p>[STUDENTS]<br />
+It’s Chadleyyyyyy!</p>
+<p>[NARRATOR]<br />
+The full name he used was—</p>
+<p>[STUDENTS]<br />
+Chadley Pickhaaammm!</p>
+<p>[NARRATOR]<br />
+Justin, what drew you to Chadley initially?</p>
+<p>[JUSTIN]<br />
+Man, he used to make these charts in class<br />
+He was a light-skinneded charismatic-New Zealander—<br />
+Short hair, mature with the bowtie like whoa</p>
+<p>[STUDENTS]<br />
+Like, whoa</p>
+<p>[JUSTIN]<br />
+That’s not the only reason I liked him, though<br />
+He said he moved with his partner to Texas from Auckland</p>
+<p>[STUDENTS]<br />
+Where R was made!</p>
+<p>[JUSTIN]<br />
+His code was fly. So I said, hi<br />
+He seemed to abhor loops made of <code>for</code></p>
+<p>[STUDENTS]<br />
+<code>for</code>, <code>for</code>, <code>for</code>!</p>
+<p>[JUSTIN]<br />
+And I was like, what the heck I gotta do to <code>tidy</code> you?</p>
+<p>[STUDENTS]<br />
+What the heck I gotta do?</p>
+<p>[JUSTIN]<br />
+What the heck I gotta do to wrangle you?</p>
+<p>[STUDENTS]<br />
+What the heck I gotta do?</p>
+<p>[JUSTIN]<br />
+What function do I need for this to plot for me?</p>
+<p>[NARRATOR]<br />
+You told him all this in class?</p>
+<p>[JUSTIN]<br />
+Yeah. Well, I messaged him! Y’know, I was like, what the heck I gotta do to <code>tidy()</code> you?</p>
+<p>[STUDENTS]<br />
+<code>filter()</code> <code>group_by()</code> <code>mutate()</code>!</p>
+<p>[JUSTIN]<br />
+What the heck I gotta do to wrangle you?</p>
+<p>[STUDENTS]<br />
+<code>melt()</code> <code>dcast()</code> <code>lapply()</code>!</p>
+<p>[JUSTIN]<br />
+What function do I need for this to plot for me?</p>
+<p>[CHADLEY]<br />
+<code>ggplot()</code></p>
+<p>[JUSTIN]<br />
+Yes! Next thing you know, we’re coding day and night. I trust him right away.</p>
+<p>[STUDENTS]<br />
+Like, whoa!</p>
+<p>[JUSTIN]<br />
+Hey, yo. I never met anyone like him, bro. Yo, he listens to all my problems. I let him <code>tidy()</code> all my data. And then I lay it all on the line. And he was like—</p>
+<p>[STUDENTS]<br />
+No, no—</p>
+<p>[JUSTIN]<br />
+No! He didn’t say no exactly. I don’t know</p>
+<p>[STUDENTS]<br />
+No, no, no, no!</p>
+<p>[JUSTIN]<br />
+Yeah, I was surprised. I’m a pretty great guy</p>
+<p>[STUDENTS]<br />
+So? So?</p>
+<p>[JUSTIN]<br />
+So, I decided I needed to step my game up</p>
+<p>[STUDENTS]<br />
+Oh, oh, oh, oh</p>
+<p>[JUSTIN]<br />
+It’s too late to be shy. And so I got in front of the whole class one day, and sang to him. I was like, what the heck I gotta do to code with you?</p>
+<p>[STUDENTS]<br />
+What the heck I gotta do?</p>
+<p>[JUSTIN]<br />
+What the heck I gotta do to plot with you?</p>
+<p>[STUDENTS]<br />
+What the heck I gotta do?</p>
+<p>[JUSTIN]<br />
+Who do I have to be for you to make a package for me!</p>
+<p>[NARRATOR]<br />
+You asked him to write a package?</p>
+<p>[JUSTIN]<br />
+Yeah! I danced and everything</p>
+<p>[STUDENTS]<br />
+Oh Chadleeeyyy!</p>
+<p>[JUSTIN]<br />
+Oh Chadley! I know there’s a reason you make <code>tibbles</code> for me</p>
+<p>[STUDENTS]<br />
+Oh Chadley!</p>
+<p>[STUDENTS]<br />
+Oh Chadley! I know there’s a reason this isn’t <code>base</code>, it’s super tidy!</p>
+<p>[STUDENTS]<br />
+Oh Chadley!</p>
+<p>[JUSTIN]<br />
+Oh Chadley! You know me! Will you go make a package for me!</p>
+<p>[CHADLEY]<br />
+I’ll think about it</p>
+<p>[STUDENTS]<br />
+He’ll think about it. He’ll think about it. He’ll think about it. He’ll think about</p>
+<p>[JUSTIN]<br />
+He said he’d think about it</p>
+<p>[STUDENTS]<br />
+He’ll think about it</p>
+<p>[JUSTIN]<br />
+He’ll think about it</p>
+<p>[STUDENTS]<br />
+Think about it</p>
+<p>[JUSTIN]<br />
+He’ll think about it</p>
+<p>[STUDENTS]<br />
+He’ll think about it. He’ll think about it</p>
+<p>[JUSTIN]<br />
+Yes!</p>
+<hr />
+</div>
+<div id="one-line" class="section level2">
+<h2>One Line</h2>
+<p><img src="images/javaandC.gif" /><!-- --></p>
+<p>[CHADLEY]<br />
+I didn’t say yes. I didn’t say I’ll think about it. I can’t tell my real name or how I convinced the school administrator to allow a full-grown adult to attend their high school, but I can confirm that I was asked to make a package for a student.</p>
+<p>[NARRATOR]<br />
+Chadley Pickham was 35 years old and a new recruit at the Houston Tidyverse Academy.</p>
+<p>[CHADLEY]<br />
+My assignment: to pose as a senior and find out who’s writing, who’s coding. Mostly <code>Java</code> and <code>C</code>, you would not believe how easy it is to code in <code>Java</code> and <code>C</code>.</p>
+<p>[NARRATOR]<br />
+What’s the hardest part?</p>
+<p>[CHADLEY]<br />
+Pssh—the library. Imagine hundreds of teenagers pushing and pulling full speed. And the lack of style guides. Let’s just say I would bake at the end of the day. Seriously, these kids need to learn there are consequences in life. If I’m doing my job and I’m doing it right, I am making code cleaner one line at a time.</p>
+<p>[NARRATOR]<br />
+So he asked you to write a package?</p>
+<p>[CHADLEY]<br />
+Right. I gave every excuse. I said it’s too derivative, which is totally true, by the way. I told him, look, I’m just learning American History, I wouldn’t feel comfortable doing all that work. And it’s true you make friends on the job, then it ends. You meet kids who are sensitive, smart, and defenseless. Those are the ones you remember, the ones that you think about after you’re gone.</p>
+<p>Seriously, these kids need to learn there are consequences in life. If I’m doing my job and I’m doing it right, I am making code cleaning one line at a time.</p>
+<p>[NARRATOR]<br />
+Meanwhile—</p>
+<p>[JUSTIN]<br />
+What the heck I gotta do to <code>tidy()</code> you?</p>
+<p>[STUDENTS]<br />
+What the heck I gotta do?</p>
+<p>[JUSTIN]<br />
+Tell me who I gotta be for you to code with me</p>
+<p>[CHADLEY]<br />
+Do you set?</p>
+<p>[JUSTIN]<br />
+What?</p>
+<p>[CHADLEY]<br />
+Do you <code>setwd()</code>?</p>
+<p>[JUSTIN]<br />
+No, I don’t. But if that’s what you need, I can do that for you. I can set the directory.</p>
+<p>[CHADLEY]<br />
+You would set that for me?</p>
+<p>[JUSTIN]<br />
+I can be your guy. Oh, yes!</p>
+<p>[CHADLEY]<br />
+Seriously, these kids need to learn there are consequences in life</p>
+<p>[JUSTIN]<br />
+I’ll set whatever you need!</p>
+<p>[CHADLEY]<br />
+If I’m doing my job and I’m doing it right, I am making code cleaner one line at a time.</p>
+<p>[NARRATOR]<br />
+What are you thinking as you’re trying to get this directory to set for him?</p>
+<p>[JUSTIN]<br />
+I’m thinking, what the heck am I doing? Cause I don’t set directories like that.</p>
+<p>[NARRATOR]<br />
+So what did you do?</p>
+<hr />
+</div>
+<div id="folder" class="section level2">
+<h2>Folder</h2>
+<p><img src="images/folder.gif" /><!-- --></p>
+<p>[JUSTIN]<br />
+I set a path to a folder in another folder of a subfolder to another drive, which set a path to a couple dozen folders until it became live.</p>
+<p>[FOLDER 1]<br />
+My folder Justin’s looking for a little something-something for a certain someone, some boy he wants to be packaging</p>
+<p>[FOLDERS]<br />
+Everybody’s got a folder that can hook them up with something<br />
+Everybody’s got a folder that can hook them up with something</p>
+<p>[FOLDER 2]<br />
+We were just discussing our folder of Justin. Wasn’t Justin’s folder the folder that downloaded that virus, that got all the other folders buzzin’?</p>
+<p>[FOLDER 3]<br />
+Are we close to our folder of Justin? Are we supposed to trust him?</p>
+<p>[FOLDER 1]<br />
+Are we thugs to our folder of Justin? We don’t set absolute paths, man</p>
+<p>[FOLDERS]<br />
+Everybody’s got a folder that can hook them up with something<br />
+Everybody’s got a folder that can hook them up with something</p>
+<p>[CHADLEY]<br />
+Did you set it yet?</p>
+<p>[JUSTIN]<br />
+No, I’m about to set it</p>
+<p>[CHADLEY]<br />
+Is your directory open?</p>
+<p>[JUSTIN]<br />
+I got you, Chad. Don’t sweat it</p>
+<p>[CHADLEY]<br />
+Let me know when you set it</p>
+<p>[JUSTIN]<br />
+As soon as I can</p>
+<p>[CHADLEY]<br />
+I’ll find a way to repay you, Justin</p>
+<p>[JUSTIN]<br />
+Oh, man!</p>
+<p>[FOLDER 2]<br />
+Yo, what is up with this fussin’? This isn’t up for discussion. This is our folder coming to us. He’s our drive, and we love him</p>
+<p>[FOLDER 3]<br />
+Ah, look at Justin. He blushing</p>
+<p>[FOLDER 2]<br />
+Our little Justin is crushing</p>
+<p>[FOLDER 3]<br />
+Sorry for rushing to judgement</p>
+<p>[FOLDER 1]<br />
+Why should we open this path?</p>
+<p>[JUSTIN]<br />
+GitHub!</p>
+<p>[FOLDERS]<br />
+What?</p>
+<p>[JUSTIN]<br />
+Only if you believe in GitHub. GitHub!</p>
+<p>[FOLDERS]<br />
+GitHub! GitHub! Only if you believe in GitHub</p>
+<p>[FOLDER 2]<br />
+Get him the path</p>
+<p>[JUSTIN]<br />
+I write my path in twenty-five characters, I’m sweating buckets. My folder shows some little file icons. I set it for you</p>
+<p>[CHADLEY]<br />
+😍 Cool</p>
+<p>[JUSTIN]<br />
+You want that code now?</p>
+<p>[CHADLEY]<br />
+See you at school</p>
+<p>[FOLDERS]<br />
+Everybody’s got a folder that can hook them up with something<br />
+Everybody’s got a folder that can hook them up with something<br />
+Everybody’s got a folder that can hook them up with something<br />
+Everybody’s got a folder that can hook them up with something</p>
+<div class="row">
+<div class="col-md-6">
+<p><br> [JUSTIN]<br />
+GitHuuuuub!</p>
+<p>[JUSTIN]<br />
+Only if you believe in GitHuuuuub!</p>
+</div>
+<div class="col-md-6">
+<p><br> [FOLDERS]<br />
+Everybody’s got a folder that can hook them up with something<br />
+Everybody’s got a folder that can hook them up with something<br />
+Everybody’s got a folder that can hook them up with something<br />
+Everybody’s got a folder that can hook them up with something.</p>
+</div>
+</div>
+<hr />
+</div>
+<div id="the-money" class="section level2">
+<h2>The Money</h2>
+<p><img src="images/money.gif" /><!-- --></p>
+<p>[NARRATOR]<br />
+The next day, Justin brought a flash drive of <code>R</code> files to school for Chadley</p>
+<p>[JUSTIN]<br />
+And I was like, oh my god, I’m actually gonna do this. So we was in class, and I sat down right next to him. And he was like—</p>
+<p>[CHADLEY]<br />
+Justin, do you have it?</p>
+<p>[JUSTIN]<br />
+Yeah, I do. And I was like, you know what? We’re going to wait for a few. Because I didn’t want to be like, oh hey, and just slide it in his hand or whatever. So we waited</p>
+<p><em>Wood blocks tick-tocking</em></p>
+<p>[JUSTIN]<br />
+And he was like—</p>
+<p>[CHADLEY]<br />
+Okay, put it in my laptop</p>
+<p>[JUSTIN]<br />
+So I slid it right in there. And then he was like—</p>
+<p>[CHADLEY]<br />
+Okay, here. Take the money. Justin, take the money.</p>
+<p>[JUSTIN]<br />
+I don’t want your money.<br />
+I wrote this code for you. Keep your money.<br />
+There’s nothing I won’t do for you. I’ll come through for you every time—just in time</p>
+<div class="row">
+<div class="col-md-4">
+<p><br> [CHADLEY]<br />
+Justin, listen<br />
+Please, just take the money<br />
+</p>
+<p>You’re making me feel guilty. Take the money<br />
+</p>
+<p>You really did come through for me<br />
+</p>
+<p>There’s only one last thing you need to do for me<br />
+Take the money<br />
+Take the money<br />
+Take the money<br />
+</p>
+<p>The teacher’s coming<br />
+Take this money, Justin<br />
+</p>
+<p>We aren’t done. Please take this money, Justin<br />
+</p>
+<p>Take the money<br />
+</p>
+<p>Take the money.<br />
+Take this money, Justin.</p>
+</div>
+<div class="col-md-4">
+<p><br> [JUSTIN]<br />
+Chadley, I know there’s a reason you were transferred here to me</p>
+<p>Chadley, I know there’s a reason. This isn’t luck, it’s destiny</p>
+<p>Chadley<br />
+<br />
+You know me I will be there<br />
+just in time<br />
+Every time<br />
+Anytime</p>
+<p>I don’t want your money</p>
+<p>I wrote this code for you</p>
+<p>Keep your money</p>
+<p>There’s nothing I won’t do for you.<br />
+I’ll come through for you</p>
+<p>Every time</p>
+<p>Anytime</p>
+<p>Just in time.</p>
+</div>
+<div class="col-md-4">
+<p><br> [STUDENTS]<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</p>
+<p>Chadley<br />
+<br />
+<br />
+</p>
+<p>Chadley<br />
+<br />
+<br />
+</p>
+<p>Chadley<br />
+<br />
+<br />
+</p>
+<p>Chadley</p>
+</div>
+</div>
+<hr />
+</div>
+<div id="epilogue" class="section level2">
+<h2>Epilogue</h2>
+<p><img src="images/github.gif" /><!-- --></p>
+<p>[NARRATOR]<br />
+Justin would later find out it’s bad practice to write absolute paths. And the penalty is even harsher for selling them to other students. In other words, Justin had made an irreversibly bad decision. And since he was over 18, he was legally an adult when he made it</p>
+<p>[CHADLEY]<br />
+Seriously, these kids need to learn there are consequences in life. I am doing my job. I am doing it right. I am making code cleaner one line at a time.</p>
+<p>[NARRATOR]<br />
+In May, the coding academy detained 31 students at several schools. Justin was one of them</p>
+<p>[SIRENS]<br />
+</p>
+<p>[TIDYVERSE OFFICER]<br />
+Freeze! You have the right to remain <code>silent()</code></p>
+<p>[STUDENTS]<br />
+Everybody who sold code to undercover cops is busted<br />
+Everybody who sold code to undercover cops is busted<br />
+Everybody who sold code to undercover cops is busted<br />
+Everybody who sold code to undercover cops is busted<br />
+</p>
+<p>[NARRATOR]<br />
+He spent a week in <code>tidyverse</code> bootcamp wondering what would happen next</p>
+<p>[STUDENTS]<br />
+It’s your word against his. GitHub has every text. GitHub has every text. GitHub has every text. “Don’t worry, Chad. I got the stuff, I got you.”</p>
+<p>[NARRATOR]<br />
+He knew he’d lose on StackOverflow. He had to take a plea</p>
+<p>[JUSTIN]<br />
+Four years bachelor’s decree. I got enrolled for a new degree.</p>
+<p>[STUDENTS]<br />
+What? A degree? Messy code is a bachelor’s decree? What? Justin, say goodbye to <code>SAS</code> they got you.</p>
+<p>[CHADLEY]<br />
+These kids need to wake up. I don’t want to go too much into it, but code hits really close to work for me. I saw the effects growing up of messy code, and broken links, and proprietary software.</p>
+<p>[NARRATOR]<br />
+With coworkers?</p>
+<p>[CHADLEY]<br />
+Yes. I’ve seen what it can do to data science. That’s all I want to say about it</p>
+<p>[NARRATOR]<br />
+Do you wish someone like you had done this type of work?</p>
+<p>[CHADLEY]<br />
+Yes. And I hope someone like me keeps doing it. Still, there are kids you remember, the ones that you’ll think about after you’re gone</p>
+<p>[NARRATOR]<br />
+During the week he spent in bootcamp, Justin couldn’t help but think about Chadley</p>
+<p>[JUSTIN]<br />
+He was a light-skinneded, charismatic New Zealander, short hair, mature with the bowtie like whoa. That’s not the only reason I liked him, though.</p>
+<p>Yo, if it had been a teacher that came up to me asking me for absolute paths, I would’ve been like, “No, get out of my face.” I don’t code stuff like that. It’s cause it was him</p>
+<p>[NARRATOR]<br />
+Have you talked to him since all of this happened?</p>
+<p>[JUSTIN]<br />
+No. I would love to. I would love to have that conversation</p>
+<p>[NARRATOR]<br />
+What do you think you would say?</p>
+<p>[JUSTIN]<br />
+I would say, what the heck did you do? What the heck did you do? Chadley? What the heck did you do?</p>
+</div>
+
+<br />
+<br />
+<br />
+<br />
+
+&nbsp;
+
+<hr />
+<p style="text-align: center;">Compiled in R with RMarkdown and Github Pages.<br />
+Copyright &copy; <span id="year"></span><a href="https://github.com/hgoldspiel/"> Harrison Goldspiel.</a></p>
+<p style="text-align: center;"><span style="color: #808080;"><a href="mailto:hbgoldspiel@gmail.com">hbgoldspiel@gmail.com</a></span></p>
+
+<br>
+
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+
+<div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;"></div>
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,634 @@
+---
+title: "21 Chunk Street"
+subtitle: "A horrible parody of Lin-Manuel Miranda's NPR musical masterpiece."
+author: "Harrison Goldspiel & Clare Peabody"
+date: "25 August 2021"
+output:
+  html_document:
+    theme: yeti
+    toc: true
+    toc_float:
+      collapsed: true
+      smooth_scroll: true
+---
+\ 
+\ 
+
+In case you haven't seen the original body of art this play is based off of, please indulge yourself [here](https://www.youtube.com/watch?v=KgN5bve6S-4&ab_channel=swaggybeans){target="_blank" rel="noopener"}.
+
+***
+
+## What The Heck I Gotta Do
+
+```{r, echo = FALSE}
+knitr::include_graphics("images/whattheheck.gif")
+```
+
+[NARRATOR]\
+The plan was called Operation C++. And one of the schools included in the plan was Leland Wilkinson Community High School, where a kid named Justin La'Tex—
+
+[JUSTIN]\
+That's me
+
+[NARRATOR]\
+—an 18-year-old honor roll student—
+
+[JUSTIN]\
+I get straight A's, man
+
+[NARRATOR]\
+—was in the last semester of his senior year. Justin could hardly believe his luck when a very enthusiastic Kiwi wearing a bowtie showed up
+
+[JUSTIN]\
+It’s Chadleyyyyyy!
+
+[NARRATOR]\
+In not one but two of his classes
+
+[STUDENTS]\
+It’s Chadleyyyyyy!
+
+[NARRATOR]\
+He sat in front of him.  He switched seats
+
+[STUDENTS]\
+It’s Chadleyyyyyy!
+
+[NARRATOR]\
+The full name he used was—
+
+[STUDENTS]\
+Chadley Pickhaaammm!
+
+[NARRATOR]\
+Justin, what drew you to Chadley initially?
+
+[JUSTIN]\
+Man, he used to make these charts in class\
+He was a light-skinneded charismatic-New Zealander—\
+Short hair, mature with the bowtie like whoa
+
+[STUDENTS]\
+Like, whoa
+
+[JUSTIN]\
+That's not the only reason I liked him, though\
+He said he moved with his partner to Texas from Auckland
+
+[STUDENTS]\
+Where R was made!
+
+[JUSTIN]\
+His code was fly. So I said, hi\
+He seemed to abhor loops made of `for`
+
+[STUDENTS]\
+`for`, `for`, `for`!
+
+[JUSTIN]\
+And I was like, what the heck I gotta do to `tidy` you?
+
+[STUDENTS]\
+What the heck I gotta do?
+
+[JUSTIN]\
+What the heck I gotta do to wrangle you?
+
+[STUDENTS]\
+What the heck I gotta do?
+
+[JUSTIN]\
+What function do I need for this to plot for me?
+
+[NARRATOR]\
+You told him all this in class?
+
+[JUSTIN]\
+Yeah. Well, I messaged him! Y'know, I was like, what the heck I gotta do to `tidy()` you?
+
+[STUDENTS]\
+`filter()` `group_by()` `mutate()`!
+
+[JUSTIN]\
+What the heck I gotta do to wrangle you?
+
+[STUDENTS]\
+`melt()` `dcast()` `lapply()`!
+
+[JUSTIN]\
+What function do I need for this to plot for me?
+
+[CHADLEY]\
+`ggplot()`
+
+[JUSTIN]\
+Yes! Next thing you know, we're coding day and night. I trust him right away.
+
+[STUDENTS]\
+Like, whoa!
+
+[JUSTIN]\
+Hey, yo. I never met anyone like him,  bro. Yo, he listens to all my problems. I let him `tidy()` all my data. And then I lay it all on the line. And he was like—
+
+[STUDENTS]\
+No, no—
+
+[JUSTIN]\
+No! He didn't say no exactly. I don't know
+
+[STUDENTS]\
+No, no, no, no!
+
+[JUSTIN]\
+Yeah, I was surprised. I'm a pretty great guy
+
+[STUDENTS]\
+So? So?
+
+[JUSTIN]\
+So, I decided I needed to step my game up
+
+[STUDENTS]\
+Oh, oh, oh, oh
+
+[JUSTIN]\
+It's too late to be shy. And so I got in front of the whole class one day, and sang to him. I was like, what the heck I gotta do to code with you?
+
+[STUDENTS]\
+What the heck I gotta do?
+
+[JUSTIN]\
+What the heck I gotta do to plot with you?
+
+[STUDENTS]\
+What the heck I gotta do?
+
+[JUSTIN]\
+Who do I have to be for you to make a package for me!
+
+[NARRATOR]\
+You asked him to write a package?
+
+[JUSTIN]\
+Yeah! I danced and everything
+
+[STUDENTS]\
+Oh Chadleeeyyy!
+
+[JUSTIN]\
+Oh Chadley! I know there's a reason you make `tibbles` for me
+
+[STUDENTS]\
+Oh Chadley!
+
+[STUDENTS]\
+Oh Chadley! I know there's a reason this isn't `base`, it's super tidy!
+
+[STUDENTS]\
+Oh Chadley!
+
+[JUSTIN]\
+Oh Chadley! You know me! Will you go make a package for me!
+
+[CHADLEY]\
+I'll think about it
+
+[STUDENTS]\
+He'll think about it. He'll think about it. He'll think about it. He'll think about
+
+[JUSTIN]\
+He said he'd think about it
+
+[STUDENTS]\
+He'll think about it
+
+[JUSTIN]\
+He'll think about it
+
+[STUDENTS]\
+Think about it
+
+[JUSTIN]\
+He'll think about it
+
+[STUDENTS]\
+He'll think about it. He'll think about it
+
+[JUSTIN]\
+Yes!
+
+***
+
+## One Line
+
+```{r, echo = FALSE}
+knitr::include_graphics("images/javaandC.gif")
+```
+
+[CHADLEY]\
+I didn't say yes. I didn't say I'll think about it. I can’t tell my real name or how I convinced the school administrator to allow a full-grown adult to attend their high school, but I can confirm that I was asked to make a package for a student.
+
+[NARRATOR]\
+Chadley Pickham was 35 years old and a new recruit at the Houston Tidyverse Academy.
+
+[CHADLEY]\
+My assignment: to pose as a senior and find out who's writing, who’s coding. Mostly `Java` and `C`, you would not believe how easy it is to code in `Java` and `C`.
+
+[NARRATOR]\
+What's the hardest part?
+
+[CHADLEY]\
+Pssh—the library. Imagine hundreds of teenagers pushing and pulling full speed. And the lack of style guides. Let's just say I would bake at the end of the day. Seriously, these kids need to learn there are consequences in life. If I'm doing my job and I'm doing it right, I am making code cleaner one line at a time.
+
+[NARRATOR]\
+So he asked you to write a package?
+
+[CHADLEY]\
+Right. I gave every excuse. I said it's too derivative, which is totally true, by the way. I told him, look, I'm just learning American History, I wouldn't feel comfortable doing all that work. And it's true you make friends on the job, then it ends. You meet kids who are sensitive, smart, and defenseless. Those are the ones you remember, the ones that you think about after you're gone. 
+
+Seriously, these kids need to learn there are consequences in life. If I'm doing my job and I'm doing it right, I am making code cleaning one line at a time.
+
+[NARRATOR]\
+Meanwhile—
+
+[JUSTIN]\
+What the heck I gotta do to `tidy()` you?
+
+[STUDENTS]\
+What the heck I gotta do?
+
+[JUSTIN]\
+Tell me who I gotta be for you to code with me
+
+[CHADLEY]\
+Do you set?
+
+[JUSTIN]\
+What?
+
+[CHADLEY]\
+Do you `setwd()`?
+
+[JUSTIN]\
+No, I don't. But if that's what you need, I can do that for you. I can set the directory.
+
+[CHADLEY]\
+You would set that for me?
+
+[JUSTIN]\
+I can be your guy. Oh, yes!
+
+[CHADLEY]\
+Seriously, these kids need to learn there are consequences in life
+
+[JUSTIN]\
+I'll set whatever you need!
+
+[CHADLEY]\
+If I'm doing my job and I'm doing it right, I am making code cleaner one line at a time.
+
+[NARRATOR]\
+What are you thinking as you're trying to get this directory to set for him?
+
+[JUSTIN]\
+I'm thinking, what the heck am I doing? Cause I don't set directories like that.
+
+[NARRATOR]\
+So what did you do?
+
+***
+## Folder
+
+```{r, echo = FALSE}
+knitr::include_graphics("images/folder.gif")
+```
+
+[JUSTIN]\
+I set a path to a folder in another folder of a subfolder to another drive, which set a path to a couple dozen folders until it became live.
+
+[FOLDER 1]\
+My folder Justin's looking for a little something-something for a certain someone, some boy he wants to be packaging
+
+[FOLDERS]\
+Everybody's got a folder that can hook them up with something\
+Everybody's got a folder that can hook them up with something
+
+[FOLDER 2]\
+We were just discussing our folder of Justin. Wasn't Justin’s folder the folder that downloaded that virus, that got all the other folders buzzin'?
+
+[FOLDER 3]\
+Are we close to our folder of Justin? Are we supposed to trust him?
+
+[FOLDER 1]\
+Are we thugs to our folder of Justin? We don't set absolute paths, man
+
+[FOLDERS]\
+Everybody's got a folder that can hook them up with something\
+Everybody's got a folder that can hook them up with something
+
+[CHADLEY]\
+Did you set it yet?
+
+[JUSTIN]\
+No, I'm about to set it
+
+[CHADLEY]\
+Is your directory open?
+
+[JUSTIN]\
+I got you, Chad. Don't sweat it
+
+[CHADLEY]\
+Let me know when you set it
+
+[JUSTIN]\
+As soon as I can
+
+[CHADLEY]\
+I'll find a way to repay you, Justin
+
+[JUSTIN]\
+Oh, man!
+
+[FOLDER 2]\
+Yo, what is up with this fussin'? This isn't up for discussion. This is our folder coming to us. He's our drive, and we love him
+
+[FOLDER 3]\
+Ah, look at Justin. He blushing
+
+[FOLDER 2]\
+Our little Justin is crushing
+
+[FOLDER 3]\
+Sorry for rushing to judgement
+
+[FOLDER 1]\
+Why should we open this path?
+
+[JUSTIN]\
+GitHub!
+
+[FOLDERS]\
+What?
+
+[JUSTIN]\
+Only if you believe in GitHub. GitHub!
+
+[FOLDERS]\
+GitHub! GitHub! Only if you believe in GitHub
+
+[FOLDER 2]\
+Get him the path
+
+[JUSTIN]\
+I write my path in twenty-five characters, I'm sweating buckets. My folder shows some little file icons. I set it for you
+
+[CHADLEY]\
+😍 Cool
+
+[JUSTIN]\
+You want that code now?
+
+[CHADLEY]\
+See you at school
+
+[FOLDERS]\
+Everybody's got a folder that can hook them up with something\
+Everybody's got a folder that can hook them up with something\
+Everybody's got a folder that can hook them up with something\
+Everybody's got a folder that can hook them up with something  
+
+<div class = "row">
+  
+<div class = "col-md-6">
+<br>
+[JUSTIN]\
+GitHuuuuub!
+ 
+[JUSTIN]\
+Only if you believe in GitHuuuuub!
+</div>
+  
+<div class = "col-md-6">
+<br>
+[FOLDERS]\
+Everybody's got a folder that can hook them up with something\
+Everybody's got a folder that can hook them up with something\
+Everybody's got a folder that can hook them up with something\
+Everybody's got a folder that can hook them up with something.
+</div>
+
+</div>
+
+***
+
+## The Money
+
+```{r, echo = FALSE}
+knitr::include_graphics("images/money.gif")
+```
+
+[NARRATOR]\
+The next day, Justin brought a flash drive of `R` files to school for Chadley
+
+[JUSTIN]\
+And I was like, oh my god, I'm actually gonna do this. So we was in class, and I sat down right next
+to him. And he was like—
+
+[CHADLEY]\
+Justin, do you have it?
+
+[JUSTIN]\
+Yeah, I do. And I was like, you know what? We're going to wait for a few. Because I didn't want to be like, oh hey, and just slide it in his hand or whatever. So we waited
+
+*Wood blocks tick-tocking*
+
+[JUSTIN]\
+And he was like—
+
+[CHADLEY]\
+Okay, put it in my laptop
+
+[JUSTIN]\
+So I slid it right in there. And then he was like—
+
+[CHADLEY]\
+Okay, here. Take the money. Justin, take the money.
+
+[JUSTIN]\
+I don't want your money.\
+I wrote this code for you. Keep your money.\
+There's nothing I won't do for you. I'll come through for you every time—just in time
+
+<div class = "row">
+  
+<div class = "col-md-4">
+<br>
+[CHADLEY]\
+Justin, listen\
+Please, just take the money\
+ 
+You're making me feel guilty. Take the money\
+
+You really did come through for me\
+
+There's only one last thing you need to do for me\
+Take the money\
+Take the money\
+Take the money\
+
+The teacher's coming\
+Take this money, Justin\
+
+We aren't done. Please take this money, Justin\
+
+Take the money\
+
+Take the money.\
+Take this money, Justin.  
+</div>
+  
+<div class = "col-md-4">
+<br>
+[JUSTIN]\
+Chadley, I know there's a reason you were transferred here to me 
+
+Chadley, I know there's a reason. This isn't luck, it's destiny 
+
+Chadley\
+\
+You know me
+I will be there\
+just in time\
+Every time\
+Anytime
+
+I don't want your money
+
+I wrote this code for you
+
+Keep your money
+
+There's nothing I won't do for you.\
+I'll come through for you
+
+Every time
+
+Anytime
+
+Just in time.
+</div>
+  
+<div class = "col-md-4">
+<br>
+[STUDENTS]\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+
+Chadley
+\
+\
+\
+
+Chadley
+\
+\
+\
+
+Chadley
+\
+\
+\
+
+Chadley
+</div>
+
+</div>
+
+***
+
+## Epilogue
+
+```{r, echo = FALSE}
+knitr::include_graphics("images/github.gif")
+```
+
+[NARRATOR]\
+Justin would later find out it's bad practice to write absolute paths. And the penalty is even harsher for selling them to other students. In other words, Justin had made an irreversibly bad decision. And since he was over 18, he was legally an adult when he made it
+
+[CHADLEY]\
+Seriously, these kids need to learn there are consequences in life. I am doing my job. I am doing it right. I am making code cleaner one line at a time.
+
+[NARRATOR]\
+In May, the coding academy detained 31 students at several schools. Justin was one of them
+
+[SIRENS]\
+
+[TIDYVERSE OFFICER]\
+Freeze! You have the right to remain `silent()`
+
+[STUDENTS]\
+Everybody who sold code to undercover cops is busted\
+Everybody who sold code to undercover cops is busted\
+Everybody who sold code to undercover cops is busted\
+Everybody who sold code to undercover cops is busted\
+
+[NARRATOR]\
+He spent a week in `tidyverse` bootcamp wondering what would happen next
+
+[STUDENTS]\
+It's your word against his. GitHub has every text. GitHub has every text. GitHub has every text. "Don't worry, Chad. I got the stuff, I got you."
+
+[NARRATOR]\
+He knew he'd lose on StackOverflow. He had to take a plea
+
+[JUSTIN]\
+Four years bachelor’s decree. I got enrolled for a new degree.
+
+[STUDENTS]\
+What? A degree? Messy code is a bachelor's decree? What? Justin, say goodbye to `SAS` they got you.
+
+[CHADLEY]\
+These kids need to wake up. I don't want to go too much into it, but code hits really close to work for me. I saw the effects growing up of messy code, and broken links, and proprietary software.
+
+[NARRATOR]\
+With coworkers?
+
+[CHADLEY]\
+Yes. I've seen what it can do to data science. That's all I want to say about it
+
+[NARRATOR]\
+Do you wish someone like you had done this type of work?
+
+[CHADLEY]\
+Yes. And I hope someone like me keeps doing it. Still, there are kids you remember, the ones that you'll think about after you're gone
+
+[NARRATOR]\
+During the week he spent in bootcamp, Justin couldn't help but think about Chadley
+
+[JUSTIN]\
+He was a light-skinneded, charismatic New Zealander, short hair, mature with the bowtie like whoa.
+That's not the only reason I liked him, though. 
+
+Yo, if it had been a teacher that came up to me asking me for absolute paths, I would've been like, "No, get out of my face." I don't code stuff like that. It's cause it was him
+
+[NARRATOR]\
+Have you talked to him since all of this happened?
+
+[JUSTIN]\
+No. I would love to. I would love to have that conversation
+
+[NARRATOR]\
+What do you think you would say?
+
+[JUSTIN]\
+I would say, what the heck did you do? What the heck did you do? Chadley? What the heck did you do?

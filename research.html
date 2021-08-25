@@ -13,13 +13,22 @@
 
 <title>Research</title>
 
-<script src="site_libs/header-attrs-2.3/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
@@ -29,12 +38,16 @@
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
-<style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -47,35 +60,10 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
 
 <link rel="stylesheet" href="custom.css" type="text/css" />
-<link rel="stylesheet" href="academicons-1.8.6\css\academicons.css" type="text/css" />
+<link rel="stylesheet" href="academicons-1.8.6/css/academicons.css" type="text/css" />
 
 
 
@@ -84,10 +72,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -104,40 +88,13 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 45px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
-.section h2 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
-.section h3 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
-.section h4 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
-.section h5 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
-.section h6 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -165,7 +122,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -177,7 +134,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -188,10 +145,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -203,7 +173,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -329,7 +298,7 @@ div.tocify {
 
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
+<div class="row">
 <div class="col-xs-12 col-sm-4 col-md-3">
 <div id="TOC" class="tocify">
 </div>
@@ -390,6 +359,9 @@ div.tocify {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
+      <a href="twentyone-chunk-street.html">21 Chunk Street</a>
+    </li>
+    <li>
       <a href="LTjournal_Pt1.html">Long Trail (Pt. 1)</a>
     </li>
     <li>
@@ -443,21 +415,21 @@ div.tocify {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
 <h1 class="title toc-ignore">Research</h1>
-<h4 class="date">Last updated: 01 December, 2020</h4>
+<h4 class="date">Last updated: 25 August 2021</h4>
 
 </div>
 
 
-<p>My research mostly resides in the realm of ecology and conservation biology, with a focus on amphibians and reptiles. I am most interested in studying wildlife populations over different gradients of natural and human disturbance, and applying those relationships for understanding future threats against biodiversity and guiding conservation planning. I work with a variety of organisms and ecosystems, ranging from vernal pool amphibians to Galápagos tortoises, and use various quantitative techniques for studying ecological and demographic processes. I’m also interested in social science perspectives in ecological research and using historical data and social-ecological frameworks to better understand complex conservation stories.</p>
+<p>My research mostly resides in the realm of ecology and conservation biology, with a focus on amphibians and reptiles. I am most interested in studying wildlife populations over different gradients of natural and human disturbance, and applying those relationships for understanding future threats against biodiversity and guiding conservation planning. I work with a variety of organisms and ecosystems, ranging from vernal pool amphibians to Galápagos tortoises, and use various quantitative techniques for studying ecological and demographic processes. I’m also interested in social dimensions of wildlife ecology and using historical data and social-ecological frameworks to better understand complex conservation stories.</p>
 <p>Here is a short list of some projects I’ve worked on over the last several years.</p>
 <hr />
-<div id="amphibian-ecology-and-conservation" class="section level2">
-<h2>Amphibian ecology and conservation</h2>
+<div id="population-biology-and-restoration-ecology" class="section level2">
+<h2>Population biology and restoration ecology</h2>
 <div class="figure" style="text-align: center">
 <img src="images/amphibs.jpg" alt="Left: A Tapichalaca tree frog (Hyloscirtus tapichalaca) from southern Ecuador. Right: Spotted salamander (Ambystoma maculatum)." width="60%" height="60%" />
 <p class="caption">
@@ -476,7 +448,7 @@ For my master’s thesis, I was interested in how historical landscape setting (
 <div class="col-md-6">
 <p>       </p>
 <div class="figure" style="text-align: center">
-<img src="images/heiberg_history.jpg" alt="Land cover at Heiberg Memorial Forest (Tully, NY) in 1936 (top) and 2015 (bottom)." width="276" />
+<img src="images/heiberg_history.jpg" alt="Land cover at Heiberg Memorial Forest (Tully, NY) in 1936 (top) and 2015 (bottom)."  />
 <p class="caption">
 Land cover at Heiberg Memorial Forest (Tully, NY) in 1936 (top) and 2015 (bottom).
 </p>
@@ -492,8 +464,27 @@ Land cover at Heiberg Memorial Forest (Tully, NY) in 1936 (top) and 2015 (bottom
 <p><em>Media:</em> <a href="https://wildlife.org/spotted-salamanders-prefer-legacy-forests/">The Wildlife Society</a></p>
 <hr />
 </div>
-<div id="wood-frogs-and-transgenic-chestnut" class="section level3">
-<h3><em>Wood frogs and transgenic chestnut</em></h3>
+<div id="island-rewilding" class="section level3">
+<h3><em>Island rewilding</em></h3>
+<p>I have been collaborating with Galapagos Conservancy’s <a href="https://www.galapagos.org/conservation/our-work/tortoise-restoration/">Giant Tortoise Restoration Initiative</a> (GTRI) since 2018, providing technical support on long-term demographic and ecological data on tortoises and islands in the Galápagos archipelago.</p>
+<div class="figure" style="text-align: center">
+<img src="images/espanola_tort.png" alt="Population regeneration of giant tortoises on Española following 50 years of captive breeding and repatriation."  />
+<p class="caption">
+Population regeneration of giant tortoises on Española following 50 years of captive breeding and repatriation.
+</p>
+</div>
+<p>Once numbered in the hundreds of thousands throughout the archipelago, Galápagos tortoises have suffered extreme population declines and extinctions over hundreds of years due to human activity. GTRI works together with the Galápagos National Park Directorate to restore tortoise populations to their historical ranges and sizes, via research, captive breeding, and management programs.</p>
+<p><em>Relevant literature:</em></p>
+<ul>
+<li><p>Tapia, WA, <strong>Goldspiel, HB</strong>, Gibbs, JP. In press. Introduction of giant tortoises as a replacement “ecosystem engineer” to facilitate restoration of Santa Fe Island, Galapagos. <em>Restoration Ecology</em>: e13476.</p></li>
+<li><p>Tapia, WA, <strong>Goldspiel, HB</strong>, Sevilla, C, Málaga J, Gibbs, JP. 2020. Santa Fe Island: Return of Tortoises via a Replacement Species. In: Gibbs, JP, Cayot, L, Tapia, WA, editors. <em>Galapagos Tortoises, 1st Edition</em>. Academic Press, Cambridge, MA.</p></li>
+<li><p>Gibbs, JP and <strong>Goldspiel, HB</strong>. 2020. Population Biology. In: Gibbs, JP, Cayot, L, Tapia, WA, editors. <em>Galapagos Tortoises, 1st Edition</em>. Academic Press, Cambridge, MA.</p></li>
+</ul>
+<p><em>Media:</em> <a href="https://www.nytimes.com/2020/01/12/world/americas/diego-tortoise-sex-drive.html">NY Times</a>, <a href="https://www.theguardian.com/world/2020/feb/02/galapagos-experts-find-a-tortoise-related-to-lonesome-george">The Guardian</a>, <a href="https://www.youtube.com/watch?v=hFbYgad3UXo">The Daily Show</a>, <a href="https://www.npr.org/2020/01/18/797574404/bluff-the-listener">Wait Wait Don’t Tell Me</a></p>
+<hr />
+</div>
+<div id="amphibians-and-biotechnology" class="section level3">
+<h3><em>Amphibians and biotechnology</em></h3>
 <p>With rapid advancements in transgenic research, biotechnology has become more commonplace in discussions about ecological restoration. These techniques present numerous opportunities for conservation, as well as numerous uncertainties about potential non-target effects on other organisms. Following decades of research at SUNY ESF with the <a href="https://www.esf.edu/chestnut/">American Chestnut Project</a>, American chestnut (<em>Castanea dentata</em>) has become a primary case study of species restoration using biotechnology. As part of the regulatory approval process for planting these trees, various studies have been done to examine non-target effects on native species and ecological processes. Until 2017, no research had yet been conducted to examine potential effects of transgenic chestnut on forest vertebrates, such as amphibians. In collaboration with the American Chestnut Project, I conducted a lab survival experiment to study interactions between transgenic American chestnut litter and amphibian larvae.</p>
 <div class="figure" style="text-align: center">
 <img src="images/litter_tadpole.jpg" alt="Left: Sample vials of leaf litter with pond water from central New York. Right: a wood frog (Lithobates sylvaticus) tadpole." width="60%" height="60%" />
@@ -509,24 +500,6 @@ Left: Sample vials of leaf litter with pond water from central New York. Right: 
 <hr />
 </div>
 </div>
-<div id="tortoise-ecology-and-conservation" class="section level2">
-<h2>Tortoise ecology and conservation</h2>
-<p>I have been collaborating with Galapagos Conservancy’s <a href="https://www.galapagos.org/conservation/our-work/tortoise-restoration/">Giant Tortoise Restoration Initiative</a> (GTRI) since 2018, providing technical support on long-term demographic and ecological data on tortoises and islands in the Galápagos archipelago.</p>
-<div class="figure" style="text-align: center">
-<img src="images/espanola_tort.png" alt="Population regeneration of giant tortoises on Española following 50 years of captive breeding and repatriation." width="522" />
-<p class="caption">
-Population regeneration of giant tortoises on Española following 50 years of captive breeding and repatriation.
-</p>
-</div>
-<p>Once numbered in the hundreds of thousands throughout the archipelago, Galápagos tortoises have suffered extreme population declines and extinctions over hundreds of years due to human activity. GTRI works together with the Galápagos National Park Directorate to restore tortoise populations to their historical ranges and sizes, via research, captive breeding, and management programs.</p>
-<p><em>Relevant literature:</em></p>
-<ul>
-<li><p>Tapia, WA, <strong>Goldspiel, HB</strong>, Sevilla, C, Málaga J, Gibbs, JP. 2020. Santa Fe Island: Return of Tortoises via a Replacement Species. In: Gibbs, JP, Cayot, L, Tapia, WA, editors. <em>Galapagos Tortoises, 1st Edition</em>. Academic Press, Cambridge, MA.</p></li>
-<li><p>Gibbs, JP and <strong>Goldspiel, HB</strong>. 2020. Population Biology. In: Gibbs, JP, Cayot, L, Tapia, WA, editors. <em>Galapagos Tortoises, 1st Edition</em>. Academic Press, Cambridge, MA.</p></li>
-</ul>
-<p><em>Media:</em> <a href="https://www.nytimes.com/2020/01/12/world/americas/diego-tortoise-sex-drive.html">NY Times</a>, <a href="https://www.theguardian.com/world/2020/feb/02/galapagos-experts-find-a-tortoise-related-to-lonesome-george">The Guardian</a>, <a href="https://www.youtube.com/watch?v=hFbYgad3UXo">The Daily Show</a>, <a href="https://www.npr.org/2020/01/18/797574404/bluff-the-listener">Wait Wait Don’t Tell Me</a></p>
-<hr />
-</div>
 <div id="social-media-and-forest-recreation" class="section level2">
 <h2>Social media and forest recreation</h2>
 <div class="row">
@@ -534,7 +507,7 @@ Population regeneration of giant tortoises on Española following 50 years of ca
 Social media platforms have become fixtures of modern society, defining how millions of individuals interact with each other and their environment. The smart phone era has consequently produced an overabundance of rich, textured data on human behavior. I’ve been working with researchers at SUNY ESF to better understand how these data can be used to inform conservation and land management in the northeastern United States. Using geo-tagged photographs from Flickr, we have been investigating how social media activity relates to park visitation and different landscape characteristics.
 </div>
 <div class="col-md-6">
-<p><img src="images/flickr_NFR.jpg" width="376" /></p>
+<p><img src="images/flickr_NFR.jpg" /><!-- --></p>
 </div>
 </div>
 <p><em>Project websites:</em> <a href="https://www.esf.edu/socialmediastudy">ESF</a>, <a href="https://nsrcforest.org/project/using-social-media-quantify-forest-based-tourism">NSRC</a>  </p>
@@ -554,10 +527,8 @@ With researchers at SUNY ESF, I have been applying an SES framework to understan
 </div>
 <div class="col-md-6">
 <div class="figure">
-<img src="images/altai_SES_correlations.png" alt="Relationships among social-ecological components of Altai herder-grassland systems." width="2700" />
-<p class="caption">
-Relationships among social-ecological components of Altai herder-grassland systems.
-</p>
+<img src="images/altai_SES_correlations.png" alt="" />
+<p class="caption">Relationships among social-ecological components of Altai herder-grassland systems.</p>
 </div>
 </div>
 </div>
@@ -594,7 +565,7 @@ Copyright &copy; <span id="year"></span><a href="https://github.com/hgoldspiel/"
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -612,7 +583,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
@@ -621,6 +592,9 @@ $(document).ready(function () {
 
 <script>
 $(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
 
     // move toc-ignore selectors from section div to header
     $('div.section.toc-ignore')

@@ -17,6 +17,8 @@ navbar:
     - text: "Misc."
       icon: fa-hiking
       menu: 
+        - text: "21 Chunk Street"
+          href: twentyone-chunk-street.html
         - text: "Long Trail (Pt. 1)"
           href: LTjournal_Pt1.html
         - text: "Long Trail (Pt. 2)"
