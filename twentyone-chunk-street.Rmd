@@ -25,19 +25,19 @@ knitr::include_graphics("images/whattheheck.gif")
 ```
 
 [NARRATOR]\
-The plan was called Operation C++. And one of the schools included in the plan was Leland Wilkinson Community High School, where a kid named Justin La'Tex—
+The plan was called Operation C++. And one of the schools included in the plan was Leland Wilkinson Community College, where a kid named Justin La'Tex—
 
 [JUSTIN]\
 That's me
 
 [NARRATOR]\
-—an 18-year-old honor roll student—
+—a 20-year-old Dean's List student—
 
 [JUSTIN]\
 I get straight A's, man
 
 [NARRATOR]\
-—was in the last semester of his senior year. Justin could hardly believe his luck when a very enthusiastic Kiwi wearing a bowtie showed up
+—was in the second semester of his last year. Justin could hardly believe his luck when a very enthusiastic Kiwi wearing a bowtie showed up
 
 [JUSTIN]\
 It’s Chadleyyyyyy!
@@ -86,7 +86,7 @@ He seemed to abhor loops made of `for`
 `for`, `for`, `for`!
 
 [JUSTIN]\
-And I was like, what the heck I gotta do to `tidy` you?
+And I was like, what the heck I gotta do to `tidy()` you?
 
 [STUDENTS]\
 What the heck I gotta do?
@@ -188,7 +188,7 @@ Oh Chadley! I know there's a reason this isn't `base`, it's super tidy!
 Oh Chadley!
 
 [JUSTIN]\
-Oh Chadley! You know me! Will you go make a package for me!
+Oh Chadley! You know me! Will you make a package for me!
 
 [CHADLEY]\
 I'll think about it
@@ -226,19 +226,19 @@ knitr::include_graphics("images/javaandC.gif")
 ```
 
 [CHADLEY]\
-I didn't say yes. I didn't say I'll think about it. I can’t tell my real name or how I convinced the school administrator to allow a full-grown adult to attend their high school, but I can confirm that I was asked to make a package for a student.
+I didn't say yes. I didn't say I'll think about it. I can’t tell my real name, but I can confirm that I was asked to make a package for a student.
 
 [NARRATOR]\
 Chadley Pickham was 35 years old and a new recruit at the Houston Tidyverse Academy.
 
 [CHADLEY]\
-My assignment: to pose as a senior and find out who's writing, who’s coding. Mostly `Java` and `C`, you would not believe how easy it is to code in `Java` and `C`.
+My assignment: to pose as a student and find out who's writing, who’s coding. Mostly `Java` and `C`, you would not believe how easy it is to code in `Java` and `C`.
 
 [NARRATOR]\
 What's the hardest part?
 
 [CHADLEY]\
-Pssh—the library. Imagine hundreds of teenagers pushing and pulling full speed. And the lack of style guides. Let's just say I would bake at the end of the day. Seriously, these kids need to learn there are consequences in life. If I'm doing my job and I'm doing it right, I am making code cleaner one line at a time.
+Pssh—the library. Imagine hundreds of students pushing and pulling full speed. And the lack of style guides. Let's just say I would bake at the end of the day. Seriously, these kids need to learn there are consequences in life. If I'm doing my job and I'm doing it right, I am making code cleaner one line at a time.
 
 [NARRATOR]\
 So he asked you to write a package?
@@ -569,7 +569,7 @@ Justin would later find out it's bad practice to write absolute paths. And the p
 Seriously, these kids need to learn there are consequences in life. I am doing my job. I am doing it right. I am making code cleaner one line at a time.
 
 [NARRATOR]\
-In May, the coding academy detained 31 students at several schools. Justin was one of them
+In May, the coding academy detained 31 students at several colleges. Justin was one of them
 
 [SIRENS]\
 
@@ -592,10 +592,10 @@ It's your word against his. GitHub has every text. GitHub has every text. GitHub
 He knew he'd lose on StackOverflow. He had to take a plea
 
 [JUSTIN]\
-Four years bachelor’s decree. I got enrolled for a new degree.
+Two-years master’s decree. I got enrolled for a new degree.
 
 [STUDENTS]\
-What? A degree? Messy code is a bachelor's decree? What? Justin, say goodbye to `SAS` they got you.
+What? A degree? Messy code is a master's decree? What? Justin, say goodbye to `SAS` they got you.
 
 [CHADLEY]\
 These kids need to wake up. I don't want to go too much into it, but code hits really close to work for me. I saw the effects growing up of messy code, and broken links, and proprietary software.
@@ -619,7 +619,7 @@ During the week he spent in bootcamp, Justin couldn't help but think about Chadl
 He was a light-skinneded, charismatic New Zealander, short hair, mature with the bowtie like whoa.
 That's not the only reason I liked him, though. 
 
-Yo, if it had been a teacher that came up to me asking me for absolute paths, I would've been like, "No, get out of my face." I don't code stuff like that. It's cause it was him
+Yo, if it had been a professor that came up to me asking me for absolute paths, I would've been like, "No, get out of my face." I don't code stuff like that. It's cause it was him
 
 [NARRATOR]\
 Have you talked to him since all of this happened?
