@@ -10,7 +10,7 @@ output:
 
 Greetings! I'm a conservation biologist, data scientist, and outdoor enthusiast. 
 
-I am currently a PhD Student at the [University of Maine](www.umaine.edu) in the Department of Wildlife, Fisheries, and Conservation Biology with Dr. Noah Charney.
+I am currently a PhD Student at the [University of Maine](https://www.umaine.edu) in the Department of Wildlife, Fisheries, and Conservation Biology with Dr. Noah Charney.
 
 Welcome to my personal website for rambling on conservation research, wildlife, data science, and other miscellaneous musings.
 
