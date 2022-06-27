@@ -71,7 +71,7 @@ Once numbered in the hundreds of thousands throughout the archipelago, Galápago
 
 *Relevant literature:*
 
-- Tapia, WA, **Goldspiel, HB**, Gibbs, JP. In press. Introduction of giant tortoises as a replacement “ecosystem engineer” to facilitate restoration of Santa Fe Island, Galapagos. *Restoration Ecology*: e13476.
+- Tapia, WA, **Goldspiel, HB**, Gibbs, JP. 2022. Introduction of giant tortoises as a replacement “ecosystem engineer” to facilitate restoration of Santa Fe Island, Galapagos. *Restoration Ecology*: e13476. https://doi.org/10.1111/rec.13476 
 
 - Tapia, WA, **Goldspiel, HB**, Sevilla, C, Málaga J, Gibbs, JP. 2020. Santa Fe Island: Return of Tortoises via a Replacement Species. In: Gibbs, JP, Cayot, L, Tapia, WA, editors. *Galapagos Tortoises, 1st Edition*. Academic Press, Cambridge, MA.
 
@@ -119,6 +119,8 @@ knitr::include_graphics("images/flickr_NFR.jpg")
 \ 
 
 *Relevant literature:*
+
+- **Goldspiel HB**, Barr B, Badding J, Kuehn D. Using crowdsourced photography and automated image classification to understand spatiotemporal patterns of nature-based recreation in large rural landscapes. *In review*.
 
 - Kuehn D, Gibbs J, **Goldspiel HB**, Barr B, Sampson A, Moutenot M, Badding J, Stradtman L. 2020. Using Social Media Data and Park Characteristics to Understand Park Visitation. *The Journal of Park and Recreation Administration* 38.2: 1–12. https://doi.org/10.18666/JPRA-2019-10035
 
