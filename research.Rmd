@@ -14,28 +14,51 @@ My research mostly resides in the realm of ecology and conservation biology, wit
 Here is a short list of some projects I've worked on over the last several years.
 
 ***
-## Population biology and restoration ecology
+
+## Wildlife conservation
 
 ```{r, echo=FALSE, out.width="60%", out.height="60%", fig.cap="Left: A Tapichalaca tree frog (Hyloscirtus tapichalaca) from southern Ecuador. Right: Spotted salamander (Ambystoma maculatum).", fig.show='hold', fig.align='center'}
 knitr::include_graphics("images/amphibs.jpg")
 ``` 
-\ 
 
 ***
+### *Cryptic species and ecosystems*
+
+<div class = "row">
+<div class = "col-md-6">
+
+My current work at the University of Maine focuses on improving conservation capacity for cryptic species and ecosystems. Specifically, I'm working on developing new monitoring approaches for studying rare salamanders in the unisexual *Ambystoma* complex and forested vernal pools that remain highly vulnerable throughout their range. These species and ecosystems are both highly cryptic (i.e., they are hard to detect and distinguish) and present unique challenges to researchers, managers, and conservation stakeholders. 
+
+Working with a team of collaborators in academia and government, I am exploring the potential of innovative trapping approaches and environmental DNA (eDNA) for detecting rare species in vernal pools, identifying critical habitat, and characterizing pool biodiversity over large spatial and temporal scales.</div>
+
+<div class = "col-md-6">
+
+```{r, echo=FALSE, fig.cap = "Blue-spotted salamanders (top) and unisexual *Ambystoma*. Image from Bogart & Klemens (2008).", fig.show='hold', fig.align='center', out.width = "400px"}
+knitr::include_graphics("images/unisexuals.jpg")
+```
+</div>
+
+\ 
+\ 
+
+*Relevant literature:*
+
+- **Goldspiel HB**, Hoffmann, KE, Charney, ND. *In review*. Light at the end of the funnel: Taxonomic biases of aquatic funnel traps and glow sticks for studying wetland-breeding amphibians. *Journal of Herpetology*. 
+
+- **Goldspiel HB**, Hoffmann, KE, Charney, ND. 2023. *Ambystoma laterale-jeffersonianum* complex (Unisexual *Ambystoma*). Longevity. *Herpetological Review*. 
+
+***
+
 ### *Land-use legacies*
 
 <div class = "row">
 <div class = "col-md-6">
 
-Most forests in the eastern United States have rich histories of human disturbance, many having once been cleared for agriculture and regenerated in the last century. These landscape transformations came at a cost for seasonal wetlands, also known as “vernal pools” in the northeast, which are central to the life cycles of many frogs and salamanders. In recent decades, many landowners have taken to creating artificial pools as a means of restoring amphibian habitat, but these created pools have mixed rates of success for amphibian populations. 
+Most forests in the eastern United States have rich histories of human disturbance, many having once been cleared for agriculture and regenerated in the last century. These landscape transformations came at a cost for wetlands, which are central to the life cycles of many frogs and salamanders. In recent decades, many landowners have taken to creating artificial wetlands as a means of restoring amphibian habitat, but these created wetlands have mixed rates of success for amphibian populations. 
 
-For my master's thesis, I was interested in how historical landscape setting (i.e., adult habitat quality) and pool densities (i.e., larval habitat availability) interactively affect the outcome of these habitat restoration projects. This work occurred at Heiberg Memorial Forest, an experimental research station operated by SUNY ESF in Tully, NY.</div>
+For my master's thesis, I was interested in how historical landscape setting (i.e., adult habitat quality) and vernal pool densities (i.e., larval habitat availability) interactively affect the outcome of these habitat restoration projects. This work occurred at Heiberg Memorial Forest, an experimental research station operated by SUNY ESF in Tully, NY.</div>
 
 <div class = "col-md-6">
-\ 
-\ 
-\ 
-\ 
 
 
 ```{r, echo=FALSE, fig.cap = "Land cover at Heiberg Memorial Forest (Tully, NY) in 1936 (top) and 2015 (bottom).", fig.show='hold', fig.align='center'}
@@ -60,7 +83,7 @@ knitr::include_graphics("images/heiberg_history.jpg")
 
 ### *Island rewilding*
 
-I have been collaborating with Galapagos Conservancy's [Giant Tortoise Restoration Initiative](https://www.galapagos.org/conservation/our-work/tortoise-restoration/) (GTRI) since 2018, providing technical support on long-term demographic and ecological data on tortoises and islands in the Galápagos archipelago. 
+From 2018--2020, I worked with Galapagos Conservancy's [Giant Tortoise Restoration Initiative](https://www.galapagos.org/conservation/our-work/tortoise-restoration/) (GTRI), providing analytical support for long-term demographic and ecological data on tortoises and islands in the Galápagos archipelago. 
 
 ```{r, echo = FALSE, fig.cap = "Population regeneration of giant tortoises on Española following 50 years of captive breeding and repatriation.", fig.height=6, fig.width=8, fig.show='hold', fig.align='center'}
 
@@ -82,9 +105,9 @@ Once numbered in the hundreds of thousands throughout the archipelago, Galápago
 ***
 
 
-### *Amphibians and biotechnology*
+### *Biotechnology*
 
-With rapid advancements in transgenic research, biotechnology has become more commonplace in discussions about ecological restoration. These techniques present numerous opportunities for conservation, as well as numerous uncertainties about potential non-target effects on other organisms. Following decades of research at SUNY ESF with the [American Chestnut Project](https://www.esf.edu/chestnut/), American chestnut (*Castanea dentata*) has become a primary case study of species restoration using biotechnology. As part of the regulatory approval process for planting these trees, various studies have been done to examine non-target effects on native species and ecological processes. Until 2017, no research had yet been conducted to examine potential effects of transgenic chestnut on forest vertebrates, such as amphibians. In collaboration with the American Chestnut Project, I conducted a lab survival experiment to study interactions between transgenic American chestnut litter and amphibian larvae.
+With rapid advancements in transgenic research, biotechnology has become more commonplace in discussions about ecological restoration. These techniques present numerous opportunities for conservation, as well as numerous uncertainties about potential non-target effects on other organisms. Following decades of research at SUNY ESF with the [American Chestnut Project](https://www.esf.edu/chestnut/), American chestnut (*Castanea dentata*) has become a primary case study of species restoration using biotechnology. As part of the regulatory approval process for planting these trees, various studies have been done to examine non-target effects on native species and ecological processes. Until 2017, no research had yet been conducted to examine potential effects of transgenic plants on forest-dwelling vertebrates, such as amphibians. In collaboration with the American Chestnut Project, I conducted a lab survival experiment to study interactions between transgenic American chestnut litter and amphibian larvae.
 
 ```{r, echo=FALSE, out.width="60%", out.height="60%", fig.cap="Left: Sample vials of leaf litter with pond water from central New York. Right: a wood frog (Lithobates sylvaticus) tadpole.", fig.show='hold', fig.align='center'}
 knitr::include_graphics("images/litter_tadpole.jpg")
@@ -120,7 +143,7 @@ knitr::include_graphics("images/flickr_NFR.jpg")
 
 *Relevant literature:*
 
-- **Goldspiel HB**, Barr B, Badding J, Kuehn D. Using crowdsourced photography and automated image classification to understand spatiotemporal patterns of nature-based recreation in large rural landscapes. *In review*.
+- **Goldspiel HB**, Barr B, Badding J, Kuehn D. 2023. Snapshots of Nature-Based Recreation Across Rural Landscapes: Insights from Geotagged Photographs in the Northeastern United States. *Environmental Management* 71: 234-248. https://doi.org/10.1007/s00267-022-01728-2
 
 - Kuehn D, Gibbs J, **Goldspiel HB**, Barr B, Sampson A, Moutenot M, Badding J, Stradtman L. 2020. Using Social Media Data and Park Characteristics to Understand Park Visitation. *The Journal of Park and Recreation Administration* 38.2: 1–12. https://doi.org/10.18666/JPRA-2019-10035
 

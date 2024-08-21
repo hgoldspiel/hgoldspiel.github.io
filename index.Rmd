@@ -10,10 +10,10 @@ output:
 
 Greetings! I'm a conservation biologist, data scientist, and outdoor enthusiast. 
 
-I am currently a PhD Student at the [University of Maine](https://www.umaine.edu) in the Department of Wildlife, Fisheries, and Conservation Biology with Dr. Noah Charney.
+I am currently a PhD Candidate at the [University of Maine](https://www.umaine.edu) in the Department of Wildlife, Fisheries, and Conservation Biology with Dr. Noah Charney.
 
 Welcome to my personal website for rambling on conservation research, wildlife, data science, and other miscellaneous musings.
 
-When not tinkering in R, you might find me flipping logs in a forest somewhere.
+When not tinkering in R, you might find me flipping logs in a forest somewhere. 
 
 My full CV is available [here](docs/Goldspiel_Harrison_CV.pdf).
