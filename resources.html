@@ -13,7 +13,7 @@
 
 <title>Resources</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.30/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
@@ -29,14 +29,14 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.5.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -57,6 +57,7 @@ if (window.hljs) {
   }
 }
 </script>
+
 
 
 
@@ -87,6 +88,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -144,11 +148,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -177,8 +185,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -186,16 +194,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -312,7 +313,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -350,7 +351,7 @@ div.tocify {
   </a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-hiking"></span>
      
     Misc.
@@ -399,12 +400,6 @@ div.tocify {
   </a>
 </li>
 <li>
-  <a href="https://twitter.com/hbgoldspiel">
-    <span class="fa fa-twitter"></span>
-     
-  </a>
-</li>
-<li>
   <a href="https://www.linkedin.com/in/harrisongoldspiel/">
     <span class="fa fa-linkedin"></span>
      
@@ -420,36 +415,68 @@ div.tocify {
 
 
 <h1 class="title toc-ignore">Resources</h1>
-<h4 class="date">Last updated: 27 June 2022</h4>
+<h4 class="date">Last updated: 02 February 2026</h4>
 
 </div>
 
 
-<p>The following page provides examples for various coding and quantitative techniques I’ve used over the years that may be useful to others. This page is a <em>work in progress</em>. I will be adding more vignettes when available!</p>
+<p>The following page provides examples for various coding and
+quantitative techniques I’ve used over the years that may be useful to
+others. This page is a <em>work in progress</em>. I will be adding more
+vignettes when available!</p>
 <hr />
 <div id="data-visualization-tutorial" class="section level2">
 <h2>Data visualization tutorial</h2>
-<p><strong>Link:</strong> <a href="dataviz_part1_HBG.html" target="_blank" rel="noopener">Dataviz workshop</a></p>
-<p>Call me lazy, but when I read academic papers I like to zoom straight to the figures. Well made figures can tell you practically everything you need to know about a study. Of course, I’ll read the main text too (usually). But good figures help me better disentangle the often disjointed nature of scientific writing. There is a reason that supplementary graphical abstracts are growing in popularity! And with the growing visualization toolbox for data scientists, making high quality figures is easier than ever.</p>
-<p>Here is a little workshop I put together for a data science collective in Galapagos in 2019. This is by no means an attempt to reinvent the wheel, which I’m still learning how to maneuver myself. These slides constitute a brief introduction to data visualization, focusing on the Grammar of Graphics philosophy as implemented in R with <code>ggplot2</code>.</p>
+<p><strong>Link:</strong> <a href="dataviz_part1_HBG.html"
+target="_blank" rel="noopener">Dataviz workshop</a></p>
+<p>Call me lazy, but when I read academic papers I like to zoom straight
+to the figures. Well made figures can tell you practically everything
+you need to know about a study. Of course, I’ll read the main text too
+(usually). But good figures help me better disentangle the often
+disjointed nature of scientific writing. There is a reason that
+supplementary graphical abstracts are growing in popularity! And with
+the growing visualization toolbox for data scientists, making high
+quality figures is easier than ever.</p>
+<p>Here is a little workshop I put together for a data science
+collective in Galapagos in 2019. This is by no means an attempt to
+reinvent the wheel, which I’m still learning how to maneuver myself.
+These slides constitute a brief introduction to data visualization,
+focusing on the Grammar of Graphics philosophy as implemented in R with
+<code>ggplot2</code>.</p>
 <hr />
 </div>
 <div id="mapping-flickr-data" class="section level2">
 <h2>Mapping Flickr data</h2>
-<p><strong>Link:</strong> <a href="Flickr_hotspot_mapping.html" target="_blank" rel="noopener">Flickr mapping vignette</a></p>
-<p>If you thought your social media data were only being used for marketing and other profitable ventures, well think again! There has been a boom of environmental research in the last decade using big data from social media platforms including Twitter, Instagram, and Flickr to better understand a myriad of modern ecological and conservation challenges.</p>
-<p>In this vignette, I demonstrate some basic tasks with spatial point data using the <code>spatstat</code> package. The dataset consists of Flickr images from the northeastern United States from 2012-2016. This synthesis is part of an ongoing project at <a href="https://www.esf.edu/socialmediastudy/">SUNY ESF</a> to understand patterns of nature-based tourism and recreation in the Northern Forest region from New York to Maine.</p>
+<p><strong>Link:</strong> <a href="Flickr_hotspot_mapping.html"
+target="_blank" rel="noopener">Flickr mapping vignette</a></p>
+<p>If you thought your social media data were only being used for
+marketing and other profitable ventures, well think again! There has
+been a boom of environmental research in the last decade using big data
+from social media platforms including Twitter, Instagram, and Flickr to
+better understand a myriad of modern ecological and conservation
+challenges.</p>
+<p>In this vignette, I demonstrate some basic tasks with spatial point
+data using the <code>spatstat</code> package. The dataset consists of
+Flickr images from the northeastern United States from 2012-2016. This
+synthesis is part of an ongoing project at <a
+href="https://www.esf.edu/socialmediastudy/">SUNY ESF</a> to understand
+patterns of nature-based tourism and recreation in the Northern Forest
+region from New York to Maine.</p>
 <hr />
 </div>
 <div id="future-topics" class="section level2">
 <h2>Future topics</h2>
-<p>I’ll continue dusting off some old analyses to put on here. Some potential additions to this website might include:</p>
+<p>I’ll continue dusting off some old analyses to put on here. Some
+potential additions to this website might include:</p>
 <ul>
 <li>estimating survival in the <code>survival</code> package</li>
-<li>estimating survival and other demographic parameters in <code>RMark</code></li>
-<li>using occupancy, abundance, and distance sampling models in <code>unmarked</code></li>
+<li>estimating survival and other demographic parameters in
+<code>RMark</code></li>
+<li>using occupancy, abundance, and distance sampling models in
+<code>unmarked</code></li>
 <li>randomization tests in <code>base</code> R</li>
-<li>classification/regression trees and random forests with <code>rpart</code> and <code>randomForest</code></li>
+<li>classification/regression trees and random forests with
+<code>rpart</code> and <code>randomForest</code></li>
 <li>analyzing precipitation data series with <code>SPEI</code></li>
 </ul>
 </div>

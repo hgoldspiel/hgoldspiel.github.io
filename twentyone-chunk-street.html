@@ -15,7 +15,7 @@
 
 <title>21 Chunk Street</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.30/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
@@ -31,14 +31,14 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.5.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -59,6 +59,7 @@ if (window.hljs) {
   }
 }
 </script>
+
 
 
 
@@ -89,6 +90,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -146,11 +150,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -179,8 +187,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -188,16 +196,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -314,7 +315,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -352,7 +353,7 @@ div.tocify {
   </a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-hiking"></span>
      
     Misc.
@@ -401,12 +402,6 @@ div.tocify {
   </a>
 </li>
 <li>
-  <a href="https://twitter.com/hbgoldspiel">
-    <span class="fa fa-twitter"></span>
-     
-  </a>
-</li>
-<li>
   <a href="https://www.linkedin.com/in/harrisongoldspiel/">
     <span class="fa fa-linkedin"></span>
      
@@ -422,7 +417,8 @@ div.tocify {
 
 
 <h1 class="title toc-ignore">21 Chunk Street</h1>
-<h3 class="subtitle">A horrible parody of Lin-Manuel Miranda’s NPR musical masterpiece.</h3>
+<h3 class="subtitle">A horrible parody of Lin-Manuel Miranda’s NPR
+musical masterpiece.</h3>
 <h4 class="author">Harrison Goldspiel &amp; Clare Peabody</h4>
 <h4 class="date">25 August 2021</h4>
 
@@ -430,13 +426,18 @@ div.tocify {
 
 
 <p>   </p>
-<p>In case you haven’t seen the original body of art this play is based off of, please indulge yourself <a href="https://www.youtube.com/watch?v=KgN5bve6S-4&amp;ab_channel=swaggybeans" target="_blank" rel="noopener">here</a>.</p>
+<p>In case you haven’t seen the original body of art this play is based
+off of, please indulge yourself <a
+href="https://www.youtube.com/watch?v=KgN5bve6S-4&amp;ab_channel=swaggybeans"
+target="_blank" rel="noopener">here</a>.</p>
 <hr />
 <div id="what-the-heck-i-gotta-do" class="section level2">
 <h2>What The Heck I Gotta Do</h2>
 <p><img src="images/whattheheck.gif" /><!-- --></p>
 <p>[NARRATOR]<br />
-The plan was called Operation C++. And one of the schools included in the plan was Leland Wilkinson Community College, where a kid named Justin La’Tex—</p>
+The plan was called Operation C++. And one of the schools included in
+the plan was Leland Wilkinson Community College, where a kid named
+Justin La’Tex—</p>
 <p>[JUSTIN]<br />
 That’s me</p>
 <p>[NARRATOR]<br />
@@ -444,7 +445,9 @@ That’s me</p>
 <p>[JUSTIN]<br />
 I get straight A’s, man</p>
 <p>[NARRATOR]<br />
-—was in the second semester of his final year. Justin could hardly believe his luck when a very enthusiastic Kiwi wearing a bowtie showed up</p>
+—was in the second semester of his final year. Justin could hardly
+believe his luck when a very enthusiastic Kiwi wearing a bowtie showed
+up</p>
 <p>[JUSTIN]<br />
 It’s Chadleyyyyyy!</p>
 <p>[NARRATOR]<br />
@@ -490,7 +493,8 @@ What function do I need for this to plot for me?</p>
 <p>[NARRATOR]<br />
 You told him all this in class?</p>
 <p>[JUSTIN]<br />
-Yeah. Well, I messaged him! Y’know, I was like, what the heck I gotta do to <code>tidy()</code> you?</p>
+Yeah. Well, I messaged him! Y’know, I was like, what the heck I gotta do
+to <code>tidy()</code> you?</p>
 <p>[STUDENTS]<br />
 <code>filter()</code> <code>group_by()</code> <code>mutate()</code>!</p>
 <p>[JUSTIN]<br />
@@ -502,11 +506,14 @@ What function do I need for this to plot for me?</p>
 <p>[CHADLEY]<br />
 <code>ggplot()</code></p>
 <p>[JUSTIN]<br />
-Yes! Next thing you know, we’re coding day and night. I trust him right away.</p>
+Yes! Next thing you know, we’re coding day and night. I trust him right
+away.</p>
 <p>[STUDENTS]<br />
 Like, whoa!</p>
 <p>[JUSTIN]<br />
-Hey, yo. I never met anyone like him, bro. Yo, he listens to all my problems. I let him <code>tidy()</code> all my data. And then I lay it all on the line. And he was like—</p>
+Hey, yo. I never met anyone like him, bro. Yo, he listens to all my
+problems. I let him <code>tidy()</code> all my data. And then I lay it
+all on the line. And he was like—</p>
 <p>[STUDENTS]<br />
 No, no—</p>
 <p>[JUSTIN]<br />
@@ -522,7 +529,9 @@ So, I decided I needed to step my game up</p>
 <p>[STUDENTS]<br />
 Oh, oh, oh, oh</p>
 <p>[JUSTIN]<br />
-It’s too late to be shy. And so I got in front of the whole class one day, and sang to him. I was like, what the heck I gotta do to code with you?</p>
+It’s too late to be shy. And so I got in front of the whole class one
+day, and sang to him. I was like, what the heck I gotta do to code with
+you?</p>
 <p>[STUDENTS]<br />
 What the heck I gotta do?</p>
 <p>[JUSTIN]<br />
@@ -538,11 +547,13 @@ Yeah! I danced and everything</p>
 <p>[STUDENTS]<br />
 Oh Chadleeeyyy!</p>
 <p>[JUSTIN]<br />
-Oh Chadley! I know there’s a reason you make <code>tibbles</code> for me</p>
+Oh Chadley! I know there’s a reason you make <code>tibbles</code> for
+me</p>
 <p>[STUDENTS]<br />
 Oh Chadley!</p>
 <p>[STUDENTS]<br />
-Oh Chadley! I know there’s a reason this isn’t <code>base</code>, it’s super tidy!</p>
+Oh Chadley! I know there’s a reason this isn’t <code>base</code>, it’s
+super tidy!</p>
 <p>[STUDENTS]<br />
 Oh Chadley!</p>
 <p>[JUSTIN]<br />
@@ -550,7 +561,8 @@ Oh Chadley! You know me! Will you make a package for me!</p>
 <p>[CHADLEY]<br />
 I’ll think about it</p>
 <p>[STUDENTS]<br />
-He’ll think about it. He’ll think about it. He’ll think about it. He’ll think about</p>
+He’ll think about it. He’ll think about it. He’ll think about it. He’ll
+think about</p>
 <p>[JUSTIN]<br />
 He said he’d think about it</p>
 <p>[STUDENTS]<br />
@@ -571,20 +583,37 @@ Yes!</p>
 <h2>One Line</h2>
 <p><img src="images/javaandC.gif" /><!-- --></p>
 <p>[CHADLEY]<br />
-I didn’t say yes. I didn’t say I’ll think about it. I can’t tell my real name, but I can confirm that I was asked to make a package for a student.</p>
+I didn’t say yes. I didn’t say I’ll think about it. I can’t tell my real
+name, but I can confirm that I was asked to make a package for a
+student.</p>
 <p>[NARRATOR]<br />
-Chadley Pickham was 35 years old and a new recruit at the Houston Tidyverse Academy.</p>
+Chadley Pickham was 35 years old and a new recruit at the Houston
+Tidyverse Academy.</p>
 <p>[CHADLEY]<br />
-My assignment: to pose as a student and find out who’s writing, who’s coding. Mostly <code>Java</code> and <code>C</code>, you would not believe how easy it is to code in <code>Java</code> and <code>C</code>.</p>
+My assignment: to pose as a student and find out who’s writing, who’s
+coding. Mostly <code>Java</code> and <code>C</code>, you would not
+believe how easy it is to code in <code>Java</code> and
+<code>C</code>.</p>
 <p>[NARRATOR]<br />
 What’s the hardest part?</p>
 <p>[CHADLEY]<br />
-Pssh—the library. Imagine hundreds of students pushing and pulling full speed. And the lack of style guides. Let’s just say I would bake at the end of the day. Seriously, these kids need to learn there are consequences in life. If I’m doing my job and I’m doing it right, I am making code cleaner one line at a time.</p>
+Pssh—the library. Imagine hundreds of students pushing and pulling full
+speed. And the lack of style guides. Let’s just say I would bake at the
+end of the day. Seriously, these kids need to learn there are
+consequences in life. If I’m doing my job and I’m doing it right, I am
+making code cleaner one line at a time.</p>
 <p>[NARRATOR]<br />
 So he asked you to write a package?</p>
 <p>[CHADLEY]<br />
-Right. I gave every excuse. I said it’s too derivative, which is totally true, by the way. I told him, look, I’m just learning American History, I wouldn’t feel comfortable doing all that work. And it’s true you make friends on the job, then it ends. You meet kids who are sensitive, smart, and defenseless. Those are the ones you remember, the ones that you think about after you’re gone.</p>
-<p>Seriously, these kids need to learn there are consequences in life. If I’m doing my job and I’m doing it right, I am making code cleaning one line at a time.</p>
+Right. I gave every excuse. I said it’s too derivative, which is totally
+true, by the way. I told him, look, I’m just learning American History,
+I wouldn’t feel comfortable doing all that work. And it’s true you make
+friends on the job, then it ends. You meet kids who are sensitive,
+smart, and defenseless. Those are the ones you remember, the ones that
+you think about after you’re gone.</p>
+<p>Seriously, these kids need to learn there are consequences in life.
+If I’m doing my job and I’m doing it right, I am making code cleaning
+one line at a time.</p>
 <p>[NARRATOR]<br />
 Meanwhile—</p>
 <p>[JUSTIN]<br />
@@ -600,7 +629,8 @@ What?</p>
 <p>[CHADLEY]<br />
 Do you <code>setwd()</code>?</p>
 <p>[JUSTIN]<br />
-No, I don’t. But if that’s what you need, I can do that for you. I can set the directory.</p>
+No, I don’t. But if that’s what you need, I can do that for you. I can
+set the directory.</p>
 <p>[CHADLEY]<br />
 You would set that for me?</p>
 <p>[JUSTIN]<br />
@@ -610,11 +640,14 @@ Seriously, these kids need to learn there are consequences in life</p>
 <p>[JUSTIN]<br />
 I’ll set whatever you need!</p>
 <p>[CHADLEY]<br />
-If I’m doing my job and I’m doing it right, I am making code cleaner one line at a time.</p>
+If I’m doing my job and I’m doing it right, I am making code cleaner one
+line at a time.</p>
 <p>[NARRATOR]<br />
-What are you thinking as you’re trying to get this directory to set for him?</p>
+What are you thinking as you’re trying to get this directory to set for
+him?</p>
 <p>[JUSTIN]<br />
-I’m thinking, what the heck am I doing? Cause I don’t set directories like that.</p>
+I’m thinking, what the heck am I doing? Cause I don’t set directories
+like that.</p>
 <p>[NARRATOR]<br />
 So what did you do?</p>
 <hr />
@@ -623,18 +656,24 @@ So what did you do?</p>
 <h2>Folder</h2>
 <p><img src="images/folder.gif" /><!-- --></p>
 <p>[JUSTIN]<br />
-I set a path to a folder in another folder of a subfolder to another drive, which set a path to a couple dozen folders until it became live.</p>
+I set a path to a folder in another folder of a subfolder to another
+drive, which set a path to a couple dozen folders until it became
+live.</p>
 <p>[FOLDER 1]<br />
-My folder Justin’s looking for a little something-something for a certain someone, some boy he wants to be packaging</p>
+My folder Justin’s looking for a little something-something for a
+certain someone, some boy he wants to be packaging</p>
 <p>[FOLDERS]<br />
 Everybody’s got a folder that can hook them up with something<br />
 Everybody’s got a folder that can hook them up with something</p>
 <p>[FOLDER 2]<br />
-We were just discussing our folder of Justin. Wasn’t Justin’s folder the folder that downloaded that virus, that got all the other folders buzzin’?</p>
+We were just discussing our folder of Justin. Wasn’t Justin’s folder the
+folder that downloaded that virus, that got all the other folders
+buzzin’?</p>
 <p>[FOLDER 3]<br />
 Are we close to our folder of Justin? Are we supposed to trust him?</p>
 <p>[FOLDER 1]<br />
-Are we thugs to our folder of Justin? We don’t set absolute paths, man</p>
+Are we thugs to our folder of Justin? We don’t set absolute paths,
+man</p>
 <p>[FOLDERS]<br />
 Everybody’s got a folder that can hook them up with something<br />
 Everybody’s got a folder that can hook them up with something</p>
@@ -655,7 +694,8 @@ I’ll find a way to repay you, Justin</p>
 <p>[JUSTIN]<br />
 Oh, man!</p>
 <p>[FOLDER 2]<br />
-Yo, what is up with this fussin’? This isn’t up for discussion. This is our folder coming to us. He’s our drive, and we love him</p>
+Yo, what is up with this fussin’? This isn’t up for discussion. This is
+our folder coming to us. He’s our drive, and we love him</p>
 <p>[FOLDER 3]<br />
 Ah, look at Justin. He blushing</p>
 <p>[FOLDER 2]<br />
@@ -675,7 +715,8 @@ GitHub! GitHub! Only if you believe in GitHub</p>
 <p>[FOLDER 2]<br />
 Get him the path</p>
 <p>[JUSTIN]<br />
-I write my path in twenty-five characters, I’m sweating buckets. My folder shows some little file icons. I set it for you</p>
+I write my path in twenty-five characters, I’m sweating buckets. My
+folder shows some little file icons. I set it for you</p>
 <p>[CHADLEY]<br />
 😍 Cool</p>
 <p>[JUSTIN]<br />
@@ -708,13 +749,17 @@ Everybody’s got a folder that can hook them up with something.</p>
 <h2>The Money</h2>
 <p><img src="images/money.gif" /><!-- --></p>
 <p>[NARRATOR]<br />
-The next day, Justin brought a flash drive of <code>R</code> files to school for Chadley</p>
+The next day, Justin brought a flash drive of <code>R</code> files to
+school for Chadley</p>
 <p>[JUSTIN]<br />
-And I was like, oh my god, I’m actually gonna do this. So we was in class, and I sat down right next to him. And he was like—</p>
+And I was like, oh my god, I’m actually gonna do this. So we was in
+class, and I sat down right next to him. And he was like—</p>
 <p>[CHADLEY]<br />
 Justin, do you have it?</p>
 <p>[JUSTIN]<br />
-Yeah, I do. And I was like, you know what? We’re going to wait for a few. Because I didn’t want to be like, oh hey, and just slide it in his hand or whatever. So we waited</p>
+Yeah, I do. And I was like, you know what? We’re going to wait for a
+few. Because I didn’t want to be like, oh hey, and just slide it in his
+hand or whatever. So we waited</p>
 <p><em>Wood blocks tick-tocking</em></p>
 <p>[JUSTIN]<br />
 And he was like—</p>
@@ -727,7 +772,8 @@ Okay, here. Take the money. Justin, take the money.</p>
 <p>[JUSTIN]<br />
 I don’t want your money.<br />
 I wrote this code for you. Keep your money.<br />
-There’s nothing I won’t do for you. I’ll come through for you every time—just in time</p>
+There’s nothing I won’t do for you. I’ll come through for you every
+time—just in time</p>
 <div class="row">
 <div class="col-md-4">
 <p><br> [CHADLEY]<br />
@@ -807,11 +853,17 @@ I’ll come through for you</p>
 <h2>Epilogue</h2>
 <p><img src="images/github.gif" /><!-- --></p>
 <p>[NARRATOR]<br />
-Justin would later find out it’s bad practice to write absolute paths. And the penalty is even harsher for selling them to other students. In other words, Justin had made an irreversibly bad decision. And since he was over 18, he was legally an adult when he made it</p>
+Justin would later find out it’s bad practice to write absolute paths.
+And the penalty is even harsher for selling them to other students. In
+other words, Justin had made an irreversibly bad decision. And since he
+was over 18, he was legally an adult when he made it</p>
 <p>[CHADLEY]<br />
-Seriously, these kids need to learn there are consequences in life. I am doing my job. I am doing it right. I am making code cleaner one line at a time.</p>
+Seriously, these kids need to learn there are consequences in life. I am
+doing my job. I am doing it right. I am making code cleaner one line at
+a time.</p>
 <p>[NARRATOR]<br />
-In May, the coding academy detained 31 students at several colleges. Justin was one of them</p>
+In May, the coding academy detained 31 students at several colleges.
+Justin was one of them</p>
 <p>[SIRENS]<br />
 </p>
 <p>[TIDYVERSE OFFICER]<br />
@@ -823,30 +875,43 @@ Everybody who sold code to undercover cops is busted<br />
 Everybody who sold code to undercover cops is busted<br />
 </p>
 <p>[NARRATOR]<br />
-He spent a week in <code>tidyverse</code> bootcamp wondering what would happen next</p>
+He spent a week in <code>tidyverse</code> bootcamp wondering what would
+happen next</p>
 <p>[STUDENTS]<br />
-It’s your word against his. GitHub has every text. GitHub has every text. GitHub has every text. “Don’t worry, Chad. I got the stuff, I got you.”</p>
+It’s your word against his. GitHub has every text. GitHub has every
+text. GitHub has every text. “Don’t worry, Chad. I got the stuff, I got
+you.”</p>
 <p>[NARRATOR]<br />
 He knew he’d lose on StackOverflow. He had to take a plea</p>
 <p>[JUSTIN]<br />
 Two-years master’s decree. I got enrolled for a new degree.</p>
 <p>[STUDENTS]<br />
-What? A degree? Messy code is a master’s decree? What? Justin, say goodbye to <code>SAS</code> they got you.</p>
+What? A degree? Messy code is a master’s decree? What? Justin, say
+goodbye to <code>SAS</code> they got you.</p>
 <p>[CHADLEY]<br />
-These kids need to wake up. I don’t want to go too much into it, but code hits really close to work for me. I saw the effects growing up of messy code, and broken links, and proprietary software.</p>
+These kids need to wake up. I don’t want to go too much into it, but
+code hits really close to work for me. I saw the effects growing up of
+messy code, and broken links, and proprietary software.</p>
 <p>[NARRATOR]<br />
 With coworkers?</p>
 <p>[CHADLEY]<br />
-Yes. I’ve seen what it can do to data science. That’s all I want to say about it</p>
+Yes. I’ve seen what it can do to data science. That’s all I want to say
+about it</p>
 <p>[NARRATOR]<br />
 Do you wish someone like you had done this type of work?</p>
 <p>[CHADLEY]<br />
-Yes. And I hope someone like me keeps doing it. Still, there are kids you remember, the ones that you’ll think about after you’re gone</p>
+Yes. And I hope someone like me keeps doing it. Still, there are kids
+you remember, the ones that you’ll think about after you’re gone</p>
 <p>[NARRATOR]<br />
-During the week he spent in bootcamp, Justin couldn’t help but think about Chadley</p>
+During the week he spent in bootcamp, Justin couldn’t help but think
+about Chadley</p>
 <p>[JUSTIN]<br />
-He was a light-skinneded, charismatic New Zealander, short hair, mature with the bowtie like whoa. That’s not the only reason I liked him, though.</p>
-<p>Yo, if it had been a professor that came up to me asking me for absolute paths, I would’ve been like, “No, get out of my face.” I don’t code stuff like that. It’s cause it was him</p>
+He was a light-skinneded, charismatic New Zealander, short hair, mature
+with the bowtie like whoa. That’s not the only reason I liked him,
+though.</p>
+<p>Yo, if it had been a professor that came up to me asking me for
+absolute paths, I would’ve been like, “No, get out of my face.” I don’t
+code stuff like that. It’s cause it was him</p>
 <p>[NARRATOR]<br />
 Have you talked to him since all of this happened?</p>
 <p>[JUSTIN]<br />
@@ -854,7 +919,8 @@ No. I would love to. I would love to have that conversation</p>
 <p>[NARRATOR]<br />
 What do you think you would say?</p>
 <p>[JUSTIN]<br />
-I would say, what the heck did you do? What the heck did you do? Chadley? What the heck did you do?</p>
+I would say, what the heck did you do? What the heck did you do?
+Chadley? What the heck did you do?</p>
 </div>
 
 <br />
