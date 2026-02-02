@@ -43,9 +43,15 @@ knitr::include_graphics("images/unisexuals.jpg")
 
 *Relevant literature:*
 
-- **Goldspiel HB**, Hoffmann, KE, Charney, ND. *In review*. Light at the end of the funnel: Taxonomic biases of aquatic funnel traps and glow sticks for studying wetland-breeding amphibians. *Journal of Herpetology*. 
+- **Goldspiel HB**, Davis SK, Winiarski EC, Kubel JE, Grey EK, Charney ND. *Accepted*. Detection and succession properties of forested vernal pools with eDNA metabarcoding. *Ecological Solutions and Evidence*.
 
-- **Goldspiel HB**, Hoffmann, KE, Charney, ND. 2023. *Ambystoma laterale-jeffersonianum* complex (Unisexual *Ambystoma*). Longevity. *Herpetological Review*. 
+- **Goldspiel HB**, Charney, ND. 2023. *Ambystoma laterale-jeffersonianum* complex (Unisexual *Ambystoma*). Polydactyly. *Herpetological Review*. 56.2: 175-176. [PDF](docs/pubs/Goldspiel_and_Charney_2025_HerpReview_polydactyly.pdf)
+
+- **Goldspiel HB**. 2025. [Edna and Al](https://umaine.edu/spire/2025/04/19/goldspiel/). *Spire: The Maine Journal of Conservation and Sustainability* Vol. 9. 
+
+- **Goldspiel HB**, Hoffmann, KE, Charney, ND. 2025. Light at the end of the funnel: Taxonomic biases of aquatic funnel traps and glow sticks for studying wetland-breeding amphibians. *Journal of Herpetology*. 59.1: 1-10. https://doi.org/10.1670/2460810
+
+- **Goldspiel HB**, Hoffmann, KE, Charney, ND. 2023. *Ambystoma laterale-jeffersonianum* complex (Unisexual *Ambystoma*). Longevity. *Herpetological Review*. 54.4: 614-615. [PDF](docs/pubs/Goldspiel_et_al_2023_HerpReview_longevity.pdf)
 
 ***
 
