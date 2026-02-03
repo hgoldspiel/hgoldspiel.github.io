@@ -45,7 +45,7 @@ knitr::include_graphics("images/unisexuals.jpg")
 
 - **Goldspiel HB**, Davis SK, Winiarski EC, Kubel JE, Grey EK, Charney ND. *Accepted*. Detection and succession properties of forested vernal pools with eDNA metabarcoding. *Ecological Solutions and Evidence*.
 
-- **Goldspiel HB**, Charney, ND. 2023. *Ambystoma laterale-jeffersonianum* complex (Unisexual *Ambystoma*). Polydactyly. *Herpetological Review*. 56.2: 175-176. [PDF](docs/pubs/Goldspiel_and_Charney_2025_HerpReview_polydactyly.pdf)
+- **Goldspiel HB**, Charney, ND. 2025. *Ambystoma laterale-jeffersonianum* complex (Unisexual *Ambystoma*). Polydactyly. *Herpetological Review*. 56.2: 175-176. [PDF](docs/pubs/Goldspiel_and_Charney_2025_HerpReview_polydactyly.pdf)
 
 - **Goldspiel HB**. 2025. [Edna and Al](https://umaine.edu/spire/2025/04/19/goldspiel/). *Spire: The Maine Journal of Conservation and Sustainability* Vol. 9. 
 
