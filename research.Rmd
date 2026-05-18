@@ -37,13 +37,13 @@ Working with a team of collaborators in academia and government, I am exploring 
 knitr::include_graphics("images/unisexuals.jpg")
 ```
 </div>
+</div>
 
-\ 
-\ 
+ \ 
 
 *Relevant literature:*
 
-- **Goldspiel HB**, Davis SK, Winiarski EC, Kubel JE, Grey EK, Charney ND. *Accepted*. Detection and succession properties of forested vernal pools with eDNA metabarcoding. *Ecological Solutions and Evidence*.
+- **Goldspiel HB**, Davis SK, Winiarski EC, Kubel JE, Grey EK, Charney ND. 2026. Detection and succession properties of forested vernal pools with eDNA metabarcoding. *Ecological Solutions and Evidence*. 7.1. https://doi.org/10.1002/2688-8319.70209
 
 - **Goldspiel HB**, Charney, ND. 2025. *Ambystoma laterale-jeffersonianum* complex (Unisexual *Ambystoma*). Polydactyly. *Herpetological Review*. 56.2: 175-176. [PDF](docs/pubs/Goldspiel_and_Charney_2025_HerpReview_polydactyly.pdf)
 
@@ -54,7 +54,6 @@ knitr::include_graphics("images/unisexuals.jpg")
 - **Goldspiel HB**, Hoffmann, KE, Charney, ND. 2023. *Ambystoma laterale-jeffersonianum* complex (Unisexual *Ambystoma*). Longevity. *Herpetological Review*. 54.4: 614-615. [PDF](docs/pubs/Goldspiel_et_al_2023_HerpReview_longevity.pdf)
 
 ***
-
 ### *Land-use legacies*
 
 <div class = "row">
@@ -73,8 +72,7 @@ knitr::include_graphics("images/heiberg_history.jpg")
 </div>
 </div>
 
-\ 
-\ 
+ \ 
 
 *Relevant literature:*
 
@@ -98,6 +96,9 @@ knitr::include_graphics("images/espanola_tort.png")
 
 Once numbered in the hundreds of thousands throughout the archipelago, Galápagos tortoises have suffered extreme population declines and extinctions over hundreds of years due to human activity. GTRI works together with the Galápagos National Park Directorate to restore tortoise populations to their historical ranges and sizes, via research, captive breeding, and management programs.
 
+ \ 
+
+
 *Relevant literature:*
 
 - Tapia, WA, **Goldspiel, HB**, Gibbs, JP. 2022. Introduction of giant tortoises as a replacement “ecosystem engineer” to facilitate restoration of Santa Fe Island, Galapagos. *Restoration Ecology*: e13476. https://doi.org/10.1111/rec.13476 
@@ -110,7 +111,6 @@ Once numbered in the hundreds of thousands throughout the archipelago, Galápago
 
 ***
 
-
 ### *Biotechnology*
 
 With rapid advancements in transgenic research, biotechnology has become more commonplace in discussions about ecological restoration. These techniques present numerous opportunities for conservation, as well as numerous uncertainties about potential non-target effects on other organisms. Following decades of research at SUNY ESF with the [American Chestnut Project](https://www.esf.edu/chestnut/), American chestnut (*Castanea dentata*) has become a primary case study of species restoration using biotechnology. As part of the regulatory approval process for planting these trees, various studies have been done to examine non-target effects on native species and ecological processes. Until 2017, no research had yet been conducted to examine potential effects of transgenic plants on forest-dwelling vertebrates, such as amphibians. In collaboration with the American Chestnut Project, I conducted a lab survival experiment to study interactions between transgenic American chestnut litter and amphibian larvae.
@@ -118,6 +118,9 @@ With rapid advancements in transgenic research, biotechnology has become more co
 ```{r, echo=FALSE, out.width="60%", out.height="60%", fig.cap="Left: Sample vials of leaf litter with pond water from central New York. Right: a wood frog (Lithobates sylvaticus) tadpole.", fig.show='hold', fig.align='center'}
 knitr::include_graphics("images/litter_tadpole.jpg")
 ``` 
+
+\ 
+
 
 *Relevant literature:*
 
@@ -154,6 +157,7 @@ knitr::include_graphics("images/flickr_NFR.jpg")
 - Kuehn D, Gibbs J, **Goldspiel HB**, Barr B, Sampson A, Moutenot M, Badding J, Stradtman L. 2020. Using Social Media Data and Park Characteristics to Understand Park Visitation. *The Journal of Park and Recreation Administration* 38.2: 1–12. https://doi.org/10.18666/JPRA-2019-10035
 
 ***
+
 ## Social-ecological systems
 
 <div class = "row">
